@@ -9,65 +9,7 @@
  */
 {
   "sections": {
-    "gp_section_560310868135379824": {
-      "settings": {
-        "checksum": "ef2c47bbb46eb7846a144e43d5165b973b3019f62db816b1066801faaec2959a_1_1_1_0_"
-      },
-      "type": "gp-section-560310868135379824"
-    },
-    "gp_section_560310868504478810": {
-      "settings": {
-        "checksum": "153c3cada2181d9d092d0c1f4d78e6eb51ff24a9ab431673fca8dc703c2fb423_1_1_1_0_"
-      },
-      "type": "gp-section-560310868504478810"
-    },
-    "gp_section_560422958695187312": {
-      "settings": {
-        "checksum": "c05ae92c739fcf9640900fa73be1708d79fe89f3b21b18193d0295dbb5d420f0_1_1_1_0_"
-      },
-      "type": "gp-section-560422958695187312"
-    },
-    "gp_section_560443634046993189": {
-      "settings": {
-        "checksum": "01aae4afac31c7e70d4f23ed051bfb34087c9e1a3f1d260771ce167f5e254de2_1_1_1_0_"
-      },
-      "type": "gp-section-560443634046993189"
-    },
-    "gp_section_560448256270664560": {
-      "settings": {
-        "checksum": "5bc6e0cb22e76c1dfb36e52a12e6d590cc329a3cbd63e0d0cf88e7f2e4b5c28e_1_1_1_0_",
-        "section_preload": "true"
-      },
-      "type": "gp-section-560448256270664560"
-    },
-    "gp_section_562197297731994401": {
-      "settings": {
-        "checksum": "900b56d9e11a434a318fdb222c2c17fbb69fbd67684582f8507e8769764570a0_1_1_1_0_"
-      },
-      "type": "gp-section-562197297731994401"
-    },
-    "gp_section_563504039585645363": {
-      "settings": {
-        "checksum": "c1f5c237e056845433adede01f548595bd913bbbb5c2176deda82a7e27d8f502_1_1_1_0_"
-      },
-      "type": "gp-section-563504039585645363"
-    },
-    "gp_section_568536928652100663": {
-      "settings": {
-        "checksum": "639c2ffe2707663f6b7f62a82ca13cacc49124146931449c4c1f207d0c7e7d8a_1_1_1_0_"
-      },
-      "type": "gp-section-568536928652100663"
-    }
-  },
-  "order": [
-    "gp_section_560448256270664560",
-    "gp_section_560310868135379824",
-    "gp_section_560422958695187312",
-    "gp_section_560310868504478810",
-    "gp_section_560443634046993189",
-    "gp_section_562197297731994401",
-    "gp_section_563504039585645363",
-    "gp_section_568536928652100663"
-  ],
-  "layout": "theme.gempages.header"
+	},
+  "order": [],
+  "layout": "theme"
 }
