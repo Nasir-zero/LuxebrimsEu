@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_560310868135379824": {
+      "settings": {
+        "checksum": "fb5fd3a7c0f19008b6bf4f8f72df477ea855853e71993d2001a53f9f39b9fbde_1_1_1_0_"
+      },
+      "type": "gp-section-560310868135379824"
+    },
+    "gp_section_560310868504478810": {
+      "settings": {
+        "checksum": "329b82de12932e2014ee1b46fcfe12955e8154f6dc08160a8cc2a1f69aba6df5_1_1_1_0_"
+      },
+      "type": "gp-section-560310868504478810"
+    },
+    "gp_section_560422958695187312": {
+      "settings": {
+        "checksum": "b0b825fbe5667957aafdafe5ee9e9c366c2f530052a7250a1adb22dc275e637a_1_1_1_0_"
+      },
+      "type": "gp-section-560422958695187312"
+    },
+    "gp_section_560443634046993189": {
+      "settings": {
+        "checksum": "8f0ca0994c90a5357261087a71e3b8670eff2e2c80a8c13b0e213ba4acadd350_1_1_1_0_"
+      },
+      "type": "gp-section-560443634046993189"
+    },
+    "gp_section_560448256270664560": {
+      "settings": {
+        "checksum": "0c3911e45273da9162e5c6d4e0df7307dee396a66405be936c79140ce3283a81_1_1_1_0_",
+        "section_preload": "true"
+      },
+      "type": "gp-section-560448256270664560"
+    },
+    "gp_section_562197297731994401": {
+      "settings": {
+        "checksum": "5412dfa02ed28bc1d77dfdb0f761500f1e76a42e106d270e8eaf40f44d37b727_1_1_1_0_"
+      },
+      "type": "gp-section-562197297731994401"
+    },
+    "gp_section_563504039585645363": {
+      "settings": {
+        "checksum": "e4278730c908c745b4929ae01a645ed878113f936d53db8391e36e7eea154efd_1_1_1_0_"
+      },
+      "type": "gp-section-563504039585645363"
+    },
+    "gp_section_568536928652100663": {
+      "settings": {
+        "checksum": "ec04f2733128e880e5a2b7a40e716014a479da4fadbc27c43fc0614451afbe00_1_1_1_0_"
+      },
+      "type": "gp-section-568536928652100663"
+    }
+  },
+  "order": [
+    "gp_section_560448256270664560",
+    "gp_section_560310868135379824",
+    "gp_section_560422958695187312",
+    "gp_section_560310868504478810",
+    "gp_section_560443634046993189",
+    "gp_section_562197297731994401",
+    "gp_section_563504039585645363",
+    "gp_section_568536928652100663"
+  ],
+  "layout": "theme.gempages.header"
+}

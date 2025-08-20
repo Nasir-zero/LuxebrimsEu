@@ -11,10 +11,8 @@
   - anchor: {String} (optional) This can be added so that on page reload it takes you to wherever you've placed your anchor tag.
 {% endcomment %}
 
-{{ 'component-pagination.css' | asset_url | stylesheet_tag }}
-
 {%- if paginate.parts.size > 0 -%}
-  <div class="pagination-wrapper" data-page="{{ paginate.current_page }}">
+  <div class="pagination-wrapper">
     <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
       <ul class="pagination__list list-unstyled" role="list">
         {%- if paginate.previous -%}
@@ -24,9 +22,7 @@
               class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce"
               aria-label="{{ 'general.pagination.previous' | t }}"
             >
-              <span class="svg-wrapper">
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </span>
+              {% render 'icon-caret' %}
             </a>
           </li>
         {%- endif -%}
@@ -66,9 +62,7 @@
               class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
               aria-label="{{ 'general.pagination.next' | t }}"
             >
-              <span class="svg-wrapper">
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </span>
+              {%- render 'icon-caret' -%}
             </a>
           </li>
         {%- endif -%}

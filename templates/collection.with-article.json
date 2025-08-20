@@ -1,0 +1,146 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "order": [
+    "main-collection-banner",
+    "article-preview",
+    "main-collection-product-grid",
+    "collage",
+    "newsletter"
+  ],
+  "sections": {
+    "collage": {
+      "block_order": [
+        "product",
+        "collection"
+      ],
+      "blocks": {
+        "collection": {
+          "settings": {
+            "collection": "all"
+          },
+          "type": "collection"
+        },
+        "product": {
+          "settings": {
+            "product": "",
+            "second_image": false
+          },
+          "type": "product"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "custom_colors_background": "#ffffff",
+        "custom_colors_text": "#2e2a39",
+        "custom_gradient_background": "",
+        "desktop_layout": "right",
+        "display_id": false,
+        "heading_size": "h2",
+        "mobile_layout": "collage",
+        "padding_bottom": 64,
+        "padding_top": 16,
+        "title": "Multimedia collage",
+        "title_highlight_color": "#6d388b",
+        "visibility": "always-display"
+      },
+      "type": "collage"
+    },
+    "main-collection-banner": {
+      "settings": {
+        "color_scheme": "background-1",
+        "show_collection_description": true,
+        "show_collection_image": true
+      },
+      "type": "main-collection-banner"
+    },
+    "article-preview": {
+      "type": "article-preview",
+      "settings": {
+        "title": "Baseball caps: a trendy choice for everyone",
+        "excerpt": "Baseball caps have distant roots, but over time they have spread into many settings and contexts...",
+        "full_content": "<p>Baseball caps have distant roots, but over time they have spread into many settings and contexts. They began as a functional accessory to shield the eyes from bright sunlight during games, and in the United States, they were immediately recognized for their practical value.</p><p>From the games to the streets: everyday use</p><p>Baseball caps have become urban style icons, suitable for both outdoor and informal indoor settings. They highlight versatility, ability to add a \"pop of color,\" and the protection and practicality they offer.</p><p>Materials and basic care</p><p>This section focuses on the importance of fabric choice (cotton, polyester, synthetic blends) for breathability and durability. It provides simple care instructions, including gentle washing, air-drying, and dry storage.</p><p>Personal choice and styling</p><p>This final section explores the countless styling possibilities with baseball caps. It mentions pairing them with casual wear like jeans, T-shirts, and sneakers, as well as dressier pieces for contrast.</p>"
+      }
+    },
+    "main-collection-product-grid": {
+      "custom_css": [],
+      "settings": {
+        "badges": "regular",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "enable_filtering": true,
+        "enable_quick_add": true,
+        "enable_sorting": true,
+        "filter_type": "horizontal",
+        "image_ratio": "adapt",
+        "padding_bottom": 36,
+        "padding_top": 0,
+        "products_per_page": 20,
+        "show_rating": false,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "stretch_cards": false,
+        "swatches_desktop_size": 36,
+        "swatches_mobile_size": 24,
+        "swatches_option_name": "",
+        "swatches_position": "top"
+      },
+      "type": "main-collection-product-grid"
+    },
+    "newsletter": {
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "blocks": {
+        "email-form": {
+          "settings": {},
+          "type": "email_form"
+        },
+        "heading": {
+          "settings": {
+            "heading_size": "h1",
+            "title": "Subscribe to our emails",
+            "title_highlight_color": "#6d388b"
+          },
+          "type": "heading"
+        },
+        "paragraph": {
+          "settings": {
+            "text": "<p>Join our email list for exclusive offers and the latest news. </p>"
+          },
+          "type": "paragraph"
+        }
+      },
+      "settings": {
+        "button_label": "Sign up",
+        "button_style_secondary": false,
+        "button_type": "solid",
+        "color_scheme": "background-2",
+        "custom_colors_background": "#ffffff",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff",
+        "custom_colors_text": "#2e2a39",
+        "custom_gradient_background": "",
+        "display_id": false,
+        "full_width": true,
+        "padding_bottom": 52,
+        "padding_top": 68,
+        "visibility": "always-display"
+      },
+      "type": "newsletter"
+    }
+  }
+}
+
+

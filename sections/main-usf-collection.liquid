@@ -1,0 +1,427 @@
+
+ {% render 'usf-general', section: section %}
+<script>
+  window._usfSectionSettings = {
+    image_style: {{ section.settings.usf_image_style | json }},
+    sale_type: {{ section.settings.usf_sale_type | json }},
+  }
+</script>
+<div class="usf-page-width" usf-desktop-col="{{ section.settings.usf_columns_desktop }}" usf-mobile-col="{{ section.settings.usf_columns_mobile }}" usf-text-alignment="{{ section.settings.usf_text_alignment }}" usf-image-style="{{ section.settings.usf_image_style }}">
+
+  	<h1 class="usf-page-title">{{ collection.title}}</h1>
+  
+  	 {%- if section.settings.usf_show_description and collection.description != blank -%}
+    	<div class="usf-collection-description">{{ collection.description }}</div>
+  	 {% endif %}
+	<style>
+#usf_container{
+    visibility:hidden;
+}
+</style>
+<div id="usf_container"></div>
+<div class="usf-skeleton-container">
+	<style>              
+	  @media (max-width: 749px){
+		.usf-mobile-hidden{
+		  display: none !important;
+		}
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper{
+		  display: flex;
+		  width: 100%;
+		  flex-wrap: wrap;
+		}
+		.usf-skeleton-container .usf-filters, 
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper .usf-c-select{
+		  height: 49px;
+		  border: 1px solid #ededed;
+		  width: 50%;
+		  border-left: none;
+		  display: flex !important;
+		  align-items: center;
+		}
+		.usf-skeleton-container .usf-filters{
+		  border-left: 1px solid #ededed;
+		}
+
+		.usf-skeleton-container .usf-results{
+		  height: 400px;
+		  margin-left: -20px;
+		  display: flex;
+		  flex-wrap: wrap;
+		}
+		.usf-skeleton-container .usf-sr-config{
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  margin-top: 13px;
+		  flex-wrap: wrap;
+		}
+		
+		.usf-skeleton-container .usf-sr-summary:before{
+		  margin: 0 !important;
+		  width: 100px !important;
+		}
+		.usf-skeleton-container .usf-views:before{
+		  margin: 0 !important;
+		  width: 50px !important;
+		  margin-left: auto !important;
+		}
+		.usf-skeleton-container .usf-grid__item{
+		  width: 50%;
+		  padding-left: 20px;
+		}
+		.usf-skeleton-container .usf-sr-summary, 
+		.usf-skeleton-container .usf-views{
+		  margin: 30px 0 20px 0;
+		  display: block;
+		  width: 50%;
+		}
+		
+		.usf-skeleton-container .usf-filters:before,
+		.usf-skeleton-container .usf-c-select:before{
+		  margin: 30px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container{
+		  width: 100%;
+		  padding: 0;
+		  float: none;
+		}
+	  }
+	  
+	  .usf-skeleton-container .usf-filters:before,
+	  .usf-skeleton-container .usf-c-select:before,
+	  .usf-skeleton-container .usf-sr-summary:before,
+	  .usf-skeleton-container .usf-views:before,
+	  .usf-skeleton-container .usf-facet .usf-title:before,
+	  .usf-skeleton-container .usf-facet .usf-body:before,
+	  .usf-skeleton-container .usf-facet .usf-body:after              
+	  {
+		content:'';
+		display: block;
+		background-color: #0000000b;
+		-webkit-animation: usf-skeleton-animation 2.3s infinite;
+		animation: usf-skeleton-animation 2.3s infinite;
+		height: 10px;
+		border-radius: 10px;
+		width: 100%;                
+	  }
+	  
+	  @keyframes usf-skeleton-animation {
+		0% {
+			opacity: 1
+		}
+
+		50% {
+			opacity: .5
+		}
+
+		100% {
+			opacity: 1
+		}
+	  }
+	  
+	  @media (min-width: 750px){
+		.usf-skeleton-container .usf-desktop-hidden{
+		  display: none !important;
+		}
+		.usf-skeleton-container .usf-facet .usf-title,
+		.usf-skeleton-container .usf-facet .usf-body,
+		.usf-skeleton-container .usf-c-select
+		{
+		  display: block !important;
+		}              
+	  
+		.usf-skeleton-container .usf-sr-config__mobile-filters-wrapper{
+		  display: none;
+		}
+		
+		.usf-skeleton-container .usf-facets{
+		  display: block;
+		  width: 23%;
+		  float: left;
+		  margin-top: 17px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container {
+		  width: 77%;
+		  float: left;
+		  padding-left: 30px;
+		  margin-top: 17px;
+		}
+		
+		.usf-skeleton-container .usf-sr-config{
+		  display: flex;
+		}
+		
+		.usf-skeleton-container .usf-sr-config > .usf-c-select{
+		  width: 200px;
+		}
+		
+		.usf-skeleton-container .usf-sr-summary{
+		  width: 100%;
+		}
+		.usf-skeleton-container .usf-sr-summary:before{
+		  margin: auto;
+		  width: 200px;
+		}
+		.usf-skeleton-container .usf-views:before{
+		}
+		.usf-skeleton-container .usf-grid__item{
+		  width: 50%;
+		  padding-left: 20px;
+		}
+		.usf-skeleton-container .usf-views{
+		  display: block;
+		  width: 50px;
+		}
+		
+		.usf-skeleton-container .usf-sr-container{
+		  min-height: 700px;
+		}
+	  }  
+	  
+	  .usf-skeleton-container .usf-facet{
+		margin-bottom: 40px;
+	  }
+	  
+	  .usf-skeleton-container .usf-facet .usf-title:before{                
+		margin-bottom: 25px;
+		width: 70%;
+	  }
+	  
+	  .usf-skeleton-container .usf-facet .usf-body:before,
+	  .usf-skeleton-container .usf-facet .usf-body:after
+	  {
+		margin-bottom: 16px;
+	  }
+	</style>
+  
+	<div class="usf-facets usf-mobile-hidden">
+	  <div class="usf-facet">
+		<div class="usf-title"></div>
+		<div class="usf-body"></div>                
+	  </div>
+	  <div class="usf-facet">
+		<div class="usf-title"></div>
+		<div class="usf-body"></div>
+	  </div>
+	</div>
+	<div class="usf-sr-container">
+	  <div class="usf-sr-config">
+		<div class="usf-sr-config__mobile-filters-wrapper">
+		  <div class="usf-filters"></div>
+		  <div class="usf-c-select"></div>
+		</div>
+		<div class="usf-views usf-mobile-hidden"></div>
+		<span class="usf-sr-summary"></span>
+		<div class="usf-views usf-desktop-hidden"></div>
+		<div class="usf-c-select usf-mobile-hidden"></div>
+	  </div>
+	  <div class="usf-results usf-grid">
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+		<div class="usf-grid__item"></div>
+	  </div>
+	</div>       
+</div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Usf Product Grid",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "usf_show_description",
+      "label": "Show collection description",
+      "default": true
+    },
+   {
+      "type": "checkbox",
+      "id": "usf_show_grid_border",
+      "label": "Show grid border",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "usf_columns_desktop",
+      "min": 3,
+      "max": 5,
+      "step": 1,
+      "default": 3,
+      "label": "Columns desktop"
+    },
+    {
+      "type": "select",
+      "id": "usf_columns_mobile",
+      "default": "2",
+      "label": "Columns mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ]
+    },  
+    {
+      "type": "select",
+      "id": "usf_text_alignment",
+      "default": "center",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    }, 
+    {
+      "type": "font_picker",
+      "id": "usf_heading_font",
+      "label": "Font-family",
+      "default": "assistant_n4"
+    },
+    {
+        "type": "select",
+        "id": "usf_image_style",
+        "label": "Media aspect ratio",
+        "options": [
+          {
+            "value": "natural",
+            "label": "Natural"
+          },
+          {
+            "value": "rectangle",
+            "label": "Rectangle"
+          }
+        ],
+        "default": "rectangle"
+      },
+    {
+        "type": "select",
+        "id": "usf_image_size",
+        "label": "Image size",
+        "info":"Applies to Media aspect ratio/Rectangle only",
+        "options": [
+          {
+            "value": "contain",
+            "label": "Contain"
+          },
+          {
+            "value": "cover",
+            "label": "Cover"
+          }
+        ],
+        "default": "contain"
+      },{
+        "type": "header",
+        "content": "Sale badges"
+      },{
+        "type": "select",
+        "id": "usf_sale_type",
+        "label": "Sale label type",
+        "options": [
+          {
+            "value": "text",
+            "label": "Text"
+          },
+          {
+            "value": "percent",
+            "label": "Percent"
+          },
+          {
+            "value": "money",
+            "label": "Money"
+          }
+        ],
+        "default": "text"
+      },{
+        "type": "select",
+        "id": "usf_sale_label_position",
+        "label": "Sale label position",
+        "options": [
+          {
+            "value": "top-right",
+            "label": "Top - right"
+          },
+          {
+            "value": "top-left",
+            "label": "Top - left"
+          },
+          {
+            "value": "bottom-right",
+            "label": "Bottom - right"
+          },
+          {
+            "value": "bottom-left",
+            "label": "Bottom - left"
+          }
+        ],
+        "default": "top-right"
+      },{
+        "type": "color",
+        "id": "usf_sale_color",
+        "label": "Sale background color",
+        "default": "#FF4E4E"
+      },{
+        "type": "color",
+        "id": "usf_sale_text_color",
+        "label": "Sale text color",
+        "default": "#ffffff"
+      },{
+        "type": "header",
+        "content": "Sold out badges"
+      },{
+        "type": "color",
+        "id": "usf_soldout_color",
+        "label": "Sold out background color",
+        "default": "#000000"
+      },{
+        "type": "color",
+        "id": "usf_soldout_text_color",
+        "label": "Sold out text color",
+        "default": "#ffffff"
+      },{
+        "type": "select",
+        "id": "usf_soldout_label_position",
+        "label": "Sold out label position",
+        "options": [
+          {
+            "value": "top-right",
+            "label": "Top - right"
+          },
+          {
+            "value": "top-left",
+            "label": "Top - left"
+          },
+          {
+            "value": "bottom-right",
+            "label": "Bottom - right"
+          },
+          {
+            "value": "bottom-left",
+            "label": "Bottom - left"
+          }
+        ],
+        "default": "top-right"
+      },
+
+  ]
+}
+{% endschema %}

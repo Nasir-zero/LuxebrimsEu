@@ -87,6 +87,16 @@
   transform: rotate(180deg);
 }
 
+[data-rtl="true"] .article-template__link .icon-wrap {
+  transform: none;
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+[data-rtl="true"] .article-template__link .icon-wrap svg {
+  overflow: visible;
+}
+
 .article-template__content {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -132,7 +142,7 @@
 }
 
 .article-template__comments-comment {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.9);
   background-color: rgb(var(--color-background));
   margin-bottom: 1.5rem;
   padding: 2rem 2rem 1.5rem;
@@ -172,4 +182,9 @@
 
 .article-template__back:last-child {
   margin-bottom: 3.2rem;
+}
+
+.article-template .rte ul,
+.article-template .rte ol {
+  list-style-position: outside;
 }

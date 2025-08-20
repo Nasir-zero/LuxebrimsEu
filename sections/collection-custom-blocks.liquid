@@ -1,0 +1,110 @@
+<div class="collection-custom-blocks" data-section-id="{{ section.id }}" data-section-type="collection-custom-blocks">
+  {% if collection and collection.metafields.custom.collection_blocks %}
+    {% assign blocks = collection.metafields.custom.collection_blocks.value %}
+    {% for item in blocks %}
+      <div class="collection-block">
+        {% if item.image %}
+          <div class="collection-block__media">
+            <img
+              src="{{ item.image | image_url: width: 1600 }}"
+              srcset="{{ item.image | image_url: width: 800 }} 800w, {{ item.image | image_url: width: 1200 }} 1200w, {{ item.image | image_url: width: 1600 }} 1600w"
+              sizes="(min-width: 990px) 800px, 100vw"
+              alt="{{ item.image.alt | escape }}"
+              loading="lazy"
+              width="{{ item.image.width }}"
+              height="{{ item.image.height }}"
+            >
+          </div>
+        {% endif %}
+
+        <div class="collection-block__content">
+          {% if item.title %}
+            <h2 class="collection-block__title">{{ item.title }}</h2>
+          {% endif %}
+          {% if item.excerpt %}
+            <p class="collection-block__excerpt">{{ item.excerpt }}</p>
+          {% endif %}
+          {% if item.content %}
+            <div class="collection-block__richtext">{{ item.content }}</div>
+          {% endif %}
+          {% if item.button_label and item.button_url %}
+            <a class="collection-block__button" href="{{ item.button_url }}">{{ item.button_label }}</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    {% if request.design_mode %}
+      <div class="collection-block__placeholder">
+        <p>请到“设置 > 自定义数据 > 集合”中创建元字段 <code>custom.collection_blocks</code>（类型：元对象列表），并指向自定义的元对象定义 <code>collection_block</code>。在每个集合里添加条目后，这里会自动展示。</p>
+      </div>
+    {% endif %}
+  {% endif %}
+</div>
+
+<style>
+  .collection-custom-blocks {
+    margin: 0 auto;
+    padding: 32px 0;
+  }
+
+  .collection-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+
+  .collection-block__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .collection-block__title {
+    font-family: var(--font-heading-family), 'Lora', serif;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.01em;
+    margin: 8px 0 12px;
+    color: #121212;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .collection-block__content { padding: 20px; }
+  .collection-block__excerpt { color: #555; margin: 0 0 8px; }
+  .collection-block__richtext { color: #333; }
+
+  .collection-block__button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 16px;
+    border: 1px solid #222;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  @media (min-width: 990px) {
+    .collection-block { grid-template-columns: 1.1fr 1fr; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Collection Custom Blocks",
+  "tag": "section",
+  "class": "section",
+  "limit": 1,
+  "settings": [],
+  "presets": [
+    { "name": "Collection Custom Blocks", "category": "Collection" }
+  ]
+}
+{% endschema %}
+
+
