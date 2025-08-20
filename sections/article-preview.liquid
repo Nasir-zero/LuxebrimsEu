@@ -1,0 +1,226 @@
+{% liquid
+  assign should_render = false
+  assign ap_title = ''
+  assign ap_excerpt = ''
+  assign ap_full_content = ''
+
+  if collection and collection.metafields and collection.metafields.custom and collection.metafields.custom.collection_blocks
+    assign collection_blocks = collection.metafields.custom.collection_blocks.value
+    if collection_blocks
+      if collection_blocks.text != blank or collection_blocks.textarea != blank or collection_blocks.richtext != blank
+        assign should_render = true
+        if collection_blocks.text != blank
+          assign ap_title = collection_blocks.text
+        endif
+        if collection_blocks.textarea != blank
+          assign ap_excerpt = collection_blocks.textarea
+        endif
+        if collection_blocks.richtext != blank
+          assign ap_full_content = collection_blocks.richtext
+        endif
+      endif
+    endif
+  endif
+%}
+
+{% if should_render %}
+<div class="article-preview" data-section-id="{{ section.id }}" data-section-type="article-preview">
+  <div class="article-preview__container">
+    <div class="article-preview__title">
+      <h2>{{ ap_title }}</h2>
+    </div>
+    
+    <div class="article-preview__content">
+      <div class="article-preview__excerpt">
+        <p>{{ ap_excerpt }}</p>
+      </div>
+      
+      <div class="article-preview__full-content hidden">
+        {{ ap_full_content }}
+      </div>
+    </div>
+    
+    <div class="article-preview__button">
+      <button class="read-more-btn" onclick="toggleArticleContent('{{ section.id }}')" aria-expanded="false">
+        <span class="btn-text">READ MORE</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  
+.article-preview {
+  {% comment %} max-width: 1400px; {% endcomment %}
+  margin: 0 auto;
+  padding: 20px 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+.article-preview__container {
+  {% comment %} max-width: 1400px; {% endcomment %}
+  margin: 0 auto;
+}
+
+.article-preview__title h2 {
+  font-family: var(--font-heading-family), 'Lora', serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  text-align: Left;
+  margin-bottom: 20px;
+  color: #121212;
+  line-height: 1.2;
+}
+
+.article-preview__content {
+  margin-bottom: 25px;
+}
+
+.article-preview__excerpt p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+.article-preview__full-content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  margin-top: 20px;
+}
+
+.article-preview__full-content.hidden {
+  display: none;
+}
+
+.article-preview__button {
+  text-align: center;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: #0056b3;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.read-more-btn:focus {
+  {% comment %} outline: 2px solid #007bff; {% endcomment %}
+  outline-offset: 2px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .article-preview {
+    padding: 30px 15px;
+  }
+  
+  .article-preview__title h2 {
+    font-size: 32px;
+  }
+  
+  .article-preview__excerpt p,
+  .article-preview__full-content {
+    font-size: 15px;
+  }
+}
+ 
+/* 动画效果 */
+.article-preview__full-content {
+
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  transition: all 0.3s ease;
+}
+
+.article-preview__full-content:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+
+<script>
+function toggleArticleContent(sectionId) {
+  const section = document.querySelector(`[data-section-id="${sectionId}"]`);
+  const excerpt = section.querySelector('.article-preview__excerpt');
+  const fullContent = section.querySelector('.article-preview__full-content');
+  const btnText = section.querySelector('.btn-text');
+  const button = section.querySelector('.read-more-btn');
+  
+  if (fullContent.classList.contains('hidden')) {
+    // 展开内容
+    excerpt.style.display = 'none';
+    fullContent.classList.remove('hidden');
+    btnText.textContent = 'READ LESS';
+    button.setAttribute('aria-expanded', 'true');
+  } else {
+    // 收起内容
+    excerpt.style.display = 'block';
+    fullContent.classList.add('hidden');
+    btnText.textContent = 'READ MORE';
+    button.setAttribute('aria-expanded', 'false');
+  }
+}
+
+// 页面加载完成后初始化
+document.addEventListener('DOMContentLoaded', function() {
+  // 确保所有按钮都有正确的 aria 属性
+  const buttons = document.querySelectorAll('.read-more-btn');
+  buttons.forEach(button => {
+    button.setAttribute('aria-expanded', 'false');
+  });
+});
+</script>
+
+{% endif %}
+
+{% schema %}
+{
+  "name": "Article Preview",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "文章标题",
+      "default": "Baseball caps: a trendy choice for everyone"
+    },
+    {
+      "type": "textarea",
+      "id": "excerpt",
+      "label": "文章摘要",
+      "default": "Baseball caps have distant roots, but over time they have spread into many settings and contexts. They began as a functional accessory to shield the eyes from bright sunlight during games, and in the United States, they were immediat..."
+    },
+    {
+      "type": "richtext",
+      "id": "full_content",
+      "label": "完整文章内容",
+      "default": "<p>Baseball caps have distant roots, but over time they have spread into many settings and contexts. They began as a functional accessory to shield the eyes from bright sunlight during games, and in the United States, they were immediately recognized for their practical value.</p><p>From the games to the streets: everyday use</p><p>Baseball caps have become urban style icons, suitable for both outdoor and informal indoor settings. They highlight versatility, ability to add a \"pop of color,\" and the protection and practicality they offer.</p><p>Materials and basic care</p><p>This section focuses on the importance of fabric choice (cotton, polyester, synthetic blends) for breathability and durability. It provides simple care instructions, including gentle washing, air-drying, and dry storage.</p><p>Personal choice and styling</p><p>This final section explores the countless styling possibilities with baseball caps. It mentions pairing them with casual wear like jeans, T-shirts, and sneakers, as well as dressier pieces for contrast.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Article Preview",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}

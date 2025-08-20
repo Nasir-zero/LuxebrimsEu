@@ -1,0 +1,39 @@
+/* Force-disable USF instant/predictive overlays injected by app ScriptTags */
+.usf-is,
+.usf-is-first-loader,
+#usf_is_loader,
+.usf-is--full,
+.usf-is--compact,
+.usf-is__container,
+.usf-popup.usf-is,
+.usf-backdrop {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Fix: search modal overlay flashes not full-size on first paint */
+.modal-overlay {
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  animation: none !important;
+}
+
+/* Ensure pseudo-element also covers viewport immediately */
+.modal-overlay:after {
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+/* Remove open animation on the search modal to prevent first-frame size flicker */
+details[open] > .search-modal {
+  animation: none !important;
+}
+

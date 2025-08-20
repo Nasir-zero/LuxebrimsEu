@@ -1,0 +1,2801 @@
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-561765491551503340.gps.gpsil [style*="--ai:"]{align-items:var(--ai)}.gps-561765491551503340.gps.gpsil [style*="--as:"]{align-self:var(--as)}.gps-561765491551503340.gps.gpsil [style*="--aspect:"]{aspect-ratio:var(--aspect)}.gps-561765491551503340.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-561765491551503340.gps.gpsil [style*="--hvr-bg:"]:hover{background:var(--hvr-bg)}.gps-561765491551503340.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-561765491551503340.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-561765491551503340.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-561765491551503340.gps.gpsil [style*="--hvr-bgi:"]:hover{background-image:var(--hvr-bgi)}.gps-561765491551503340.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-561765491551503340.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-561765491551503340.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-561765491551503340.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-561765491551503340.gps.gpsil [style*="--hvr-b:"]:hover{border:var(--hvr-b)}.gps-561765491551503340.gps.gpsil [style*="--bb:"]{border-bottom:var(--bb)}.gps-561765491551503340.gps.gpsil [style*="--hvr-bb:"]:hover{border-bottom:var(--hvr-bb)}.gps-561765491551503340.gps.gpsil [style*="--bbw:"]{border-bottom-width:var(--bbw)}.gps-561765491551503340.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-561765491551503340.gps.gpsil [style*="--bblr:"]{border-bottom-left-radius:var(--bblr)}.gps-561765491551503340.gps.gpsil [style*="--hvr-bblr:"]:hover{border-bottom-left-radius:var(--hvr-bblr)}.gps-561765491551503340.gps.gpsil [style*="--bbrr:"]{border-bottom-right-radius:var(--bbrr)}.gps-561765491551503340.gps.gpsil [style*="--hvr-bbrr:"]:hover{border-bottom-right-radius:var(--hvr-bbrr)}.gps-561765491551503340.gps.gpsil [style*="--radius:"]{border-radius:var(--radius)}.gps-561765491551503340.gps.gpsil [style*="--hvr-radius:"]:hover{border-radius:var(--hvr-radius)}.gps-561765491551503340.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-561765491551503340.gps.gpsil [style*="--bt:"]{border-top:var(--bt)}.gps-561765491551503340.gps.gpsil [style*="--hvr-bt:"]:hover{border-top:var(--hvr-bt)}.gps-561765491551503340.gps.gpsil [style*="--btlr:"]{border-top-left-radius:var(--btlr)}.gps-561765491551503340.gps.gpsil [style*="--hvr-btlr:"]:hover{border-top-left-radius:var(--hvr-btlr)}.gps-561765491551503340.gps.gpsil [style*="--btrr:"]{border-top-right-radius:var(--btrr)}.gps-561765491551503340.gps.gpsil [style*="--hvr-btrr:"]:hover{border-top-right-radius:var(--hvr-btrr)}.gps-561765491551503340.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-561765491551503340.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-561765491551503340.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-561765491551503340.gps.gpsil [style*="--hvr-c:"]:hover{color:var(--hvr-c)}.gps-561765491551503340.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-561765491551503340.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-561765491551503340.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-561765491551503340.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-561765491551503340.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-561765491551503340.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-561765491551503340.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-561765491551503340.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-561765491551503340.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-561765491551503340.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-561765491551503340.gps.gpsil [style*="--tdt:"]{text-decoration-thickness:var(--tdt)}.gps-561765491551503340.gps.gpsil [style*="--tdl:"]{text-decoration-line:var(--tdl)}.gps-561765491551503340.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-561765491551503340.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-561765491551503340.gps.gpsil [style*="--ml:"]{margin-left:var(--ml)}.gps-561765491551503340.gps.gpsil [style*="--mr:"]{margin-right:var(--mr)}.gps-561765491551503340.gps.gpsil [style*="--mt:"]{margin-top:var(--mt)}.gps-561765491551503340.gps.gpsil [style*="--minw:"]{min-width:var(--minw)}.gps-561765491551503340.gps.gpsil [style*="--objf:"]{-o-object-fit:var(--objf);object-fit:var(--objf)}.gps-561765491551503340.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-561765491551503340.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-561765491551503340.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-561765491551503340.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-561765491551503340.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-561765491551503340.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-561765491551503340.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-561765491551503340.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-561765491551503340.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-561765491551503340.gps.gpsil [style*="--tt:"]{text-transform:var(--tt)}.gps-561765491551503340.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-561765491551503340.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-561765491551503340.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1024px){.gps-561765491551503340.gps.gpsil [style*="--bbw-tablet:"]{border-bottom-width:var(--bbw-tablet)}.gps-561765491551503340.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-561765491551503340.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-561765491551503340.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-561765491551503340.gps.gpsil [style*="--pb-tablet:"]{padding-bottom:var(--pb-tablet)}.gps-561765491551503340.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-561765491551503340.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-561765491551503340.gps.gpsil [style*="--pt-tablet:"]{padding-top:var(--pt-tablet)}.gps-561765491551503340.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-561765491551503340.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-561765491551503340.gps.gpsil [style*="--aspect-mobile:"]{aspect-ratio:var(--aspect-mobile)}.gps-561765491551503340.gps.gpsil [style*="--bbw-mobile:"]{border-bottom-width:var(--bbw-mobile)}.gps-561765491551503340.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-561765491551503340.gps.gpsil [style*="--gtc-mobile:"]{grid-template-columns:var(--gtc-mobile)}.gps-561765491551503340.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-561765491551503340.gps.gpsil [style*="--jc-mobile:"]{justify-content:var(--jc-mobile)}.gps-561765491551503340.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-561765491551503340.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-561765491551503340.gps.gpsil [style*="--ml-mobile:"]{margin-left:var(--ml-mobile)}.gps-561765491551503340.gps.gpsil [style*="--mt-mobile:"]{margin-top:var(--mt-mobile)}.gps-561765491551503340.gps.gpsil [style*="--pc-mobile:"]{place-content:var(--pc-mobile)}.gps-561765491551503340.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-561765491551503340.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-561765491551503340.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-561765491551503340.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-561765491551503340.gps.gpsil [style*="--ta-mobile:"]{text-align:var(--ta-mobile)}.gps-561765491551503340.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-561765491551503340.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-561765491551503340 .gp-g-paragraph-1{font-family:var(--g-p1-ff);font-size:var(--g-p1-size);font-style:var(--g-p1-fs);font-weight:var(--g-p1-weight);letter-spacing:var(--g-p1-ls);line-height:var(--g-p1-lh)}.gps-561765491551503340 .gp-fixed{position:fixed}.gps-561765491551503340 .gp-relative{position:relative}.gps-561765491551503340 .gp-top-\[27px\]{top:27px}.gps-561765491551503340 .gp-z-\[100\]{z-index:100}.gps-561765491551503340 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-561765491551503340 .gp-mb-0{margin-bottom:0}.gps-561765491551503340 .gp-block{display:block}.gps-561765491551503340 .gp-inline-block{display:inline-block}.gps-561765491551503340 .gp-flex{display:flex}.gps-561765491551503340 .gp-inline-flex{display:inline-flex}.gps-561765491551503340 .gp-grid{display:grid}.gps-561765491551503340 .gp-contents{display:contents}.gps-561765491551503340 .\!gp-hidden{display:none!important}.gps-561765491551503340 .gp-hidden{display:none}.gps-561765491551503340 .gp-h-auto{height:auto}.gps-561765491551503340 .gp-h-full{height:100%}.gps-561765491551503340 .gp-w-full{width:100%}.gps-561765491551503340 .gp-max-w-full{max-width:100%}.gps-561765491551503340 .gp-flex-none{flex:none}.gps-561765491551503340 .gp-grid-rows-\[1fr\]{grid-template-rows:1fr}.gps-561765491551503340 .gp-flex-col{flex-direction:column}.gps-561765491551503340 .gp-items-center{align-items:center}.gps-561765491551503340 .gp-justify-start{justify-content:flex-start}.gps-561765491551503340 .gp-justify-center{justify-content:center}.gps-561765491551503340 .gp-overflow-hidden{overflow:hidden}.gps-561765491551503340 .gp-break-words{overflow-wrap:break-word}.gps-561765491551503340 .gp-rounded{border-radius:4px}.gps-561765491551503340 .\!gp-bg-none{background-image:none!important}.gps-561765491551503340 .gp-p-\[16px\]{padding:16px}.gps-561765491551503340 .gp-text-center{text-align:center}.gps-561765491551503340 .gp-text-\[14px\]{font-size:14px}.gps-561765491551503340 .gp-leading-normal{line-height:1.5}.gps-561765491551503340 .gp-text-g-bg-3{color:var(--g-c-bg-3)}.gps-561765491551503340 .gp-text-g-text-3{color:var(--g-c-text-3)}.gps-561765491551503340 .gp-no-underline{text-decoration-line:none}.gps-561765491551503340 .\!gp-outline-none{outline:2px solid transparent!important;outline-offset:2px!important}.gps-561765491551503340 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-561765491551503340 .gp-duration-200{transition-duration:.2s}.gps-561765491551503340 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-561765491551503340 .disabled\:gp-btn-disabled:disabled{cursor:default}@media (hover:hover) and (pointer:fine){.gps-561765491551503340 .hover\:gp-text-g-text-3:hover{color:var(--g-c-text-3)}}.gps-561765491551503340 .disabled\:gp-opacity-30:disabled{opacity:.3}.gps-561765491551503340 .gp-group\/button:active .group-active\/button\:\!gp-text-inherit{color:inherit!important}.gps-561765491551503340 .gp-group[data-state=loading] .group-data-\[state\=loading\]\:gp-invisible{visibility:hidden}@media (max-width:1024px){.gps-561765491551503340 .tablet\:gp-block{display:block}.gps-561765491551503340 .tablet\:\!gp-hidden{display:none!important}.gps-561765491551503340 .tablet\:gp-hidden{display:none}.gps-561765491551503340 .tablet\:gp-h-auto{height:auto}.gps-561765491551503340 .tablet\:gp-flex-none{flex:none}}@media (max-width:767px){.gps-561765491551503340 .mobile\:gp-block{display:block}.gps-561765491551503340 .mobile\:\!gp-hidden{display:none!important}.gps-561765491551503340 .mobile\:gp-hidden{display:none}.gps-561765491551503340 .mobile\:gp-h-auto{height:auto}.gps-561765491551503340 .mobile\:gp-flex-none{flex:none}}.gps-561765491551503340 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-561765491551503340 .\[\&_p\]\:gp-whitespace-pre-line p{white-space:pre-line}</style>
+
+
+    
+
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+
+    
+        <section
+          class="gp-mx-auto gp-max-w-full [&_*]:gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:none;--pl-tablet:none;--pl-mobile:none;--pr:none;--pr-tablet:none;--pr-mobile:none"
+        >
+          
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"#FCFAF7","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color","video":"","videoHtml5":""}},"uid":"gXiqhwhvbJ"}' data-id="gXiqhwhvbJ" id="gXiqhwhvbJ" data-same-height-subgrid-container class="gXiqhwhvbJ gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:var(--g-s-xs);--pb:var(--g-s-xs);--pt-mobile:var(--g-s-4xl);--pl-mobile:0px;--pr-mobile:0px;--pt-tablet:var(--g-s-4xl);--pl-tablet:0px;--pr-tablet:0px;--cg:0px;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FCFAF7;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--o:0"
+      class="g76Xe8kLIv gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gxzuTyJ8H9"}' data-id="gxzuTyJ8H9" id="gxzuTyJ8H9" data-same-height-subgrid-container class="gxzuTyJ8H9 gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--pt:0px;--pl:15px;--pb:15px;--pr:15px;--cg:32px;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gLtMtFgafT gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gxSk5qY1XZ"
+        class="gxSk5qY1XZ"
+        style="--ta:center;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mt:30px;--mb:var(undefined);--pt:0px;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209500"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <h2
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center;--c:#191918;--fs:normal;--ff:var(--g-font-heading, heading);--weight:700;--ls:normal;--size:33px;--size-tablet:33px;--size-mobile:29px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggxSk5qY1XZ_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    <div class="gp-mx-auto gp-max-w-full" style="--w:100%;--pl:0px;--pr:0px;--pt:var(--g-s-xs);--pb:var(--g-s-xs);--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:var(--g-s-2xl);--pb-mobile:12px;--bc:transparent;--bw:0px;--bs:none;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px">
+      <gp-form
+        data-id="gdNTX310LO" id="gdNTX310LO"
+        data-callback='{"link":"","target":"_self"}'
+      >
+        <a
+          hidden="true" id="gp-form-callback-gdNTX310LO"
+        >
+        </a>
+        {% form 'customer', class: 'gp-form-gdNTX310LO ', id: 'contact_form_gdNTX310LO' %}
+          {% if form.errors %}
+            <div
+              id="gp-form-error-gdNTX310LO"
+              class="gp-form-message gp-hidden gp-top-[27px] gp-fixed gp-rounded gp-p-[16px] gp-text-[14px] gp-leading-normal gp-z-[100]"
+              style="background-color:#FFE9E9;left:50%;transform:translateX(-50%)"
+            >
+              {{ section.settings.ggdNTX310LO_errorMessage }}
+            </div>
+          {% endif %}
+          <div popover id="my-popover-gdNTX310LO">
+            <style>
+              
+    #my-popover-gdNTX310LO::backdrop {
+      width: fit-content;
+      height: fit-content;
+    }
+  
+            </style>
+            <div
+              id="gp-form-success-gdNTX310LO"
+              class="gp-form-message gp-hidden gp-top-[27px] gp-fixed gp-rounded gp-p-[16px] gp-text-[14px] gp-leading-normal gp-z-[100]"
+              style="background-color:#F2FFEC;left:50%;transform:translateX(-50%)"
+            >
+              {{ section.settings.ggdNTX310LO_successMessage }}
+            </div>
+          </div>
+          
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"#FFFFFF","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gK98kAqS37"}' data-id="gK98kAqS37" id="gK98kAqS37" data-same-height-subgrid-container class="gK98kAqS37 gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--cg:0px;--gtc:minmax(0, 9fr) minmax(0, 3fr);--gtc-mobile:minmax(0, 8fr) minmax(0, 4fr);--w:570px;--w-tablet:570px;--w-mobile:100%;--bgc:#FFFFFF;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="geeACBbr7X gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      
+      data-id="gHZXfm37An"
+      class="gHZXfm37An flex flex-col"
+      style="--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ta:left"
+    >
+      
+      <input
+        type="email"
+        class="gp-form-item gp-g-paragraph-1 !gp-outline-none !gp-bg-none email-form-gHZXfm37An"
+        style="--w:100%;--w-tablet:313px;--w-mobile:100%;--h:auto;--pl:16px;--pr:16px;--pt:12px;--pb:12px;--pl-tablet:16px;--pr-tablet:16px;--pt-tablet:12px;--pb-tablet:12px;--pl-mobile:16px;--pr-mobile:16px;--pt-mobile:12px;--pb-mobile:12px;--bs:none;--bw:0px 0px 0px 0px;--bc:transparent;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:6.123233995736766e-16px 10px 8px 0px hsl(0deg 0% 0% / 12%)"
+        placeholder="{{ section.settings.ggHZXfm37An_placeholder }}"
+        name="contact[email]"
+        required
+        autocomplete="email"
+        
+      ></input>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gyH_UbapC1 gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+    <gp-button
+      gp-data='{}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left" >
+        <style>[data-id="gAYov1ZqQ_"].gp-button-base::before, [data-id="gAYov1ZqQ_-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px 0px 0px 0px;
+  border-color: transparent;
+  
+    
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      
+  
+    }
+  
+      
+  [data-id="gAYov1ZqQ_"]:hover::before, [data-id="gAYov1ZqQ_-interaction"]:hover::before {
+    border-style: none;
+  border-width: 0px 0px 0px 0px;
+  border-color: transparent;
+  
+    
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      
+  }</style>
+        
+        <button
+          data-id="gAYov1ZqQ_" dataId="gAYov1ZqQ_" data-state="idle" aria-label="Subscribe"
+          
+          type="submit"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:24px;--pr:24px;--pt:12px;--pb:12px;--pl-tablet:24px;--pr-tablet:24px;--pt-tablet:12px;--pb-tablet:12px;--pl-mobile:24px;--pr-mobile:24px;--pt-mobile:12px;--pb-mobile:12px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--hvr-bblr:0px;--hvr-bbrr:0px;--hvr-btlr:0px;--hvr-btrr:0px;--bgi:;--hvr-bgi:;--hvr-bg:rgba(36, 36, 36, 0.8);--bg:#191918;--hvr-c:var(--g-c-text-3)"
+          class="gAYov1ZqQ_ gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 hover:gp-text-g-text-3 gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggAYov1ZqQ__label }}
+    </span>
+        </div>
+        
+        </button>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+        {% endform %}
+      </gp-form>
+    </div>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-form-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gUoIxYQtxa"
+        class="gUoIxYQtxa"
+        style="--ta:center;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--pl-mobile:15px;--pb-mobile:5px;--pr-mobile:15px;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209503"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1 gp-text-g-text-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--ta:center;--line-clamp:0;--line-clamp-tablet:0;--line-clamp-mobile:0;--c:#191918;--size:10px;--size-tablet:16px;--size-mobile:11px;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggUoIxYQtxa_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+      
+    </gp-row>
+  
+  
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gu701zHN6p"}' data-id="gu701zHN6p" id="gu701zHN6p" data-same-height-subgrid-container class="gu701zHN6p gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:none;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--mt-mobile:7px;--ml-mobile:11px;--mb-mobile:6px;--cg:8px;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 6fr) minmax(0, 6fr);--w:var(--g-ct-w, 1200px);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gX5XpeHgh8 gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gw3UK5YlSk"
+        class="gw3UK5YlSk"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--mt-mobile:0px;--mb-mobile:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209504"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggw3UK5YlSk_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/conditions-of-sale","selectedTab":"pages","target":"_self","title":"Conditions of sale"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gdKWunv3kY"].gp-button-base::before, [data-id="gdKWunv3kY-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gdKWunv3kY"]:hover::before, [data-id="gdKWunv3kY-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gdKWunv3kY" dataId="gdKWunv3kY" data-state="idle" aria-label="<p>Conditions of sale</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/conditions-of-sale" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gdKWunv3kY gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggdKWunv3kY_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/privacy-policy-1","selectedTab":"pages","target":"_self","title":"Privacy policy"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gfiaYibXf_"].gp-button-base::before, [data-id="gfiaYibXf_-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gfiaYibXf_"]:hover::before, [data-id="gfiaYibXf_-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gfiaYibXf_" dataId="gfiaYibXf_" data-state="idle" aria-label="<p>Privacy policy</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/privacy-policy-1" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gfiaYibXf_ gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggfiaYibXf__label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/cookie","selectedTab":"pages","target":"_self","title":"Cookie"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gK0VJZC4T7"].gp-button-base::before, [data-id="gK0VJZC4T7-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gK0VJZC4T7"]:hover::before, [data-id="gK0VJZC4T7-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gK0VJZC4T7" dataId="gK0VJZC4T7" data-state="idle" aria-label="<p>Cookie</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/cookie" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gK0VJZC4T7 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggK0VJZC4T7_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/mens","selectedTab":"collections","target":"_self","title":"Men&#039;s"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gStjw0ZcKa"].gp-button-base::before, [data-id="gStjw0ZcKa-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gStjw0ZcKa"]:hover::before, [data-id="gStjw0ZcKa-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gStjw0ZcKa" dataId="gStjw0ZcKa" data-state="idle" aria-label="<p>Men</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/mens" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gStjw0ZcKa gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggStjw0ZcKa_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/women","selectedTab":"collections","target":"_self","title":"Women"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gv-7zOJClL"].gp-button-base::before, [data-id="gv-7zOJClL-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gv-7zOJClL"]:hover::before, [data-id="gv-7zOJClL-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gv-7zOJClL" dataId="gv-7zOJClL" data-state="idle" aria-label="<p>Women</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/women" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gv-7zOJClL gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggv-7zOJClL_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/best-seller","selectedTab":"collections","target":"_self","title":"Best Seller"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gEe3ZqX1v2"].gp-button-base::before, [data-id="gEe3ZqX1v2-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gEe3ZqX1v2"]:hover::before, [data-id="gEe3ZqX1v2-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gEe3ZqX1v2" dataId="gEe3ZqX1v2" data-state="idle" aria-label="<p>Best Seller</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/best-seller" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gEe3ZqX1v2 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggEe3ZqX1v2_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/new-arrivals","selectedTab":"collections","target":"_self","title":"New Arrivals"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="g2FU3d1q7T"].gp-button-base::before, [data-id="g2FU3d1q7T-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g2FU3d1q7T"]:hover::before, [data-id="g2FU3d1q7T-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g2FU3d1q7T" dataId="g2FU3d1q7T" data-state="idle" aria-label="<p>New Arrival</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/new-arrivals" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g2FU3d1q7T gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg2FU3d1q7T_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/accessories","selectedTab":"collections","target":"_self","title":"ACCESSORIES"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="g1Fvx1BK6w"].gp-button-base::before, [data-id="g1Fvx1BK6w-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g1Fvx1BK6w"]:hover::before, [data-id="g1Fvx1BK6w-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g1Fvx1BK6w" dataId="g1Fvx1BK6w" data-state="idle" aria-label="<p>Accessories</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/accessories" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g1Fvx1BK6w gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg1Fvx1BK6w_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="g9MxTzMamC gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gAfsdKRe_i"
+        class="gAfsdKRe_i"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209511"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggAfsdKRe_i_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/contact-page-apr-12-10-20-34","selectedTab":"pages","target":"_self","title":"Contact Us"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="garaKa7Jb7"].gp-button-base::before, [data-id="garaKa7Jb7-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="garaKa7Jb7"]:hover::before, [data-id="garaKa7Jb7-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="garaKa7Jb7" dataId="garaKa7Jb7" data-state="idle" aria-label="<p>Contact Us</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/contact-page-apr-12-10-20-34" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="garaKa7Jb7 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggaraKa7Jb7_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/legal-page-apr-12-11-00-04","selectedTab":"pages","target":"_self","title":"Shipping Policy"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gdJfx0EXW4"].gp-button-base::before, [data-id="gdJfx0EXW4-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gdJfx0EXW4"]:hover::before, [data-id="gdJfx0EXW4-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gdJfx0EXW4" dataId="gdJfx0EXW4" data-state="idle" aria-label="<p>Shipping</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/legal-page-apr-12-11-00-04" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gdJfx0EXW4 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggdJfx0EXW4_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/returnexchanges","selectedTab":"pages","target":"_self","title":"Return &amp; Exchanges"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gxLpnc0vTU"].gp-button-base::before, [data-id="gxLpnc0vTU-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gxLpnc0vTU"]:hover::before, [data-id="gxLpnc0vTU-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gxLpnc0vTU" dataId="gxLpnc0vTU" data-state="idle" aria-label="<p>Return &amp; Exchanges</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/returnexchanges" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gxLpnc0vTU gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggxLpnc0vTU_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/order-status","selectedTab":"pages","target":"_self","title":"Order Status"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gmMdZr3xBy"].gp-button-base::before, [data-id="gmMdZr3xBy-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gmMdZr3xBy"]:hover::before, [data-id="gmMdZr3xBy-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gmMdZr3xBy" dataId="gmMdZr3xBy" data-state="idle" aria-label="<p>Order Status</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/order-status" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gmMdZr3xBy gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggmMdZr3xBy_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/products/gift-card-2","selectedTab":"products","target":"_self","title":"$ E-Gift Card"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="g5RUE0zwyo"].gp-button-base::before, [data-id="g5RUE0zwyo-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g5RUE0zwyo"]:hover::before, [data-id="g5RUE0zwyo-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g5RUE0zwyo" dataId="g5RUE0zwyo" data-state="idle" aria-label="<p>Gift Cards</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/products/gift-card-2" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g5RUE0zwyo gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg5RUE0zwyo_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/faqs-1","selectedTab":"pages","target":"_self","title":"FAQs"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gLKaOYwcL7"].gp-button-base::before, [data-id="gLKaOYwcL7-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gLKaOYwcL7"]:hover::before, [data-id="gLKaOYwcL7-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gLKaOYwcL7" dataId="gLKaOYwcL7" data-state="idle" aria-label="<p>FAQ</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/faqs-1" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gLKaOYwcL7 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggLKaOYwcL7_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/hat-size-guide","selectedTab":"pages","target":"_self","title":"Hat Size Guide"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="ghDoUANZ-9"].gp-button-base::before, [data-id="ghDoUANZ-9-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="ghDoUANZ-9"]:hover::before, [data-id="ghDoUANZ-9-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="ghDoUANZ-9" dataId="ghDoUANZ-9" data-state="idle" aria-label="<p>Size Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/hat-size-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="ghDoUANZ-9 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gghDoUANZ-9_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/face-shape-guide","selectedTab":"pages","target":"_self","title":"FACE SHAPE GUIDE"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="gDeAFq4_5a"].gp-button-base::before, [data-id="gDeAFq4_5a-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gDeAFq4_5a"]:hover::before, [data-id="gDeAFq4_5a-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gDeAFq4_5a" dataId="gDeAFq4_5a" data-state="idle" aria-label="<p>Face Shape Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/face-shape-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gDeAFq4_5a gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggDeAFq4_5a_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/rewards","selectedTab":"pages","target":"_self","title":"REWARDS"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="gSZGMhwJu-"].gp-button-base::before, [data-id="gSZGMhwJu--interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gSZGMhwJu-"]:hover::before, [data-id="gSZGMhwJu--interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gSZGMhwJu-" dataId="gSZGMhwJu-" data-state="idle" aria-label="<p>Rewards</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/rewards" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gSZGMhwJu- gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggSZGMhwJu-_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/custom-hat-bar","selectedTab":"pages","target":"_self","title":"Custom Hat Bar"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--pl:0px;--pr:var(--g-s-4xl);--ta:left;--ta-mobile:left" >
+        <style>[data-id="g2JUDDvxQT"].gp-button-base::before, [data-id="g2JUDDvxQT-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g2JUDDvxQT"]:hover::before, [data-id="g2JUDDvxQT-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g2JUDDvxQT" dataId="g2JUDDvxQT" data-state="idle" aria-label="<p>Hat Bar</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/custom-hat-bar" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g2JUDDvxQT gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg2JUDDvxQT_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/hat-care-guide","selectedTab":"pages","target":"_self","title":"Hat Care Guide"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="go3b5hiJQ5"].gp-button-base::before, [data-id="go3b5hiJQ5-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="go3b5hiJQ5"]:hover::before, [data-id="go3b5hiJQ5-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="go3b5hiJQ5" dataId="go3b5hiJQ5" data-state="idle" aria-label="<p>Hat Care Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/hat-care-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="go3b5hiJQ5 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggo3b5hiJQ5_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gA4tf4d_TP"}' data-id="gA4tf4d_TP" id="gA4tf4d_TP" data-same-height-subgrid-container class="gA4tf4d_TP gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:none;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ml:auto;--mb:0px;--mr:auto;--cg:150px;--gtc:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--gtc-mobile:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--w:var(--g-ct-w, 1200px);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:center">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gOgjifDCkU gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gt1zEhp7kn"
+        class="gt1zEhp7kn"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--mt-mobile:0px;--mb-mobile:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209521"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggt1zEhp7kn_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/contact-page-apr-12-10-20-34","selectedTab":"pages","target":"_self","title":"Contact Us"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gUiLGHx7YN"].gp-button-base::before, [data-id="gUiLGHx7YN-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gUiLGHx7YN"]:hover::before, [data-id="gUiLGHx7YN-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gUiLGHx7YN" dataId="gUiLGHx7YN" data-state="idle" aria-label="<p>Contact Us</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/contact-page-apr-12-10-20-34" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gUiLGHx7YN gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggUiLGHx7YN_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/legal-page-apr-12-11-00-04","selectedTab":"pages","target":"_self","title":"Shipping Policy"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gltiEFo3ji"].gp-button-base::before, [data-id="gltiEFo3ji-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gltiEFo3ji"]:hover::before, [data-id="gltiEFo3ji-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gltiEFo3ji" dataId="gltiEFo3ji" data-state="idle" aria-label="<p>Shipping</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/legal-page-apr-12-11-00-04" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gltiEFo3ji gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggltiEFo3ji_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/returnexchanges","selectedTab":"pages","target":"_self","title":"Return &amp; Exchanges"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gyAVoNY6Vb"].gp-button-base::before, [data-id="gyAVoNY6Vb-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gyAVoNY6Vb"]:hover::before, [data-id="gyAVoNY6Vb-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gyAVoNY6Vb" dataId="gyAVoNY6Vb" data-state="idle" aria-label="<p>Return &amp; Exchanges</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/returnexchanges" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gyAVoNY6Vb gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggyAVoNY6Vb_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/order-status","selectedTab":"pages","target":"_self","title":"Order Status"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gdACuRJuqv"].gp-button-base::before, [data-id="gdACuRJuqv-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gdACuRJuqv"]:hover::before, [data-id="gdACuRJuqv-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gdACuRJuqv" dataId="gdACuRJuqv" data-state="idle" aria-label="<p>Order Status</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/order-status" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gdACuRJuqv gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggdACuRJuqv_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/products/gift-card-2","selectedTab":"products","target":"_self","title":"$ E-Gift Card"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gouQm_9Eld"].gp-button-base::before, [data-id="gouQm_9Eld-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gouQm_9Eld"]:hover::before, [data-id="gouQm_9Eld-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gouQm_9Eld" dataId="gouQm_9Eld" data-state="idle" aria-label="<p>Gift Cards</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/products/gift-card-2" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gouQm_9Eld gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggouQm_9Eld_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="glnbgel4pm gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gfiLsmGZym"
+        class="gfiLsmGZym"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--mt-mobile:0px;--mb-mobile:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209525"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggfiLsmGZym_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/conditions-of-sale","selectedTab":"pages","target":"_self","title":"Conditions of sale"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gx7y35YqdE"].gp-button-base::before, [data-id="gx7y35YqdE-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gx7y35YqdE"]:hover::before, [data-id="gx7y35YqdE-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gx7y35YqdE" dataId="gx7y35YqdE" data-state="idle" aria-label="<p>Conditions of sale</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/conditions-of-sale" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gx7y35YqdE gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggx7y35YqdE_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/privacy-policy-1","selectedTab":"pages","target":"_self","title":"Privacy policy"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gaf9t8Xtm9"].gp-button-base::before, [data-id="gaf9t8Xtm9-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gaf9t8Xtm9"]:hover::before, [data-id="gaf9t8Xtm9-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gaf9t8Xtm9" dataId="gaf9t8Xtm9" data-state="idle" aria-label="<p>Privacy policy</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/privacy-policy-1" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gaf9t8Xtm9 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggaf9t8Xtm9_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/cookie","selectedTab":"pages","target":"_self","title":"Cookie"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="g61uZNV2PA"].gp-button-base::before, [data-id="g61uZNV2PA-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g61uZNV2PA"]:hover::before, [data-id="g61uZNV2PA-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g61uZNV2PA" dataId="g61uZNV2PA" data-state="idle" aria-label="<p>Cookie</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/cookie" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g61uZNV2PA gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg61uZNV2PA_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gdTywFUxpf gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gFL3ea2YcY"
+        class="gFL3ea2YcY"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--mt-mobile:0px;--mb-mobile:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209527"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggFL3ea2YcY_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/mens","selectedTab":"collections","target":"_self","title":"Men&#039;s"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gkzBP8GMEo"].gp-button-base::before, [data-id="gkzBP8GMEo-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gkzBP8GMEo"]:hover::before, [data-id="gkzBP8GMEo-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gkzBP8GMEo" dataId="gkzBP8GMEo" data-state="idle" aria-label="<p>Men</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/mens" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gkzBP8GMEo gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggkzBP8GMEo_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/women","selectedTab":"collections","target":"_self","title":"Women"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gJwWwXoQzL"].gp-button-base::before, [data-id="gJwWwXoQzL-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gJwWwXoQzL"]:hover::before, [data-id="gJwWwXoQzL-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gJwWwXoQzL" dataId="gJwWwXoQzL" data-state="idle" aria-label="<p>Women</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/women" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gJwWwXoQzL gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggJwWwXoQzL_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/best-seller","selectedTab":"collections","target":"_self","title":"Best Seller"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="grjJME19oN"].gp-button-base::before, [data-id="grjJME19oN-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="grjJME19oN"]:hover::before, [data-id="grjJME19oN-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="grjJME19oN" dataId="grjJME19oN" data-state="idle" aria-label="<p>Best Seller</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/best-seller" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="grjJME19oN gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggrjJME19oN_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/new-arrivals","selectedTab":"collections","target":"_self","title":"New Arrivals"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="g6VMhgOzES"].gp-button-base::before, [data-id="g6VMhgOzES-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g6VMhgOzES"]:hover::before, [data-id="g6VMhgOzES-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g6VMhgOzES" dataId="g6VMhgOzES" data-state="idle" aria-label="<p>New Arrival</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/new-arrivals" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g6VMhgOzES gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg6VMhgOzES_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/accessories","selectedTab":"collections","target":"_self","title":"ACCESSORIES"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="g8UZRrbup_"].gp-button-base::before, [data-id="g8UZRrbup_-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g8UZRrbup_"]:hover::before, [data-id="g8UZRrbup_-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g8UZRrbup_" dataId="g8UZRrbup_" data-state="idle" aria-label="<p>Accessories</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/accessories" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g8UZRrbup_ gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg8UZRrbup__label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gbscRL_c08 gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g_PwdCLVGG"
+        class="g_PwdCLVGG"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--mt-mobile:0px;--mb-mobile:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209531"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg_PwdCLVGG_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/face-shape-guide","selectedTab":"pages","target":"_self","title":"FACE SHAPE GUIDE"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="g9j-SUEIU-"].gp-button-base::before, [data-id="g9j-SUEIU--interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g9j-SUEIU-"]:hover::before, [data-id="g9j-SUEIU--interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g9j-SUEIU-" dataId="g9j-SUEIU-" data-state="idle" aria-label="<p>Face Shape Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/face-shape-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g9j-SUEIU- gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg9j-SUEIU-_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/rewards","selectedTab":"pages","target":"_self","title":"REWARDS"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="gp3--R9xHo"].gp-button-base::before, [data-id="gp3--R9xHo-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gp3--R9xHo"]:hover::before, [data-id="gp3--R9xHo-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gp3--R9xHo" dataId="gp3--R9xHo" data-state="idle" aria-label="<p>Rewards</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/rewards" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gp3--R9xHo gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggp3--R9xHo_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/custom-hat-bar","selectedTab":"pages","target":"_self","title":"Custom Hat Bar"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--pl:0px;--pr:var(--g-s-4xl);--ta:left;--ta-mobile:left" >
+        <style>[data-id="gZUkdg_4SB"].gp-button-base::before, [data-id="gZUkdg_4SB-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gZUkdg_4SB"]:hover::before, [data-id="gZUkdg_4SB-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gZUkdg_4SB" dataId="gZUkdg_4SB" data-state="idle" aria-label="<p>Hat Bar</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/custom-hat-bar" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gZUkdg_4SB gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggZUkdg_4SB_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"https://luxebrims.com/pages/faqs","selectedTab":"pages","target":"_self","title":"FAQs"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gzTqm9EWZH"].gp-button-base::before, [data-id="gzTqm9EWZH-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gzTqm9EWZH"]:hover::before, [data-id="gzTqm9EWZH-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gzTqm9EWZH" dataId="gzTqm9EWZH" data-state="idle" aria-label="<p>FAQ</p>"
+          
+          href="https://luxebrims.com/pages/faqs" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gzTqm9EWZH gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggzTqm9EWZH_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gpoFsSChXO gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gP6YloH123"
+        class="gP6YloH123"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--mt-mobile:0px;--mb-mobile:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209535"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggP6YloH123_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/custom-hat-bar","selectedTab":"pages","target":"_self","title":"Custom Hat Bar"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--pl:0px;--pr:var(--g-s-4xl);--ta:left;--ta-mobile:left" >
+        <style>[data-id="gHeQJnGgmZ"].gp-button-base::before, [data-id="gHeQJnGgmZ-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gHeQJnGgmZ"]:hover::before, [data-id="gHeQJnGgmZ-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gHeQJnGgmZ" dataId="gHeQJnGgmZ" data-state="idle" aria-label="<p>Hat Bar</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/custom-hat-bar" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gHeQJnGgmZ gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggHeQJnGgmZ_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/hat-care-guide","selectedTab":"pages","target":"_self","title":"Hat Care Guide"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="gZDbeJHTED"].gp-button-base::before, [data-id="gZDbeJHTED-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gZDbeJHTED"]:hover::before, [data-id="gZDbeJHTED-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gZDbeJHTED" dataId="gZDbeJHTED" data-state="idle" aria-label="<p>Hat Care Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/hat-care-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gZDbeJHTED gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggZDbeJHTED_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gwIpkeIPW_"}' data-id="gwIpkeIPW_" id="gwIpkeIPW_" data-same-height-subgrid-container class="gwIpkeIPW_ gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ml:-5px;--pr:0px;--cg:12px;--gtc:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--gtc-mobile:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start;--pc-mobile:center">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--jc-mobile:center;--o:0"
+      class="g2_63DLkCh gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="g7937CS7vE"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:0px;--mb-mobile:0px;--ta:center"
+      class="gp-group/image gp-relative force-publish-1754920209537 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g7937CS7vE"
+    >
+      <a
+        href="https://web.facebook.com/luxebrims/" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:center"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_560307868822144090-bc974331-a8c5-4e6f-854b-0b0a9ab25fb7.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_560307868822144090-bc974331-a8c5-4e6f-854b-0b0a9ab25fb7.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_560307868822144090-bc974331-a8c5-4e6f-854b-0b0a9ab25fb7.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_560307868822144090-bc974331-a8c5-4e6f-854b-0b0a9ab25fb7.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:30px;--w-tablet:9px;--w-mobile:25px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gsX877Xal7 gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="guY-eCsVZM"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:4px;--ta:left"
+      class="gp-group/image gp-relative force-publish-1754920209537 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto guY-eCsVZM"
+    >
+      <a
+        href="https://x.com/LuxeBrims?fbclid=IwY2xjawJkTxtleHRuA2FlbQIxMAABHiUUlCV79_cnFTUB4o2xlnfjxnPYwyAV81Ehs_hSVi7ob8FnIjPE15upVOmt_aem_FtAtNtSsvR_TQg8Su6Evgw" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_560307868822144090-bd017066-76b7-420f-9a91-5f9c33534f70.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_560307868822144090-bd017066-76b7-420f-9a91-5f9c33534f70.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_560307868822144090-bd017066-76b7-420f-9a91-5f9c33534f70.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_560307868822144090-bd017066-76b7-420f-9a91-5f9c33534f70.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:22px;--w-tablet:16px;--w-mobile:19px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gCd59wUmIl gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="gTTEQbATo3"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:0px;--ta:center"
+      class="gp-group/image gp-relative force-publish-1754920209538 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gTTEQbATo3"
+    >
+      <a
+        href="https://www.instagram.com/luxebrims?igsh=MTU1ZWl3Y2p5OGExNQ==" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:center"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_560307868822144090-2196bc91-5928-49b4-bdd4-1958980659e0.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_560307868822144090-2196bc91-5928-49b4-bdd4-1958980659e0.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_560307868822144090-2196bc91-5928-49b4-bdd4-1958980659e0.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_560307868822144090-2196bc91-5928-49b4-bdd4-1958980659e0.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:18px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gox-D3-DsQ gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="g3W0hhqnmi"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left"
+      class="gp-group/image gp-relative force-publish-1754920209538 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g3W0hhqnmi"
+    >
+      <a
+        href="https://www.pinterest.com/settings/#profile" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_560307868822144090-dbb3f6fc-8821-4dfb-9fd4-a78a78a5bdd7.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_560307868822144090-dbb3f6fc-8821-4dfb-9fd4-a78a78a5bdd7.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_560307868822144090-dbb3f6fc-8821-4dfb-9fd4-a78a78a5bdd7.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_560307868822144090-dbb3f6fc-8821-4dfb-9fd4-a78a78a5bdd7.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:20px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="g5J-lOvB-S gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="glBxgC6cfv"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb-mobile:0px;--ta:left"
+      class="gp-group/image gp-relative force-publish-1754920209538 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto glBxgC6cfv"
+    >
+      <a
+        href="https://www.tiktok.com/@luxebrims?is_from_webapp=1&sender_device=pc" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_560307868822144090-4a9459f6-6820-4daa-9c51-317f4ab45b4f.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_560307868822144090-4a9459f6-6820-4daa-9c51-317f4ab45b4f.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_560307868822144090-4a9459f6-6820-4daa-9c51-317f4ab45b4f.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_560307868822144090-4a9459f6-6820-4daa-9c51-317f4ab45b4f.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:20px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+  <div gp-el-wrapper style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--pt:var(--g-s-xs);--pb:var(--g-s-xs)" class="g6ofWQOomA ">
+      
+    <div data-id="g6ofWQOomA" class="gp-flex gp-justify-start">
+      <div style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bs:solid;--bbw:1px;--bbw-tablet:1px;--bbw-mobile:1px;--t:gp-rotate(0deg);--bc:rgba(224, 224, 224, 0.1)" class="gp-block tablet:gp-block mobile:gp-block"></div>
+      <div class="gp-items-center gp-hidden tablet:gp-hidden mobile:gp-hidden" style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bc:rgba(224, 224, 224, 0.1);--t:gp-rotate(0deg)">
+        <div class="gp-hidden" style="--bc:rgba(224, 224, 224, 0.1);--bs:solid;--bbw:1px;--bbw-tablet:1px;--bbw-mobile:1px;--minw:100%;--w:100%;--w-tablet:100%;--w-mobile:100%"></div>
+        
+            <span
+              class="gp-inline-flex gp-flex-none gp-items-center gp-justify-center"
+              style="--mr:var(--g-s-xs);--w:20px;--h:20px;--t:gp-rotate(0);--c:var(--g-c-text-1, text-1)"
+            >
+              <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M428.8 137.6h-86.177a115.52 115.52 0 0 0 2.176-22.4c0-47.914-35.072-83.2-92-83.2-45.314 0-57.002 48.537-75.707 78.784-7.735 12.413-16.994 23.317-25.851 33.253l-.131.146-.129.148C135.662 161.807 127.764 168 120.8 168h-2.679c-5.747-4.952-13.536-8-22.12-8H32c-17.673 0-32 12.894-32 28.8v230.4C0 435.106 14.327 448 32 448h64c8.584 0 16.373-3.048 22.12-8h2.679c28.688 0 67.137 40 127.2 40h21.299c62.542 0 98.8-38.658 99.94-91.145 12.482-17.813 18.491-40.785 15.985-62.791A93.148 93.148 0 0 0 393.152 304H428.8c45.435 0 83.2-37.584 83.2-83.2 0-45.099-38.101-83.2-83.2-83.2zm0 118.4h-91.026c12.837 14.669 14.415 42.825-4.95 61.05 11.227 19.646 1.687 45.624-12.925 53.625 6.524 39.128-10.076 61.325-50.6 61.325H248c-45.491 0-77.21-35.913-120-39.676V215.571c25.239-2.964 42.966-21.222 59.075-39.596 11.275-12.65 21.725-25.3 30.799-39.875C232.355 112.712 244.006 80 252.8 80c23.375 0 44 8.8 44 35.2 0 35.2-26.4 53.075-26.4 70.4h158.4c18.425 0 35.2 16.5 35.2 35.2 0 18.975-16.225 35.2-35.2 35.2zM88 384c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z" /></svg>
+            </span>
+          
+        
+            <span
+              class="gp-inline-flex gp-flex-none gp-items-center gp-justify-center gp-g-paragraph-1"
+              style="--tt:horizontal;--c:var(--g-c-text-1, text-1);--mr:var(--g-s-s);--ml:var(--g-s-s)"
+            >
+              Title
+            </span>
+          
+        <div class="gp-flex" style="--bc:rgba(224, 224, 224, 0.1);--bs:solid;--bbw:1px;--bbw-tablet:1px;--bbw-mobile:1px;--minw:100%;--w:100%;--w-tablet:100%;--w-mobile:100%"></div>
+      </div>
+    </div>
+  
+      </div>
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gWqy11tKcE"}' data-id="gWqy11tKcE" id="gWqy11tKcE" data-same-height-subgrid-container class="gWqy11tKcE gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-small);--pt:55px;--pl:15px;--pb:55px;--pr:15px;--pt-mobile:var(--g-s-l);--pl-mobile:15px;--pb-mobile:30px;--pr-mobile:15px;--cg:30px;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--o:0"
+      class="gDKmEBJuT7 gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gxpOu42tMZ"
+        class="gxpOu42tMZ"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:none;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1754920209542"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-text-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--ta:left;--line-clamp:0;--line-clamp-tablet:0;--line-clamp-mobile:0;--c:rgba(255, 255, 255, 0.8);--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:13px;--size-tablet:13px;--size-mobile:12px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggxpOu42tMZ_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gqOYL56UZs gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="g91Yl2R9e_"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:right"
+      class="gp-group/image gp-relative force-publish-1754920209542 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g91Yl2R9e_"
+    >
+      <div
+        
+        style="border-radius:inherit;--jc:right"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_560307868822144090-e59e9abe-9e8f-4a65-b1dc-79f9a9e858ef.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTMyNC05MyI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0idXJsKCNnLTEzMjQtOTMpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xMzI0IiB0bz0iMTMyNCIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_560307868822144090-e59e9abe-9e8f-4a65-b1dc-79f9a9e858ef.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTMyNC05MyI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0idXJsKCNnLTEzMjQtOTMpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xMzI0IiB0bz0iMTMyNCIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" />
+    
+      
+      <img
+        base-src="{{ "gempages_560307868822144090-e59e9abe-9e8f-4a65-b1dc-79f9a9e858ef.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTMyNC05MyI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0idXJsKCNnLTEzMjQtOTMpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xMzI0IiB0bz0iMTMyNCIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" data-src="{{ "gempages_560307868822144090-e59e9abe-9e8f-4a65-b1dc-79f9a9e858ef.png" | file_url }}"
+        alt=""
+        width="100%"
+        style="--objf:cover;--w:500px;--w-tablet:500px;--w-mobile:500px;--h:auto;--h-tablet:auto;--h-mobile:auto;--b:none;--bc:#000000;--bw:1px 1px 1px 1px;--radiusType:none;--shadow:none"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </div>
+    </div>
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+        </section>
+      
+  
+
+
+{% schema %}
+  {
+    "presets": [{ "name": "footer" }],
+    "name": "footer",
+    "tag": "section",
+    "class": "gps-561765491551503340 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/ipwhmw-sc/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=561765491551503340)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"},{"type":"html","id":"ggxSk5qY1XZ_text","label":"ggxSk5qY1XZ_text","default":"SUBSCRIBE TO OUR EMAIL"},{"type":"html","id":"ggdNTX310LO_successMessage","label":"ggdNTX310LO_successMessage","default":"Thanks for contacting us. We'll get back to you as soon as possible."},{"type":"html","id":"ggdNTX310LO_errorMessage","label":"ggdNTX310LO_errorMessage","default":"Can’t send email. Please try again later."},{"type":"html","id":"ggHZXfm37An_placeholder","label":"ggHZXfm37An_placeholder","default":"Enter your email"},{"type":"html","id":"ggAYov1ZqQ__label","label":"ggAYov1ZqQ__label","default":"Subscribe"},{"type":"html","id":"ggUoIxYQtxa_text","label":"ggUoIxYQtxa_text","default":"<p>BY PROVIDING YOUR EMAIL ADDRESS, YOU AGREE TO OUR PRIVACY POLICY &amp; TERMS &amp; CONDITIONS.</p>"},{"type":"html","id":"ggw3UK5YlSk_text","label":"ggw3UK5YlSk_text","default":"<p>Customer Care</p>"},{"type":"html","id":"ggdKWunv3kY_label","label":"ggdKWunv3kY_label","default":"<p>Conditions of sale</p>"},{"type":"html","id":"ggfiaYibXf__label","label":"ggfiaYibXf__label","default":"<p>Privacy policy</p>"},{"type":"html","id":"ggK0VJZC4T7_label","label":"ggK0VJZC4T7_label","default":"<p>Cookie</p>"},{"type":"html","id":"ggStjw0ZcKa_label","label":"ggStjw0ZcKa_label","default":"<p>Men</p>"},{"type":"html","id":"ggv-7zOJClL_label","label":"ggv-7zOJClL_label","default":"<p>Women</p>"},{"type":"html","id":"ggEe3ZqX1v2_label","label":"ggEe3ZqX1v2_label","default":"<p>Best Seller</p>"},{"type":"html","id":"gg2FU3d1q7T_label","label":"gg2FU3d1q7T_label","default":"<p>New Arrival</p>"},{"type":"html","id":"gg1Fvx1BK6w_label","label":"gg1Fvx1BK6w_label","default":"<p>Accessories</p>"},{"type":"html","id":"ggAfsdKRe_i_text","label":"ggAfsdKRe_i_text","default":"<p>Support</p>"},{"type":"html","id":"ggaraKa7Jb7_label","label":"ggaraKa7Jb7_label","default":"<p>Contact Us</p>"},{"type":"html","id":"ggdJfx0EXW4_label","label":"ggdJfx0EXW4_label","default":"<p>Shipping</p>"},{"type":"html","id":"ggxLpnc0vTU_label","label":"ggxLpnc0vTU_label","default":"<p>Return &amp; Exchanges</p>"},{"type":"html","id":"ggmMdZr3xBy_label","label":"ggmMdZr3xBy_label","default":"<p>Order Status</p>"},{"type":"html","id":"gg5RUE0zwyo_label","label":"gg5RUE0zwyo_label","default":"<p>Gift Cards</p>"},{"type":"html","id":"ggLKaOYwcL7_label","label":"ggLKaOYwcL7_label","default":"<p>FAQ</p>"},{"type":"html","id":"gghDoUANZ-9_label","label":"gghDoUANZ-9_label","default":"<p>Size Guide</p>"},{"type":"html","id":"ggDeAFq4_5a_label","label":"ggDeAFq4_5a_label","default":"<p>Face Shape Guide</p>"},{"type":"html","id":"ggSZGMhwJu-_label","label":"ggSZGMhwJu-_label","default":"<p>Rewards</p>"},{"type":"html","id":"gg2JUDDvxQT_label","label":"gg2JUDDvxQT_label","default":"<p>Hat Bar</p>"},{"type":"html","id":"ggo3b5hiJQ5_label","label":"ggo3b5hiJQ5_label","default":"<p>Hat Care Guide</p>"},{"type":"html","id":"ggt1zEhp7kn_text","label":"ggt1zEhp7kn_text","default":"<p>Customer Care</p>"},{"type":"html","id":"ggUiLGHx7YN_label","label":"ggUiLGHx7YN_label","default":"<p>Contact Us</p>"},{"type":"html","id":"ggltiEFo3ji_label","label":"ggltiEFo3ji_label","default":"<p>Shipping</p>"},{"type":"html","id":"ggyAVoNY6Vb_label","label":"ggyAVoNY6Vb_label","default":"<p>Return &amp; Exchanges</p>"},{"type":"html","id":"ggdACuRJuqv_label","label":"ggdACuRJuqv_label","default":"<p>Order Status</p>"},{"type":"html","id":"ggouQm_9Eld_label","label":"ggouQm_9Eld_label","default":"<p>Gift Cards</p>"},{"type":"html","id":"ggfiLsmGZym_text","label":"ggfiLsmGZym_text","default":"<p>LEGAL AREA</p>"},{"type":"html","id":"ggx7y35YqdE_label","label":"ggx7y35YqdE_label","default":"<p>Conditions of sale</p>"},{"type":"html","id":"ggaf9t8Xtm9_label","label":"ggaf9t8Xtm9_label","default":"<p>Privacy policy</p>"},{"type":"html","id":"gg61uZNV2PA_label","label":"gg61uZNV2PA_label","default":"<p>Cookie</p>"},{"type":"html","id":"ggFL3ea2YcY_text","label":"ggFL3ea2YcY_text","default":"<p>Shop</p>"},{"type":"html","id":"ggkzBP8GMEo_label","label":"ggkzBP8GMEo_label","default":"<p>Men</p>"},{"type":"html","id":"ggJwWwXoQzL_label","label":"ggJwWwXoQzL_label","default":"<p>Women</p>"},{"type":"html","id":"ggrjJME19oN_label","label":"ggrjJME19oN_label","default":"<p>Best Seller</p>"},{"type":"html","id":"gg6VMhgOzES_label","label":"gg6VMhgOzES_label","default":"<p>New Arrival</p>"},{"type":"html","id":"gg8UZRrbup__label","label":"gg8UZRrbup__label","default":"<p>Accessories</p>"},{"type":"html","id":"gg_PwdCLVGG_text","label":"gg_PwdCLVGG_text","default":"<p>Size Guide</p>"},{"type":"html","id":"gg9j-SUEIU-_label","label":"gg9j-SUEIU-_label","default":"<p>Face Shape Guide</p>"},{"type":"html","id":"ggp3--R9xHo_label","label":"ggp3--R9xHo_label","default":"<p>Rewards</p>"},{"type":"html","id":"ggZUkdg_4SB_label","label":"ggZUkdg_4SB_label","default":"<p>Hat Bar</p>"},{"type":"html","id":"ggzTqm9EWZH_label","label":"ggzTqm9EWZH_label","default":"<p>FAQ</p>"},{"type":"html","id":"ggP6YloH123_text","label":"ggP6YloH123_text","default":"<p>Support</p>"},{"type":"html","id":"ggHeQJnGgmZ_label","label":"ggHeQJnGgmZ_label","default":"<p>Hat Bar</p>"},{"type":"html","id":"ggZDbeJHTED_label","label":"ggZDbeJHTED_label","default":"<p>Hat Care Guide</p>"},{"type":"html","id":"ggxpOu42tMZ_text","label":"ggxpOu42tMZ_text","default":"<p>Copyright © 2025 luxebrims. All Rights Reserved.</p>"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {}
+  }
+{% endschema %}

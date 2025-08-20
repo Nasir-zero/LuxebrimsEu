@@ -1,0 +1,18 @@
+<script>window._usfTheme={
+    id:144756539550,
+    name:"Shrine PRO",
+    version:"1.3.2",
+    vendor:"Shrine",
+    applied:1,
+    assetUrl:"{{ 'usf-boot.js' | asset_url }}"
+};
+window._usfCustomerTags = {{ customer.tags | json }};
+window._usfCollectionId = {{ collection.id | json }};
+window._usfCollectionDefaultSort = {{ collection.default_sort_by | json }};
+window._usfLocale = {{ request.locale.iso_code | json | downcase }};
+window._usfRootUrl = {{ routes.root_url | json }};
+window.usf = {
+  settings: {{ shop.metafields.usf.settings }}
+}
+</script>
+<script src="{{ 'usf-boot.js' | asset_url }}" async></script>
