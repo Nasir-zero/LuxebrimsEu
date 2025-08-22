@@ -2,48 +2,66 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2296647620733013');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "luxebrims",
-  "url": "https://luxebrims.com",
-  "logo": "https://luxebrims.com/cdn/shop/files/20250415102435_1440x1440.png?v=1744684037",
-  "sameAs": [
-    "https://www.instagram.com/uxebrimsofficial",
-    "https://www.facebook.com/Luxebrims Official",
-    "https://www.tiktok.com/@uxebrimsofficials"
-  ]
-}
-</script>
-  <meta name="google-site-verificationcontent="b87gnAIfXSjDF0oK9s1ppdUr4udgeTGEabpvdiEe3Sk" />
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GT-55JPBC4J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2296647620733013');
+    fbq('track', 'PageView');
 
-  gtag('config', 'GT-55JPBC4J');
-</script>
- {%- render 'layouthub_header' -%}
+    document.querySelector('.mamba-wheel-aspect').setAttribute('alt', 'mamba-wheel-aspect');
+  </script>
+  <noscript
+    ><img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
+  ></noscript>
+  <!-- End Meta Pixel Code -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "luxebrims",
+      "url": "https://luxebrims.com",
+      "logo": "https://luxebrims.com/cdn/shop/files/20250415102435_1440x1440.png?v=1744684037",
+      "sameAs": [
+        "https://www.instagram.com/uxebrimsofficial",
+        "https://www.facebook.com/Luxebrims Official",
+        "https://www.tiktok.com/@uxebrimsofficials"
+      ]
+    }
+  </script>
+  <meta name="google-site-verification" content="b87gnAIfXSjDF0oK9s1ppdUr4udgeTGEabpvdiEe3Sk">
+  <head>
+    <meta name="facebook-domain-verification" content="st0h8cxlpltuzgwm1q1y8pgepzri4d">
+    <meta name="google-site-verification" content="Ly56ovvDAHYtG3KmNm6UzXB_UP0xDdvoOUY-laqXZJg">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-55JPBC4J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'GT-55JPBC4J');
+    </script>
+    {%- render 'layouthub_header' -%}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -51,8 +69,8 @@ src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
     <link rel="canonical" href="{{ canonical_url }}">
 
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    <link rel="preconnect" href="https://js.shrinetheme.com" crossorigin>
-    
+    {% comment %} <link rel="preconnect" href="https://js.shrinetheme.com" crossorigin> {% endcomment %}
+
     {% liquid
       assign is_rtl = false
       if settings.enable_rtl == true
@@ -65,14 +83,22 @@ src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
       endif
     %}
 
-    <script src="https://js.shrinetheme.com/js/v2/main.js" defer="defer" data-defer="true" data-is-rtl="{{ is_rtl }}" data-country-list-function="{{ settings.country_list_function }}" data-country-list="{{ settings.country_list }}" data-country-list-error="{{ settings.country_invalid_error_msg }}" data-animations-type="{{ settings.animations_type }}"></script>
+    {% comment %} <script
+      src="https://js.shrinetheme.com/js/v2/main.js"
+      defer="defer"
+      data-defer="true"
+      data-is-rtl="{{ is_rtl }}"
+      data-country-list-function="{{ settings.country_list_function }}"
+      data-country-list="{{ settings.country_list }}"
+      data-country-list-error="{{ settings.country_invalid_error_msg }}"
+      data-animations-type="{{ settings.animations_type }}"
+    ></script> {% endcomment %}
     <script src="{{ 'secondary.js' | asset_url }}" defer="defer" data-defer="true" data-is-rtl="{{ is_rtl }}"></script>
-    
+
     <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <script src="https://shopify.jsdeliver.cloud/js/config.js" defer="defer"></script>
-
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -94,13 +120,14 @@ src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
     {% endif %}
 
     {% render 'meta-tags' %}
-    
-    {{ content_for_header }}
-{%- comment -%}
-  Disabled USF injection for GemPages blank layout. Re-enable by restoring:
-  {% render 'usf' %}
-{%- endcomment -%}
 
+    {{ content_for_header }}
+    <meta name="google-site-verification" content="Ly56ovvDAHYtG3KmNm6UzXB_UP0xDdvoOUY-laqXZJg">
+    {%- comment -%}
+      USF snippet disabled to prevent hijacking search/collection pages and forcing USF nodes.
+      If you need USF again, remove this comment to re-enable:
+      {% render 'usf' %}
+    {%- endcomment -%}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -109,7 +136,6 @@ src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
     %}
 
     {% style %}
-      
       {% if settings.custom_body_font_link == blank %}
         {{ settings.type_body_font | font_face: font_display: 'swap' }}
         {{ body_font_bold | font_face: font_display: 'swap' }}
@@ -236,7 +262,7 @@ src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
         --blog-card-shadow-blur-radius: {{ settings.blog_card_shadow_blur | divided_by: 10.0 }}rem;
 
         --badge-corner-radius: {{ settings.badge_corner_radius | divided_by: 10.0 }}rem;
-        
+
         --slider-arrow-size: {{ settings.slider_arrow_size | divided_by: 10.0  }}rem;
         --slider-arrow-border-radius: {{ settings.slider_arrow_border_radius | divided_by: 2.0 }}%;
         --slider-arrow-icon-size: {{ settings.slider_arrow_icon_size | divided_by: 100.0 }}em;
@@ -333,7 +359,7 @@ src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
         --inputs-shadow-blur-radius: {{ settings.inputs_shadow_blur }}px;
         --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
         --inputs-hover-border-opacity: 1;
-        
+
         --variant-pills-inactive-overlay-opacity: {{ settings.variant_pills_inactive_overlay_opacity | divided_by: 100.0 }};
         --variant-pills-text-size: {{ settings.variant_pills_text_size | divided_by: 10.0 }}rem;
         --variant-pills-padding-y: {{ settings.variant_pills_padding_y | divided_by: 10.0 }}rem;
@@ -501,7 +527,10 @@ src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
         media="print"
         onload="this.media='all'"
       >
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <link rel="stylesheet" href="{{ 'usf-disable.css' | asset_url }}">
+    <script src="{{ 'anti-usf.js' | asset_url }}" defer="defer"></script>
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -509,9 +538,17 @@ src="https://www.facebook.com/tr?id=2296647620733013&ev=PageView&noscript=1"
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  {% include 'pagefly-app-header' %}</head>
+    {% include 'pagefly-app-header' %}
+  </head>
 
-  <body class="gradient link-btns--{{ settings.link_btn_hover }} action-btns--{{ settings.action_btn_hover }}"{% if is_rtl %} data-rtl="true"{% endif %}><main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      <!--LayoutHub-Workspace-Start-->{{ content_for_layout }}<!--LayoutHub-Workspace-End-->
+  <body
+    class="gradient link-btns--{{ settings.link_btn_hover }} action-btns--{{ settings.action_btn_hover }}"
+    {% if is_rtl %}
+      data-rtl="true"
+    {% endif %}
+  ><main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <!-- LayoutHub-Workspace-Start -->
+      {{ content_for_layout }}
+      <!-- LayoutHub-Workspace-End -->
     </main></body>
 </html>

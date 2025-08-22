@@ -21,6 +21,8 @@
     })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '2296647620733013');
     fbq('track', 'PageView');
+
+    document.querySelector('.mamba-wheel-aspect').setAttribute('alt', 'mamba-wheel-aspect');
   </script>
   <noscript
     ><img
@@ -45,11 +47,11 @@
     }
   </script>
   <meta name="google-site-verification" content="b87gnAIfXSjDF0oK9s1ppdUr4udgeTGEabpvdiEe3Sk">
-
   <head>
+    <meta name="facebook-domain-verification" content="st0h8cxlpltuzgwm1q1y8pgepzri4d">
+    <meta name="google-site-verification" content="Ly56ovvDAHYtG3KmNm6UzXB_UP0xDdvoOUY-laqXZJg">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GT-55JPBC4J"></script>
-    <meta name="google-site-verification" content="Ly56ovvDAHYtG3KmNm6UzXB_UP0xDdvoOUY-laqXZJg">
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -67,7 +69,7 @@
     <link rel="canonical" href="{{ canonical_url }}">
 
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    <link rel="preconnect" href="https://js.shrinetheme.com" crossorigin>
+    {% comment %} <link rel="preconnect" href="https://js.shrinetheme.com" crossorigin> {% endcomment %}
 
     {% liquid
       assign is_rtl = false
@@ -81,7 +83,7 @@
       endif
     %}
 
-    <script
+    {% comment %} <script
       src="https://js.shrinetheme.com/js/v2/main.js"
       defer="defer"
       data-defer="true"
@@ -90,7 +92,7 @@
       data-country-list="{{ settings.country_list }}"
       data-country-list-error="{{ settings.country_invalid_error_msg }}"
       data-animations-type="{{ settings.animations_type }}"
-    ></script>
+    ></script> {% endcomment %}
     <script src="{{ 'secondary.js' | asset_url }}" defer="defer" data-defer="true" data-is-rtl="{{ is_rtl }}"></script>
 
     <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
@@ -120,8 +122,10 @@
     {% render 'meta-tags' %}
 
     {{ content_for_header }}
+    <meta name="google-site-verification" content="Ly56ovvDAHYtG3KmNm6UzXB_UP0xDdvoOUY-laqXZJg">
     {%- comment -%}
-      Disabled USF injection for GemPages header. Re-enable by restoring:
+      USF snippet disabled to prevent hijacking search/collection pages and forcing USF nodes.
+      If you need USF again, remove this comment to re-enable:
       {% render 'usf' %}
     {%- endcomment -%}
 
@@ -526,7 +530,7 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <link rel="stylesheet" href="{{ 'usf-disable.css' | asset_url }}">
-    <script src="{{ 'anti-usf.js' | asset_url }}" defer></script>
+    <script src="{{ 'anti-usf.js' | asset_url }}" defer="defer"></script>
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -558,6 +562,11 @@
       {{ content_for_layout }}
       <!-- LayoutHub-Workspace-End -->
     </main>
+
+    
+    
+    
+    
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
@@ -688,6 +697,8 @@
       </script>
     {% endif %}
     {% if settings.display_store_languages %}
+      
     {% endif %}
+    
   </body>
 </html>
