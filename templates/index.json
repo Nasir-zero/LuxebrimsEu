@@ -9,64 +9,7 @@
  */
 {
   "sections": {
-    "gp_section_582440881005527607": {
-      "settings": {
-        "checksum": "4b7b9684f138505dcb55015dfcb5cf93a1a3df631c34d18f8efe470a64b3e1a8_1_1_1_0_"
-      },
-      "type": "gp-section-582440881005527607"
-    },
-    "gp_section_582440881022304823": {
-      "settings": {
-        "checksum": "f03fe40b700b0c24a9a9ffc91b3d342f9967b6df5b6bb4436917afd1522722a7_1_1_1_0_"
-      },
-      "type": "gp-section-582440881022304823"
-    },
-    "gp_section_582440881022370359": {
-      "settings": {
-        "checksum": "3a9583e340a2addd723587100b5579bafb71f75656a2a90434db9adfa9f89bf5_1_1_1_0_"
-      },
-      "type": "gp-section-582440881022370359"
-    },
-    "gp_section_582440881039082039": {
-      "settings": {
-        "checksum": "df11961a98abd2e92496aae9f33022ef2604c874b8c2615f0f44874e9594df21_1_1_1_0_",
-        "section_preload": "true"
-      },
-      "type": "gp-section-582440881039082039"
-    },
-    "gp_section_582440881072636471": {
-      "settings": {
-        "checksum": "5ddb0facd5705cadd14f1d41dbd0571c6db3097cb912cfd566af4eb2f815f393_1_1_1_0_"
-      },
-      "type": "gp-section-582440881072636471"
-    },
-    "gp_section_582440881072702007": {
-      "settings": {
-        "checksum": "20a5f83b080c81da622ba4e8872a8dec24fcbcd1e87e40c3a9f7d710929fcaae_1_1_1_0_"
-      },
-      "type": "gp-section-582440881072702007"
-    },
-    "gp_section_582440881089413687": {
-      "settings": {
-        "checksum": "efba57bbbf627c5f3e9aa34183e72dfc76a5f00b73721b766baef12c12f9acc9_1_1_1_0_"
-      },
-      "type": "gp-section-582440881089413687"
-    },
-    "gp_section_582440881089479223": {
-      "settings": {
-        "checksum": "8fa53d1a4523dee2dd8ce8725bb8bca0821c8f37ecb0bc41cdd1300d32f60671_1_1_1_0_"
-      },
-      "type": "gp-section-582440881089479223"
-    }
-  },
-  "order": [
-    "gp_section_582440881039082039",
-    "gp_section_582440881022304823",
-    "gp_section_582440881072702007",
-    "gp_section_582440881022370359",
-    "gp_section_582440881005527607",
-    "gp_section_582440881089413687",
-    "gp_section_582440881072636471",
-    "gp_section_582440881089479223"
-  ]
+	},
+  "order": [],
+  "layout": "theme"
 }
