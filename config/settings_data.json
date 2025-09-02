@@ -180,6 +180,8 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "checkout_accent_color": "#dd1d1d",
+    "checkout_button_color": "#dd1d1d",
     "cart_progress_icon": "local_shipping",
     "cart_progress_message": "Spend [amount] more to get FREE shipping!",
     "cart_progress_success_message": "Congrats! You get FREE shipping! 🎉",
@@ -191,8 +193,6 @@
     "cart_upsell_2_desc": "",
     "cart_upsell_2_product": "",
     "cart_upsell_2_title": "",
-    "checkout_accent_color": "#dd1d1d",
-    "checkout_button_color": "#dd1d1d",
     "enable_cart_discount": false,
     "enable_cart_progress_bar": true,
     "enable_cart_timer": true,
@@ -560,35 +560,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "15623156175785154009": {
-        "type": "shopify://apps/qikify-smart-menu-mega-menu/blocks/app-embed/19d2f1cd-1836-4a32-8937-03df3c601dc8",
-        "disabled": false,
-        "settings": {}
-      },
-      "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
-        "settings": {
-          "button_color": "#000000",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#6a6a6a",
-          "button_icon": "email",
-          "button_text": "no_text",
-          "button_horizontal_position": "bottom_left",
-          "button_vertical_position": "higher",
-          "greeting_message": ""
-        }
-      },
-      "1804893150726543839": {
-        "type": "shopify://apps/nova-multi-currency-converter/blocks/app-embed/a5be3c35-cbd0-46a1-ac3a-1ace57a9c1ce",
-        "disabled": true,
-        "settings": {}
-      },
       "6478312753674380289": {
         "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
         "disabled": false,
