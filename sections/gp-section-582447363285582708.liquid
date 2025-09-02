@@ -40,7 +40,7 @@
     <div data-id="gdvimNhP9R"
         class="gdvimNhP9R"
         style="--ta:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_INDEX;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:30px;--pt:var(--g-s-xs);--pb:var(--g-s-xs);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756709512565"
+        data-test-force-publish="1756777030553"
       >
       <div class="gp-flex" style="--jc:center">
         <h2
@@ -65,13 +65,13 @@
     >
       <div class='gp-flex gp-w-full' style="--jc:center">
         <div
-          style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--op:100%;--pageType:GP_INDEX;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:0px;--pb:4px;--pt-mobile:0px;--pb-mobile:4px;--w:100%;--w-tablet:100%;--w-mobile:100%"
+          style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--op:100%;--pageType:GP_INDEX;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:0px;--pl:0px;--pb:4px;--pr:0px;--pt-mobile:0px;--pb-mobile:4px;--w:100%;--w-tablet:100%;--w-mobile:100%"
         >
           {%- assign gpBkProduct = product -%}
           {%- assign gpBkProducts = products -%}
           
       {%- liquid
-        assign productHandles = ''| split: ','
+        assign productHandles = 'ames-packable-straw-cowboy-hat,female-ringneck-hat-feather,free-easy-return-for-store-credit-or-exchanges-package-protection-valid-in-us,jolie-packable-straw-bucket-hat,straw-packable-bucket-hat,millie-brick-top,ozzy-lifeguard-hat,remy-vented-straw-cowboy-hat,rue-open-crown,mfwesterns-brim-brush,feather'| split: ','
         assign products = null
         assign target_collection = null
         assign productSrc = 'PickProduct'
@@ -81,19 +81,16 @@
         if request.page_type == 'collection' or preview_page_type == 'collection'
           assign target_collection = collection
           if target_collection == empty or target_collection == null
-            if '451200745721' == 'latest'
+            if 'latest' == 'latest'
               assign target_collection = collections | sort: 'updated_at'  | first
             else
               
-          assign target_collection = collections['frontpage']
-          if target_collection == empty
-            for collection in collections
-              if collection.id == 451200745721
-                assign target_collection = collection
-                break
-              endif
-            endfor
-          endif
+          for collection in collections
+            if collection.id == latest
+              assign target_collection = collection
+              break
+            endif
+          endfor
         
             endif
           endif
@@ -114,26 +111,23 @@
               endfor
               assign limit = products.length
             else
-              if 0 == 0
+              if 11 == 0
                 paginate collections.all.products by 100000
                   assign products = collections.all.products  | sort : "created_at"  | reverse
                 endpaginate
               endif
             endunless
           else
-            if '451200745721' == 'latest'
+            if 'latest' == 'latest'
               assign target_collection = collections | sort: 'updated_at'  | first
             else
               
-          assign target_collection = collections['frontpage']
-          if target_collection == empty
-            for collection in collections
-              if collection.id == 451200745721
-                assign target_collection = collection
-                break
-              endif
-            endfor
-          endif
+          for collection in collections
+            if collection.id == latest
+              assign target_collection = collection
+              break
+            endif
+          endfor
         
             endif
             paginate target_collection.products by 15
@@ -145,7 +139,7 @@
     
           
     {%- if products == null -%}
-    {%- if count == 0 and 0 == 0 -%}
+    {%- if count == 0 and 11 == 0 -%}
       {% if 'PickProduct' == 'RelatedProduct' -%}
           <div>{{ 'gempages.ProductList.no_related_products' | t }}</div>
         {% else %}
@@ -155,7 +149,7 @@
     {%-else-%}
       
     
-    <gp-carousel gp-data='{"id":"product-list-carousel-gd5FNgAuWm","setting":{"dotSize":{"desktop":12},"dotGapToCarousel":{"desktop":16},"arrowIconSize":{"desktop":24},"showWhenHover":false,"rtl":false,"arrowButtonSize":{"desktop":{"shapeLinked":true,"shapeValue":"1/1"}},"arrowCustom":"<svg height=\"100%\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z\"></path></svg>","autoPlayTimeout":2,"autoplay":true,"autoplayTimeout":4,"columns":{"desktop":4,"mobile":1,"tablet":2},"dot":{"desktop":true,"mobile":true},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"dotStyle":{"desktop":"outside"},"dragToScroll":true,"enableDrag":{"desktop":true},"loop":{"desktop":true},"navigationEnable":{"desktop":true,"mobile":false},"navigationStyle":{"desktop":"outside"},"numberOfProducts":"15","pauseOnHover":true,"productSetting":{"collectionHandle":"frontpage","collectionId":"gid://shopify/Collection/451200745721","productHandles":null,"productIds":null,"productSrc":"PickProduct","productTitles":["Billie Tall Fedora - Ivory BLEMISHED"]},"slidesToShow":{"desktop":4,"mobile":2,"tablet":"2"},"speed":2},"styles":{"height":{"desktop":"auto","mobile":"auto","tablet":"auto"},"horizontalGutter":{"desktop":"32px","mobile":"28px"},"layout":"slider","spacing":{"desktop":44,"mobile":"10"},"verticalGutter":{"desktop":"30px","mobile":"24px"},"width":{"desktop":"100%","mobile":"100%","tablet":"100%"},"sizeSetting":{"desktop":{"height":"auto","width":"100%"},"tablet":{"height":"auto","width":"100%"},"mobile":{"height":"auto","width":"100%"}}}}' data-id="gd5FNgAuWm" id="gp-root-carousel-product-list-carousel-gd5FNgAuWm" items-repeat="true"  class="gp-group/carousel gp-w-full gp-flex gp-justify-center gp-overflow-hidden">
+    <gp-carousel gp-data='{"id":"product-list-carousel-gd5FNgAuWm","setting":{"dotSize":{"desktop":12},"dotGapToCarousel":{"desktop":16},"arrowIconSize":{"desktop":24},"showWhenHover":false,"rtl":false,"arrowButtonSize":{"desktop":{"shapeLinked":true,"shapeValue":"1/1"}},"arrowCustom":"<svg height=\"100%\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z\"></path></svg>","autoPlayTimeout":2,"autoplay":true,"autoplayTimeout":4,"columns":{"desktop":4,"mobile":1,"tablet":2},"dot":{"desktop":true,"mobile":true},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"dotStyle":{"desktop":"outside"},"dragToScroll":true,"enableDrag":{"desktop":true},"loop":{"desktop":true},"navigationEnable":{"desktop":true,"mobile":false},"navigationStyle":{"desktop":"outside"},"numberOfProducts":"15","pauseOnHover":true,"productSetting":{"productHandles":["ames-packable-straw-cowboy-hat","female-ringneck-hat-feather","free-easy-return-for-store-credit-or-exchanges-package-protection-valid-in-us","jolie-packable-straw-bucket-hat","straw-packable-bucket-hat","millie-brick-top","ozzy-lifeguard-hat","remy-vented-straw-cowboy-hat","rue-open-crown","mfwesterns-brim-brush","feather"],"productIds":["gid://shopify/Product/8933298372857","gid://shopify/Product/8933298340089","gid://shopify/Product/8933298274553","gid://shopify/Product/8933298241785","gid://shopify/Product/8933298143481","gid://shopify/Product/8933298077945","gid://shopify/Product/8933297979641","gid://shopify/Product/8933297815801","gid://shopify/Product/8933297750265","gid://shopify/Product/8933297684729","gid://shopify/Product/8933297619193"],"productSrc":"PickProduct","productTitles":["Ames Packable Straw Cowboy Hat","Ringneck Hat Feather – Luxe Accen","Store Credit","Jolie Packable Straw Sun Hat","Retro Packable Straw Bucket Sun Hat","Marisol Palm Cowboy","Ozzy Packable Lifeguard Straw Hat","Remy Vented Straw Cowboy Hat","Hand-Stitched Open Crown Hat","Horsehair Bristle Brim Brush","Single Hat Feather Accessory"]},"slidesToShow":{"desktop":4,"mobile":2,"tablet":"2"},"speed":2},"styles":{"height":{"desktop":"auto","mobile":"auto","tablet":"auto"},"horizontalGutter":{"desktop":"32px","mobile":"28px"},"layout":"slider","spacing":{"desktop":44,"mobile":"10"},"verticalGutter":{"desktop":"30px","mobile":"24px"},"width":{"desktop":"100%","mobile":"100%","tablet":"100%"},"sizeSetting":{"desktop":{"height":"auto","width":"100%"},"tablet":{"height":"auto","width":"100%"},"mobile":{"height":"auto","width":"100%"}}}}' data-id="gd5FNgAuWm" id="gp-root-carousel-product-list-carousel-gd5FNgAuWm" items-repeat="true"  class="gp-group/carousel gp-w-full gp-flex gp-justify-center gp-overflow-hidden">
       <div
         
         class="gd5FNgAuWm gp-relative gp-my-0 tablet:gp-px-0 gp-max-w-full mobile:gp-px-0 gp-carousel-wrapper mobile:gp-block tablet:gp-block gp-block"
@@ -292,7 +286,7 @@
     <div id="p-tag-gZmfzY3yQc" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756709512569"
+        data-test-force-publish="1756777030557"
       >
       <div  >
         <div
@@ -540,7 +534,7 @@
     <div data-id="gQ0b80p0ak"
         class="gQ0b80p0ak"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756709512579"
+        data-test-force-publish="1756777030568"
       >
       <div  >
         <h2
@@ -580,7 +574,7 @@
     <div id="p-price-g_c8nvAF4v" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756709512582"
+        data-test-force-publish="1756777030577"
       >
       <div  >
         <div
@@ -617,7 +611,7 @@
     <div id="p-price-gA-j3FXgcG" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756709512583"
+        data-test-force-publish="1756777030578"
       >
       <div  >
         <div
@@ -1309,7 +1303,7 @@
   
         {%- endif -%}
         {% endfor %}
-        {%- if count == 0 and 0 == 0 -%}
+        {%- if count == 0 and 11 == 0 -%}
           {% if 'PickProduct' == 'RelatedProduct' -%}
               <div>{{ 'gempages.ProductList.no_related_products' | t }}</div>
             {% else %}
