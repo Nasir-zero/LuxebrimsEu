@@ -1,1 +1,139 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"gp_global_section_561765491551503340_NqD3kC":{"type":"gp-global-section-561765491551503340","settings":{"section_preload":"off_lazy_script","checksum":""}},"footer":{"type":"footer","blocks":{"fc645871-d789-4cfa-8584-4f8a29b6ce92":{"type":"image","settings":{"image_width":100,"alignment":"center","url":"","width_desktop":4,"width_mobile":"2"}},"1c647602-cc00-4009-a058-976435c8ee9e":{"type":"link_list","settings":{"heading":"Quick links","menu":"footer","width_desktop":4,"width_mobile":"1"}},"24f208fd-0898-43eb-af23-d74f8420ab37":{"type":"email_signup","settings":{"heading":"Subscribe to our emails","subtext":"<p>Join our email list for exclusive offers and the latest news.<\/p>","button_type":"solid","button_label":"Sign up","button_style_secondary":false,"width_desktop":4,"width_mobile":"2"}}},"block_order":["fc645871-d789-4cfa-8584-4f8a29b6ce92","1c647602-cc00-4009-a058-976435c8ee9e","24f208fd-0898-43eb-af23-d74f8420ab37"],"disabled":true,"settings":{"color_scheme":"accent-1","enable_follow_on_shop":false,"show_social":false,"enable_country_selector":false,"enable_language_selector":true,"payment_enable":true,"enabled_payment_types":"","show_policy":false,"branding_text":"Powered by <a href=\"https:\/\/shrinesolutions.com\/\" target=\"_blank\" title=\"https:\/\/shrinesolutions.com\/\">Shrine<\/a>","margin_top":0,"padding_top":32,"padding_bottom":20,"custom_colors_background":"#121212","custom_gradient_background":"","custom_colors_text":"#ffffff","custom_colors_solid_button_background":"#ffffff","custom_colors_solid_button_text":"#121212","custom_colors_outline_button":"#ffffff"}}},"order":["gp_global_section_561765491551503340_NqD3kC","footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "gp_global_section_582451411191595864_F7CqAp": {
+      "type": "gp-global-section-582451411191595864",
+      "name": "foot",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": "",
+        "gg6GLbXXS4g_text": "<strong>SUBSCRIBE TO OUR EMAIL</strong>",
+        "ggs1plLZR7N_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "ggs1plLZR7N_errorMessage": "Can’t send email. Please try again later.",
+        "ggztHTaRIm7_placeholder": "Enter your email",
+        "ggUuHG0njCz_label": "Subscribe",
+        "ggHPj2ejK5z_text": "<p>BY PROVIDING YOUR EMAIL ADDRESS, YOU AGREE TO OUR PRIVACY POLICY &amp; TERMS &amp; CONDITIONS.</p>",
+        "gg2o0VQyitH_text": "<p><strong>Customer Care</strong></p>",
+        "ggWbgx8VoEc_label": "<p>Contact Us</p>",
+        "ggR296y5BJZ_label": "<p>Shipping</p>",
+        "gguq-m5hpwC_label": "<p>Return &amp; Exchanges</p>",
+        "ggwe-fAA3yB_label": "<p>Order Status</p>",
+        "gg9WbtcJ7xD_label": "<p>Gift Cards</p>",
+        "gg38TStgVqn_text": "<p><strong>LEGAL AREA</strong></p>",
+        "ggus9aM9AUi_label": "<p>Conditions of sale</p>",
+        "ggH0Il8rxLg_label": "<p>Privacy policy</p>",
+        "ggadxflsvgj_label": "<p>Cookie</p>",
+        "ggHzUbqxab5_text": "<p><strong>Shop</strong></p>",
+        "ggvFHvWeGr7_label": "<p>Men</p>",
+        "gg_ey_OmQ6-_label": "<p>Women</p>",
+        "ggw-ootkcP-_label": "<p>Best Seller</p>",
+        "gg82ufQ4ZAC_label": "<p>New Arrival</p>",
+        "ggVBpvP5gD1_label": "<p>Accessories</p>",
+        "ggBPcPXE-Cn_text": "<p><strong>Size Guide</strong></p>",
+        "ggJMuKeY83c_label": "<p>Face Shape Guide</p>",
+        "ggKbVzzUScC_label": "<p>Rewards</p>",
+        "ggJ1xgg3lGk_label": "<p>Hat Bar</p>",
+        "gglHPUVz920_label": "<p>FAQ</p>",
+        "ggmdqZE5Vnx_text": "<p><strong>Support</strong></p>",
+        "ggGsi-eylaY_label": "<p>Hat Bar</p>",
+        "gg8R_loOQUr_label": "<p>Hat Care Guide</p>",
+        "ggJh6RY7N06_text": "<p>Copyright © 2025 luxebrims. All Rights Reserved.</p>",
+        "ggWmoSFlqBU_childItem_0": "Company",
+        "ggWmoSFlqBU_childItem_1": "Shop",
+        "ggWmoSFlqBU_childItem_2": "Help",
+        "ggWmoSFlqBU_childItem_3": "Visit",
+        "gguisaiA6yY_label": "About",
+        "ggbr0Lk398d_label": "Events",
+        "ggeBovMtYtr_label": "Rentals",
+        "ggBmC97wmCW_label": "Features",
+        "ggYPRzSIazF_label": "Men",
+        "ggmRVTXQ6p__label": "Women",
+        "ggVun17IDL8_label": "Footweat",
+        "ggAbJTkW7uu_label": "Brands",
+        "ggVXixK_DQ6_label": "Customer Service",
+        "gg74Lzdz_Ym_label": "Returns &amp; Exchanges",
+        "ggNjbVU_APz_label": "FAQs",
+        "ggfgIcPgCSH_label": "Contact Us",
+        "ggyFxHOvrhq_text": "<p>261 NW 26th Street Miami. FL 33127</p>",
+        "ggOijRKzw8n_text": "<p>999-999-999</p>",
+        "ggxko6LElRb_text": "<p>support@gmail.com</p>"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "fc645871-d789-4cfa-8584-4f8a29b6ce92": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "alignment": "center",
+            "url": "",
+            "width_desktop": 4,
+            "width_mobile": "2"
+          }
+        },
+        "1c647602-cc00-4009-a058-976435c8ee9e": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer",
+            "width_desktop": 4,
+            "width_mobile": "1"
+          }
+        },
+        "24f208fd-0898-43eb-af23-d74f8420ab37": {
+          "type": "email_signup",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "subtext": "<p>Join our email list for exclusive offers and the latest news.</p>",
+            "button_type": "solid",
+            "button_label": "Sign up",
+            "button_style_secondary": false,
+            "width_desktop": 4,
+            "width_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "fc645871-d789-4cfa-8584-4f8a29b6ce92",
+        "1c647602-cc00-4009-a058-976435c8ee9e",
+        "24f208fd-0898-43eb-af23-d74f8420ab37"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-1",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "enabled_payment_types": "",
+        "show_policy": false,
+        "branding_text": "Powered by <a href=\"https://shrinesolutions.com/\" target=\"_blank\" title=\"https://shrinesolutions.com/\">Shrine</a>",
+        "margin_top": 0,
+        "padding_top": 32,
+        "padding_bottom": 20,
+        "custom_colors_background": "#121212",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#ffffff",
+        "custom_colors_solid_button_background": "#ffffff",
+        "custom_colors_solid_button_text": "#121212",
+        "custom_colors_outline_button": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "gp_global_section_582451411191595864_F7CqAp",
+    "footer"
+  ]
+}
