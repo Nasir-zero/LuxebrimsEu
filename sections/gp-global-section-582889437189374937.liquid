@@ -54,7 +54,7 @@
     <div data-id="gz4nc2qT2Z"
         class="gz4nc2qT2Z"
         style="--ta:center;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779134"
+        data-test-force-publish="1756969410597"
       >
       <div class="gp-flex" style="--jc:center">
         <h2
@@ -233,7 +233,7 @@
     <div data-id="gC3QzfABgA"
         class="gC3QzfABgA"
         style="--ta:center;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:0px;--pl-mobile:15px;--pb-mobile:5px;--pr-mobile:15px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779139"
+        data-test-force-publish="1756969410625"
       >
       <div class="gp-flex" style="--jc:center">
         <div
@@ -264,7 +264,7 @@
     <div data-id="gXfwXbkbHf"
         class="gXfwXbkbHf"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779142"
+        data-test-force-publish="1756969410634"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -278,7 +278,7 @@
     </div>
     
     <gp-button
-      gp-data='{"btnLink":{"link":"","type":"scroll-to"}}'
+      gp-data='{"btnLink":{"link":"/pages/contact-us-page","type":"open-page"}}'
       
       class="gp-flex gp-flex-col"
     >
@@ -306,12 +306,12 @@
     
   }</style>
         
-        <button
+        <a
           data-id="gDL0RLUBsz" dataId="gDL0RLUBsz" data-state="idle" aria-label="<p>Contact Us</p>"
           
-          type="button"
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/contact-us-page" target
           style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
-          class="gDL0RLUBsz gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+          class="gDL0RLUBsz gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
         >
         
         <div class="gp-inline-flex">
@@ -326,13 +326,13 @@
     </span>
         </div>
         
-        </button>
+        </a>
       </div>
       <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
     </gp-button>
   
     <gp-button
-      gp-data='{"btnLink":{"link":"#","target":"_self"}}'
+      gp-data='{"btnLink":{"link":"/pages/legal-page-apr-12-11-00-04","target":"_self","type":"open-page"}}'
       
       class="gp-flex gp-flex-col"
     >
@@ -359,15 +359,11 @@
     
     
   }</style>
-        <a
-            class="gp-trigger-button-link gp-hidden"
-            href=#
-            target=_self
-          ></a>
+        
         <a
           data-id="gq4CIZ_kx0" dataId="gq4CIZ_kx0" data-state="idle" aria-label="<p>Shipping</p>"
           
-          href="#" target="_self"
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/legal-page-apr-12-11-00-04" target="_self"
           style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
           class="gq4CIZ_kx0 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
         >
@@ -390,7 +386,7 @@
     </gp-button>
   
     <gp-button
-      gp-data='{"btnLink":{"link":"#","target":"_self"}}'
+      gp-data='{"btnLink":{"link":"/pages/returnexchanges","target":"_self","type":"open-page"}}'
       
       class="gp-flex gp-flex-col"
     >
@@ -417,15 +413,11 @@
     
     
   }</style>
-        <a
-            class="gp-trigger-button-link gp-hidden"
-            href=#
-            target=_self
-          ></a>
+        
         <a
           data-id="gwg675iDdQ" dataId="gwg675iDdQ" data-state="idle" aria-label="<p>Return &amp; Exchanges</p>"
           
-          href="#" target="_self"
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/returnexchanges" target="_self"
           style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
           class="gwg675iDdQ gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
         >
@@ -457,7 +449,7 @@
     <div data-id="gXA-4wrqYv"
         class="gXA-4wrqYv"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779154"
+        data-test-force-publish="1756969410683"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -471,7 +463,7 @@
     </div>
     
     <gp-button
-      gp-data='{"btnLink":{"link":"#","target":"_self"}}'
+      gp-data='{"btnLink":{"link":"","target":"_self","type":"open-page"}}'
       
       class="gp-flex gp-flex-col"
     >
@@ -498,17 +490,13 @@
     
     
   }</style>
-        <a
-            class="gp-trigger-button-link gp-hidden"
-            href=#
-            target=_self
-          ></a>
-        <a
+        
+        <button
           data-id="gCu-N_wIRp" dataId="gCu-N_wIRp" data-state="idle" aria-label="<p>Conditions of sale</p>"
           
-          href="#" target="_self"
+          type="button"
           style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
-          class="gCu-N_wIRp gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+          class="gCu-N_wIRp gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
         >
         
         <div class="gp-inline-flex">
@@ -523,7 +511,7 @@
     </span>
         </div>
         
-        </a>
+        </button>
       </div>
       <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
     </gp-button>
@@ -654,7 +642,7 @@
     <div data-id="g_HmqO4gil"
         class="g_HmqO4gil"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779160"
+        data-test-force-publish="1756969410699"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -851,7 +839,7 @@
     <div data-id="gaDMhc4r_P"
         class="gaDMhc4r_P"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779167"
+        data-test-force-publish="1756969410779"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1044,7 +1032,7 @@
     <div data-id="gNKKuI56-p"
         class="gNKKuI56-p"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779173"
+        data-test-force-publish="1756969410886"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1191,7 +1179,7 @@
       role="presentation"
       data-id="g_jPnUEb3Z"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:0px;--mb-mobile:0px;--ta:center"
-      class="gp-group/image gp-relative force-publish-1756958779196 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g_jPnUEb3Z"
+      class="gp-group/image gp-relative force-publish-1756969410891 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g_jPnUEb3Z"
     >
       <a
         href="https://www.facebook.com/luxebrims.official/" target title="Image Title"
@@ -1229,7 +1217,7 @@
       role="presentation"
       data-id="gxYwCDGNoF"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:4px;--ta:left"
-      class="gp-group/image gp-relative force-publish-1756958779197 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gxYwCDGNoF"
+      class="gp-group/image gp-relative force-publish-1756969410892 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gxYwCDGNoF"
     >
       <a
         href="https://x.com/LuxeBrims?fbclid=IwY2xjawJkTxtleHRuA2FlbQIxMAABHiUUlCV79_cnFTUB4o2xlnfjxnPYwyAV81Ehs_hSVi7ob8FnIjPE15upVOmt_aem_FtAtNtSsvR_TQg8Su6Evgw" target="_self" title="Image Title"
@@ -1267,7 +1255,7 @@
       role="presentation"
       data-id="g0jNFGPqR7"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:0px;--ta:center"
-      class="gp-group/image gp-relative force-publish-1756958779198 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g0jNFGPqR7"
+      class="gp-group/image gp-relative force-publish-1756969410901 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g0jNFGPqR7"
     >
       <a
         href="https://www.instagram.com/luxebrims?igsh=MTU1ZWl3Y2p5OGExNQ==" target="_self" title="Image Title"
@@ -1305,7 +1293,7 @@
       role="presentation"
       data-id="gC0FIM3mPv"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left"
-      class="gp-group/image gp-relative force-publish-1756958779198 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gC0FIM3mPv"
+      class="gp-group/image gp-relative force-publish-1756969410901 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gC0FIM3mPv"
     >
       <a
         href="https://www.pinterest.com/settings/#profile" target="_self" title="Image Title"
@@ -1343,7 +1331,7 @@
       role="presentation"
       data-id="ghN0qlDI9P"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb-mobile:0px;--ta:left"
-      class="gp-group/image gp-relative force-publish-1756958779199 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto ghN0qlDI9P"
+      class="gp-group/image gp-relative force-publish-1756969410902 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto ghN0qlDI9P"
     >
       <a
         href="https://www.tiktok.com/@luxebrims?is_from_webapp=1&sender_device=pc" target="_self" title="Image Title"
@@ -1401,7 +1389,7 @@
     <div data-id="giGnvGfcs6"
         class="giGnvGfcs6"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:none;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779203"
+        data-test-force-publish="1756969410906"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1424,7 +1412,7 @@
       role="presentation"
       data-id="g3l1Xu_ZI1"
       style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--ta:right"
-      class="gp-group/image gp-relative force-publish-1756958779204 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g3l1Xu_ZI1"
+      class="gp-group/image gp-relative force-publish-1756969410906 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g3l1Xu_ZI1"
     >
       <div
         
@@ -1502,7 +1490,7 @@
     <div data-id
         
         style="--c:#FFFFFF;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779207"
+        data-test-force-publish="1756969410908"
       >
       <div  >
         <div
@@ -1790,7 +1778,7 @@
     <div data-id
         
         style="--c:#FFFFFF;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779214"
+        data-test-force-publish="1756969410912"
       >
       <div  >
         <div
@@ -2078,7 +2066,7 @@
     <div data-id
         
         style="--c:#FFFFFF;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779227"
+        data-test-force-publish="1756969410915"
       >
       <div  >
         <div
@@ -2366,7 +2354,7 @@
     <div data-id
         
         style="--c:#FFFFFF;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779234"
+        data-test-force-publish="1756969410919"
       >
       <div  >
         <div
@@ -2394,7 +2382,7 @@
     <div data-id="gvM4t6K8Vj"
         class="gvM4t6K8Vj"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779235"
+        data-test-force-publish="1756969410919"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -2411,7 +2399,7 @@
     <div data-id="gkEkptdXOo"
         class="gkEkptdXOo"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mt-mobile:var(--g-s-l);--mb-mobile:0px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779235"
+        data-test-force-publish="1756969410919"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -2428,7 +2416,7 @@
     <div data-id="gY8WslO2X-"
         class="gY8WslO2X-"
         style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756958779236"
+        data-test-force-publish="1756969410919"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -2459,7 +2447,7 @@
       role="presentation"
       data-id="gCcJIRovbq"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left"
-      class="gp-group/image gp-relative force-publish-1756958779238 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gCcJIRovbq"
+      class="gp-group/image gp-relative force-publish-1756969410920 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gCcJIRovbq"
     >
       <div
         
@@ -2497,7 +2485,7 @@
       role="presentation"
       data-id="gqIB2P8KLj"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left"
-      class="gp-group/image gp-relative force-publish-1756958779238 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gqIB2P8KLj"
+      class="gp-group/image gp-relative force-publish-1756969410920 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gqIB2P8KLj"
     >
       <div
         
@@ -2535,7 +2523,7 @@
       role="presentation"
       data-id="glB6U5Nu2E"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left"
-      class="gp-group/image gp-relative force-publish-1756958779239 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto glB6U5Nu2E"
+      class="gp-group/image gp-relative force-publish-1756969410921 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto glB6U5Nu2E"
     >
       <div
         
@@ -2573,7 +2561,7 @@
       role="presentation"
       data-id="gtSe42P-tR"
       style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left"
-      class="gp-group/image gp-relative force-publish-1756958779240 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gtSe42P-tR"
+      class="gp-group/image gp-relative force-publish-1756969410921 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gtSe42P-tR"
     >
       <div
         href="20" target="_self" type title="Image Title"
