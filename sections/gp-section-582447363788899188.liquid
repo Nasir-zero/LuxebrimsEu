@@ -26,43 +26,17 @@
       {%- assign gpBkProduct = product -%}
       
       {%- liquid
-        if request.page_type == 'product'
-          if 'static' == 'static'
-            if '8933298372857' == 'latest'
-              paginate collections.all.products by 100000
-                assign product = collections.all.products | sort: 'created_at' | reverse | first
-              endpaginate
-            else
-              assign product = all_products['ames-packable-straw-cowboy-hat']
-              assign productId = '8933298372857' | times: 1
-              if product == empty or product == null
-                paginate collections.all.products by 100000
-                  for item in collections.all.products
-                    if item.id == productId
-                      assign product = item
-                    endif
-                  endfor
-                endpaginate
-              endif
-            endif
-          endif
-        else
-          if '8933298372857' == 'latest'
+        if request.page_type != 'product'
+          assign product = all_products['ames-packable-straw-cowboy-hat']
+          assign productId = '8933298372857' | times: 1
+          if product == empty or product == null
             paginate collections.all.products by 100000
-              assign product = collections.all.products | sort: 'created_at'| reverse | first
+              for item in collections.all.products
+                if item.id == productId
+                  assign product = item
+                endif
+              endfor
             endpaginate
-          else
-            assign product = all_products['ames-packable-straw-cowboy-hat']
-            assign productId = '8933298372857' | times: 1
-            if product == empty or product == null
-              paginate collections.all.products by 100000
-                for item in collections.all.products
-                  if item.id == productId
-                    assign product = item
-                  endif
-                endfor
-              endpaginate
-            endif
           endif
         endif
       -%}
@@ -887,7 +861,7 @@
     <div data-id="gT56h11SX_"
         class="gT56h11SX_"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845313"
+        data-test-force-publish="1757058136201"
       >
       <div  >
         <h1
@@ -926,7 +900,7 @@
     <div id="p-price-g4dv9D3Or4" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845314"
+        data-test-force-publish="1757058136205"
       >
       <div  >
         <div
@@ -963,7 +937,7 @@
     <div id="p-price-ggo_yxaAKo" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845315"
+        data-test-force-publish="1757058136205"
       >
       <div  >
         <div
@@ -1110,7 +1084,7 @@
     <div data-id="gXlf9CLBUw"
         class="gXlf9CLBUw"
         style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845320"
+        data-test-force-publish="1757058136221"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1133,7 +1107,7 @@
     <div data-id="gnsRlswju9"
         class="gnsRlswju9"
         style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:none;--d-mobile:block;--d-tablet:none;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-2xl);--mb-mobile:16px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845320"
+        data-test-force-publish="1757058136222"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1164,7 +1138,7 @@
     <div data-id="g6w0oYKL-F"
         class="g6w0oYKL-F"
         style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845327"
+        data-test-force-publish="1757058136235"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1282,7 +1256,7 @@
     <div data-id="gqFlBYCtF3"
         class="gqFlBYCtF3"
         style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845328"
+        data-test-force-publish="1757058136240"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1673,7 +1647,7 @@
       role="presentation"
       data-id="get_mBWpGD"
       style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center"
-      class="gp-group/image gp-relative force-publish-1756966845334 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto get_mBWpGD"
+      class="gp-group/image gp-relative force-publish-1757058136281 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto get_mBWpGD"
     >
       <div
         
@@ -1726,7 +1700,7 @@
       role="presentation"
       data-id="goMeXN285o"
       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--ta:left"
-      class="gp-group/image gp-relative force-publish-1756966845335 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto goMeXN285o"
+      class="gp-group/image gp-relative force-publish-1757058136283 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto goMeXN285o"
     >
       <a
         href="https://web.facebook.com/luxebrims/" target="_self" title="Image Title"
@@ -1764,7 +1738,7 @@
       role="presentation"
       data-id="gVUmLsXKod"
       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left"
-      class="gp-group/image gp-relative force-publish-1756966845336 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gVUmLsXKod"
+      class="gp-group/image gp-relative force-publish-1757058136284 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gVUmLsXKod"
     >
       <a
         href="https://x.com/LuxeBrims" target="_self" title="Image Title"
@@ -1802,7 +1776,7 @@
       role="presentation"
       data-id="g7_1iCmujo"
       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left"
-      class="gp-group/image gp-relative force-publish-1756966845336 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g7_1iCmujo"
+      class="gp-group/image gp-relative force-publish-1757058136284 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g7_1iCmujo"
     >
       <a
         href="https://www.instagram.com/luxebrims" target="_self" title="Image Title"
@@ -1872,7 +1846,7 @@
     <div data-id
         
         style="--c:#3B3B3B;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845338"
+        data-test-force-publish="1757058136287"
       >
       <div  >
         <div
@@ -1958,7 +1932,7 @@
     <div data-id
         
         style="--c:#3B3B3B;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845339"
+        data-test-force-publish="1757058136289"
       >
       <div  >
         <div
@@ -1986,7 +1960,7 @@
     <div data-id="gOBbmTy4bI"
         class="gOBbmTy4bI"
         style="--ta:left;--bs:solid;--bw:1px 0px 0px 0px;--bc:#E6E9EB;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-xl);--pt:var(--g-s-xl);--pl:var(--g-s-xl);--pr:var(--g-s-xl);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845339"
+        data-test-force-publish="1757058136291"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -2031,7 +2005,7 @@
     <div data-id
         
         style="--c:#3B3B3B;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845344"
+        data-test-force-publish="1757058136292"
       >
       <div  >
         <div
@@ -2059,7 +2033,7 @@
     <div data-id="gtiHwHoJoI"
         class="gtiHwHoJoI"
         style="--ta:left;--bs:solid;--bw:1px 0px 0px 0px;--bc:#E6E9EB;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-xl);--pt:var(--g-s-xl);--pl:var(--g-s-xl);--pr:var(--g-s-xl);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756966845344"
+        data-test-force-publish="1757058136293"
       >
       <div class="gp-flex" style="--jc:left">
         <div
