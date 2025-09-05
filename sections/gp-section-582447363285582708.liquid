@@ -40,7 +40,7 @@
     <div data-id="gdvimNhP9R"
         class="gdvimNhP9R"
         style="--ta:center;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_INDEX;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:30px;--pt:var(--g-s-xs);--pb:var(--g-s-xs);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756799176292"
+        data-test-force-publish="1757055930786"
       >
       <div class="gp-flex" style="--jc:center">
         <h2
@@ -71,26 +71,29 @@
           {%- assign gpBkProducts = products -%}
           
       {%- liquid
-        assign productHandles = 'ames-packable-straw-cowboy-hat,female-ringneck-hat-feather,free-easy-return-for-store-credit-or-exchanges-package-protection-valid-in-us,jolie-packable-straw-bucket-hat,straw-packable-bucket-hat,millie-brick-top,ozzy-lifeguard-hat,remy-vented-straw-cowboy-hat,rue-open-crown,mfwesterns-brim-brush,feather'| split: ','
+        assign productHandles = ''| split: ','
         assign products = null
         assign target_collection = null
-        assign productSrc = 'PickProduct'
+        assign productSrc = 'Collection'
         assign c = 0
-        assign limit = 4
+        assign limit = 15
 
         if request.page_type == 'collection' or preview_page_type == 'collection'
           assign target_collection = collection
           if target_collection == empty or target_collection == null
-            if 'latest' == 'latest'
+            if '452241228025' == 'latest'
               assign target_collection = collections | sort: 'updated_at'  | first
             else
               
-          for collection in collections
-            if collection.id == latest
-              assign target_collection = collection
-              break
-            endif
-          endfor
+          assign target_collection = collections['straw-hats']
+          if target_collection == empty
+            for collection in collections
+              if collection.id == 452241228025
+                assign target_collection = collection
+                break
+              endif
+            endfor
+          endif
         
             endif
           endif
@@ -111,23 +114,26 @@
               endfor
               assign limit = products.length
             else
-              if 11 == 0
+              if 0 == 0
                 paginate collections.all.products by 100000
                   assign products = collections.all.products  | sort : "created_at"  | reverse
                 endpaginate
               endif
             endunless
           else
-            if 'latest' == 'latest'
+            if '452241228025' == 'latest'
               assign target_collection = collections | sort: 'updated_at'  | first
             else
               
-          for collection in collections
-            if collection.id == latest
-              assign target_collection = collection
-              break
-            endif
-          endfor
+          assign target_collection = collections['straw-hats']
+          if target_collection == empty
+            for collection in collections
+              if collection.id == 452241228025
+                assign target_collection = collection
+                break
+              endif
+            endfor
+          endif
         
             endif
             paginate target_collection.products by 15
@@ -139,8 +145,8 @@
     
           
     {%- if products == null -%}
-    {%- if count == 0 and 11 == 0 -%}
-      {% if 'PickProduct' == 'RelatedProduct' -%}
+    {%- if count == 0 and 0 == 0 -%}
+      {% if 'Collection' == 'RelatedProduct' -%}
           <div>{{ 'gempages.ProductList.no_related_products' | t }}</div>
         {% else %}
           <div>{{ 'gempages.ProductList.no_products_found' | t }}</div>
@@ -149,7 +155,7 @@
     {%-else-%}
       
     
-    <gp-carousel gp-data='{"id":"product-list-carousel-gd5FNgAuWm","setting":{"dotSize":{"desktop":12},"dotGapToCarousel":{"desktop":16},"arrowIconSize":{"desktop":24},"showWhenHover":false,"rtl":false,"arrowButtonSize":{"desktop":{"shapeLinked":true,"shapeValue":"1/1"}},"arrowCustom":"<svg height=\"100%\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z\"></path></svg>","autoPlayTimeout":2,"autoplay":true,"autoplayTimeout":4,"columns":{"desktop":4,"mobile":1,"tablet":2},"dot":{"desktop":true,"mobile":true},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"dotStyle":{"desktop":"outside"},"dragToScroll":true,"enableDrag":{"desktop":true},"loop":{"desktop":true},"navigationEnable":{"desktop":true,"mobile":false},"navigationStyle":{"desktop":"outside"},"numberOfProducts":"15","pauseOnHover":true,"productSetting":{"productHandles":["ames-packable-straw-cowboy-hat","female-ringneck-hat-feather","free-easy-return-for-store-credit-or-exchanges-package-protection-valid-in-us","jolie-packable-straw-bucket-hat","straw-packable-bucket-hat","millie-brick-top","ozzy-lifeguard-hat","remy-vented-straw-cowboy-hat","rue-open-crown","mfwesterns-brim-brush","feather"],"productIds":["gid://shopify/Product/8933298372857","gid://shopify/Product/8933298340089","gid://shopify/Product/8933298274553","gid://shopify/Product/8933298241785","gid://shopify/Product/8933298143481","gid://shopify/Product/8933298077945","gid://shopify/Product/8933297979641","gid://shopify/Product/8933297815801","gid://shopify/Product/8933297750265","gid://shopify/Product/8933297684729","gid://shopify/Product/8933297619193"],"productSrc":"PickProduct","productTitles":["Ames Packable Straw Cowboy Hat","Ringneck Hat Feather – Luxe Accen","Store Credit","Jolie Packable Straw Sun Hat","Retro Packable Straw Bucket Sun Hat","Marisol Palm Cowboy","Ozzy Packable Lifeguard Straw Hat","Remy Vented Straw Cowboy Hat","Hand-Stitched Open Crown Hat","Horsehair Bristle Brim Brush","Single Hat Feather Accessory"]},"slidesToShow":{"desktop":4,"mobile":2,"tablet":"2"},"speed":2},"styles":{"height":{"desktop":"auto","mobile":"auto","tablet":"auto"},"horizontalGutter":{"desktop":"32px","mobile":"28px"},"layout":"slider","spacing":{"desktop":44,"mobile":"10"},"verticalGutter":{"desktop":"30px","mobile":"24px"},"width":{"desktop":"100%","mobile":"100%","tablet":"100%"},"sizeSetting":{"desktop":{"height":"auto","width":"100%"},"tablet":{"height":"auto","width":"100%"},"mobile":{"height":"auto","width":"100%"}}}}' data-id="gd5FNgAuWm" id="gp-root-carousel-product-list-carousel-gd5FNgAuWm" items-repeat="true"  class="gp-group/carousel gp-w-full gp-flex gp-justify-center gp-overflow-hidden">
+    <gp-carousel gp-data='{"id":"product-list-carousel-gd5FNgAuWm","setting":{"dotSize":{"desktop":12},"dotGapToCarousel":{"desktop":16},"arrowIconSize":{"desktop":24},"showWhenHover":false,"rtl":false,"arrowButtonSize":{"desktop":{"shapeLinked":true,"shapeValue":"1/1"}},"arrowCustom":"<svg height=\"100%\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z\"></path></svg>","autoPlayTimeout":2,"autoplay":true,"autoplayTimeout":4,"columns":{"desktop":4,"mobile":1,"tablet":2},"dot":{"desktop":true,"mobile":true},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"dotStyle":{"desktop":"outside"},"dragToScroll":true,"enableDrag":{"desktop":true},"loop":{"desktop":true},"navigationEnable":{"desktop":true,"mobile":false},"navigationStyle":{"desktop":"outside"},"numberOfProducts":"15","pauseOnHover":true,"productSetting":{"productHandles":["ames-packable-straw-cowboy-hat","jolie-packable-straw-bucket-hat","straw-packable-bucket-hat","millie-brick-top","ozzy-lifeguard-hat","remy-vented-straw-cowboy-hat","rue-open-crown"],"productIds":["gid://shopify/Product/8933298372857","gid://shopify/Product/8933298241785","gid://shopify/Product/8933298143481","gid://shopify/Product/8933298077945","gid://shopify/Product/8933297979641","gid://shopify/Product/8933297815801","gid://shopify/Product/8933297750265"],"productSrc":"Collection","productTitles":["Ames Packable Straw Cowboy Hat","Jolie Packable Straw Sun Hat","Retro Packable Straw Bucket Sun Hat","Marisol Palm Cowboy","Ozzy Packable Lifeguard Straw Hat","Remy Vented Straw Cowboy Hat","Hand-Stitched Open Crown Hat"],"collectionId":"gid://shopify/Collection/452241228025","collectionHandle":"straw-hats"},"slidesToShow":{"desktop":4,"mobile":2,"tablet":"2"},"speed":2},"styles":{"height":{"desktop":"auto","mobile":"auto","tablet":"auto"},"horizontalGutter":{"desktop":"32px","mobile":"28px"},"layout":"slider","spacing":{"desktop":44,"mobile":"10"},"verticalGutter":{"desktop":"30px","mobile":"24px"},"width":{"desktop":"100%","mobile":"100%","tablet":"100%"},"sizeSetting":{"desktop":{"height":"auto","width":"100%"},"tablet":{"height":"auto","width":"100%"},"mobile":{"height":"auto","width":"100%"}}}}' data-id="gd5FNgAuWm" id="gp-root-carousel-product-list-carousel-gd5FNgAuWm" items-repeat="true"  class="gp-group/carousel gp-w-full gp-flex gp-justify-center gp-overflow-hidden">
       <div
         
         class="gd5FNgAuWm gp-relative gp-my-0 tablet:gp-px-0 gp-max-w-full mobile:gp-px-0 gp-carousel-wrapper mobile:gp-block tablet:gp-block gp-block"
@@ -237,7 +243,7 @@
             
       <gp-product
         gp-context='{"variantSelected": {{ variant | json | escape }}, "inventory_management": {{ variant.inventory_management | json | escape  }}, "inventory_policy": {{ variant.inventory_policy | json | escape }}, "quantity": 1 ,  "formId": "{{ product_form_id }}"}'
-        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }},"pageContext" : {"pageType":"GP_INDEX","sectionName":"","isPreviewing":false,"isOptimizePlan":false,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true}}'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }},"pageContext" : {"pageType":"GP_INDEX","sectionName":"","isPreviewing":false,"isOptimizePlan":true,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true}}'
         
 
       >
@@ -286,7 +292,7 @@
     <div id="p-tag-gZmfzY3yQc" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756799176296"
+        data-test-force-publish="1757055930795"
       >
       <div  >
         <div
@@ -333,7 +339,7 @@
       gp-data='
     {
       "id":"grfEhcMjw1",
-      "pageContext": {"pageType":"GP_INDEX","sectionName":"","isPreviewing":false,"isOptimizePlan":false,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true},
+      "pageContext": {"pageType":"GP_INDEX","sectionName":"","isPreviewing":false,"isOptimizePlan":true,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true},
       "setting":{"arrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <rect width=\"32\" height=\"32\" rx=\"16\" fill=\"white\"/>\n              <path d=\"M12.7434 20.8964C12.4176 21.2223 12.4176 21.7506 12.7434 22.0764C13.0693 22.4023 13.5976 22.4023 13.9234 22.0764L19.6227 16.3771C19.8311 16.1687 19.8311 15.8308 19.6227 15.6224L13.9234 9.9231C13.5976 9.59725 13.0693 9.59725 12.7434 9.9231C12.4176 10.2489 12.4176 10.7772 12.7434 11.1031L17.6401 15.9998L12.7434 20.8964Z\" fill=\"black\"/>\n              </svg>\n              ","borderActive":{"borderType":"none","borderWidth":"1px","color":"#000000","isCustom":"false","width":"1px 1px 1px 1px"},"clickOpenLightBox":{"desktop":false,"mobile":false,"tablet":false},"dragToScroll":true,"ftArrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM10.6828 8.13017C10.5266 7.95661 10.2734 7.95661 10.1172 8.13017C9.96095 8.30374 9.96095 8.58515 10.1172 8.75871L13.0343 12L10.1172 15.2413C9.96095 15.4149 9.96095 15.6963 10.1172 15.8698C10.2734 16.0434 10.5266 16.0434 10.6828 15.8698L13.8828 12.3143C14.0391 12.1407 14.0391 11.8593 13.8828 11.6857L10.6828 8.13017Z\" fill=\"currentColor\"/>\n    </svg>","ftArrowIconColor":"#000000","ftClickOpenLightBox":{"desktop":"product-link"},"ftDotActiveColor":{"desktop":"line-3"},"ftDotColor":{"desktop":"bg-1"},"ftDotGapToCarousel":{"desktop":16},"ftDotSize":{"desktop":12},"ftDotStyle":{"desktop":"none"},"ftNavigationPosition":{"desktop":"none","mobile":"none","tablet":"none"},"galleryClickEffect":"preview","hoverEffect":"other","loop":{"desktop":true},"navigationPosition":{"desktop":"inside","mobile":"inside","tablet":"inside"},"otherImage":1,"pauseOnHover":true,"speed":1,"type":{"desktop":"images","mobile":"images","tablet":"images"},"typeDisplay":"all-images","zoom":150,"zoomType":"default"},
       "styles":{"align":{"desktop":"center","mobile":"center","tablet":"center"},"aspectHeight":{"desktop":0},"aspectWidth":{"desktop":0},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"ftAspectHeight":{"desktop":0},"ftAspectWidth":{"desktop":0},"ftLayout":{"desktop":"cover"},"ftShape":{"desktop":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"customShapeValue":"","gap":"","height":"","shape":"vertical","shapeLinked":true,"shapeValue":"3/4","width":"100%"},"tablet":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"}},"height":{},"itemSpacing":{"desktop":"5px","mobile":"var(--g-s-s)"},"layout":{"desktop":"cover"},"position":{"desktop":"only-feature","mobile":"only-feature","tablet":"only-feature"},"ratioLayout":{"desktop":[20,80],"mobile":[20,80],"tablet":[20,80]},"ratioLayoutRight":{"desktop":[80,20],"mobile":[80,20],"tablet":[80,20]},"shape":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor1Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor2Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"50%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForBottom":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"20%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForFtOnly":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"spacing":{"desktop":"5px","mobile":"var(--g-s-s)"},"verticalLayout":{"desktop":false},"verticalLayoutRow":{"desktop":true}},
       "productUrl":{{product.url | json | escape}},
@@ -534,7 +540,7 @@
     <div data-id="gQ0b80p0ak"
         class="gQ0b80p0ak"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756799176306"
+        data-test-force-publish="1757055930805"
       >
       <div  >
         <h2
@@ -574,7 +580,7 @@
     <div id="p-price-g_c8nvAF4v" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756799176315"
+        data-test-force-publish="1757055930810"
       >
       <div  >
         <div
@@ -611,7 +617,7 @@
     <div id="p-price-gA-j3FXgcG" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756799176316"
+        data-test-force-publish="1757055930811"
       >
       <div  >
         <div
@@ -1303,8 +1309,8 @@
   
         {%- endif -%}
         {% endfor %}
-        {%- if count == 0 and 11 == 0 -%}
-          {% if 'PickProduct' == 'RelatedProduct' -%}
+        {%- if count == 0 and 0 == 0 -%}
+          {% if 'Collection' == 'RelatedProduct' -%}
               <div>{{ 'gempages.ProductList.no_related_products' | t }}</div>
             {% else %}
               <div>{{ 'gempages.ProductList.no_products_found' | t }}</div>
