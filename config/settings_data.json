@@ -463,11 +463,11 @@
           "heading_alignment": "flex-start",
           "desktop_width": "normal",
           "mobile_width": "full",
-          "enable_header_bg": false,
+          "enable_header_bg": true,
           "header_bg_color": "#f3f3f3",
-          "enable_body_bg": false,
+          "enable_body_bg": true,
           "body_bg_color": "#f3f3f3",
-          "enable_footer_bg": false,
+          "enable_footer_bg": true,
           "footer_bg_color": "#f3f3f3"
         }
       },
