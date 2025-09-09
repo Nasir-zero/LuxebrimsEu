@@ -12,5 +12,12 @@
   "context": {
     "market": "欧洲"
   },
-  "sections": {}
+  "sections": {
+    "main": {
+      "settings": {
+        "image_ratio": "square"
+      },
+      "blocks": {}
+    }
+  }
 }
