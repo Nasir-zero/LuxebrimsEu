@@ -46,7 +46,6 @@
     },
     "featured-collection": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "display_id": false,
         "visibility": "always-display",
