@@ -29,6 +29,7 @@
     "colors_background_2": "#fcfaf7",
     "gradient_background_2": "",
     "type_header_font": "lora_n4",
+    "custom_header_font_weight": 700,
     "heading_scale": 130,
     "heading_letter_spacing": 0.6,
     "type_body_font": "lora_n4",
