@@ -83,7 +83,7 @@
       endif
     %}
 
-    <script
+    {% comment %} <script
       src="https://js.shrinetheme.com/js/v2/main.js"
       defer="defer"
       data-defer="true"
@@ -92,7 +92,7 @@
       data-country-list="{{ settings.country_list }}"
       data-country-list-error="{{ settings.country_invalid_error_msg }}"
       data-animations-type="{{ settings.animations_type }}"
-    ></script>
+    ></script> {% endcomment %}
     <script src="{{ 'secondary.js' | asset_url }}" defer="defer" data-defer="true" data-is-rtl="{{ is_rtl }}"></script>
 
     <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
