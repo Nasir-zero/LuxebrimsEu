@@ -27,8 +27,8 @@
       
       {%- liquid
         if request.page_type != 'product'
-          assign product = all_products['ames-packable-straw-cowboy-hat']
-          assign productId = '8933298372857' | times: 1
+          assign product = all_products['1930s-optimo-vintage-straw-panama-hat']
+          assign productId = '8934696419577' | times: 1
           if product == empty or product == null
             paginate collections.all.products by 100000
               for item in collections.all.products
@@ -115,7 +115,7 @@
       gp-data='
     {
       "id":"giR5UT7KFv",
-      "pageContext": {"pageType":"GP_PRODUCT","sectionName":"","isPreviewing":false,"isOptimizePlan":true,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true},
+      "pageContext": {"pageType":"GP_PRODUCT","sectionName":"","isPreviewing":false,"isOptimizePlan":false,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":false,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":false},
       "setting":{"arrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM10.6828 8.13017C10.5266 7.95661 10.2734 7.95661 10.1172 8.13017C9.96095 8.30374 9.96095 8.58515 10.1172 8.75871L13.0343 12L10.1172 15.2413C9.96095 15.4149 9.96095 15.6963 10.1172 15.8698C10.2734 16.0434 10.5266 16.0434 10.6828 15.8698L13.8828 12.3143C14.0391 12.1407 14.0391 11.8593 13.8828 11.6857L10.6828 8.13017Z\" fill=\"currentColor\"/>\n    </svg>","arrowIconColor":"#000000","borderActive":{"borderType":"none","borderWidth":"1px","color":"#000000","isCustom":"false","width":"1px 1px 1px 1px"},"clickOpenLightBox":{"desktop":false},"dragToScroll":true,"ftArrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM10.6828 8.13017C10.5266 7.95661 10.2734 7.95661 10.1172 8.13017C9.96095 8.30374 9.96095 8.58515 10.1172 8.75871L13.0343 12L10.1172 15.2413C9.96095 15.4149 9.96095 15.6963 10.1172 15.8698C10.2734 16.0434 10.5266 16.0434 10.6828 15.8698L13.8828 12.3143C14.0391 12.1407 14.0391 11.8593 13.8828 11.6857L10.6828 8.13017Z\" fill=\"currentColor\"/>\n    </svg>","ftArrowIconColor":"#000000","ftClickOpenLightBox":{"desktop":"none"},"ftDotActiveColor":{"desktop":"line-3"},"ftDotColor":{"desktop":"bg-1"},"ftDotGapToCarousel":{"desktop":16},"ftDotSize":{"desktop":12},"ftDotStyle":{"desktop":"none"},"ftDragToScroll":false,"ftLoop":{"desktop":false},"ftNavigationPosition":{"desktop":"none"},"ftPauseOnHover":true,"ftSpeed":1,"galleryHoverEffect":"none","galleryZoom":150,"galleryZoomType":"default","hoverEffect":"none","loop":{"desktop":true},"navigationPosition":{"desktop":"inside"},"otherImage":0,"pauseOnHover":true,"preload":true,"speed":1,"type":{"desktop":"slider"},"typeDisplay":"all-images","zoom":150,"zoomType":"default"},
       "styles":{"align":{"desktop":"center"},"corner":{"bblr":"0px","bbrr":"0px","btlr":"0px","btrr":"0px","radiusType":"none"},"ftCorner":{"bblr":"0px","bbrr":"0px","btlr":"0px","btrr":"0px","radiusType":"none"},"ftLayout":{"desktop":"cover"},"ftShape":{"desktop":{"gap":"","height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":""}},"itemSpacing":{"desktop":"16px","mobile":"3px","tablet":"16px"},"layout":{"desktop":"cover"},"position":{"desktop":"left","mobile":"bottom-center"},"ratioLayout":{"desktop":[2,10]},"ratioLayoutRight":{"desktop":[10,2]},"shape":{"desktop":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"}},"shapeFor1Col":{"desktop":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"}},"shapeFor2Col":{"desktop":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"50%"}},"shapeForBottom":{"desktop":{"gap":"","height":"","shape":"original","shapeLinked":true,"width":"25%"},"mobile":{"customShapeValue":"","gap":"","height":"","shape":"original","shapeLinked":true,"width":"25%"},"tablet":{"customShapeValue":"","gap":"","height":"","shape":"original","shapeLinked":true,"width":"20%"}},"shapeForFtOnly":{"desktop":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"}},"spacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"}},
       "productUrl":{{product.url | json | escape}},
@@ -651,7 +651,7 @@
       >
       
     <img
-      alt="{{media.alt | escape}}" width="{{media.width}}" height="{{media.height}}" draggable="false" quality-type quality-percent data-sizes="auto" sizes="100vw" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0ie3ttZWRpYS53aWR0aH19IiBoZWlnaHQ9Int7bWVkaWEuaGVpZ2h0fX0iIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLXt7bWVkaWEud2lkdGh9fS17e21lZGlhLmhlaWdodH19Ij4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSJ7e21lZGlhLndpZHRofX0iIGhlaWdodD0ie3ttZWRpYS5oZWlnaHR9fSIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0ie3ttZWRpYS53aWR0aH19IiBoZWlnaHQ9Int7bWVkaWEuaGVpZ2h0fX0iIGZpbGw9InVybCgjZy17e21lZGlhLndpZHRofX0te3ttZWRpYS5oZWlnaHR9fSkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLXt7bWVkaWEud2lkdGh9fSIgdG89Int7bWVkaWEud2lkdGh9fSIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" base-src="{{media.preview_image | image_url}}" data-src="{{media.preview_image | image_url}}" data-srcset="{{media.preview_image | image_url: width: 480}} 480w, {{media.preview_image | image_url: width: 768}} 768w, {{media.preview_image | image_url: width: 1024}} 1024w, {{media.preview_image | image_url: width: 1440}} 1440w"
+      alt="{{media.alt | escape}}" width="{{media.width}}" height="{{media.height}}" draggable="false" quality-type quality-percent data-sizes="auto" sizes="100vw" src="{{media.preview_image | image_url}}" isNotLazyload="true" srcset base-src="{{media.preview_image | image_url}}" loading="lazy"
       id=""
       style="width:100%;height:100%;cursor:pointer;--aspect:1/1;--aspect-tablet:1/1;--aspect-mobile:{{media.width}}/{{media.height}};--objf:cover"
       class="!gp-rounded-none gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 gp-cursor-pointer"
@@ -720,7 +720,7 @@
       >
       
     <img
-      alt="{{media.alt | escape}}" width="{{media.width}}" height="{{media.height}}" draggable="false" quality-type quality-percent data-sizes="auto" sizes="100vw" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0ie3ttZWRpYS53aWR0aH19IiBoZWlnaHQ9Int7bWVkaWEuaGVpZ2h0fX0iIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz4KICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJnLXt7bWVkaWEud2lkdGh9fS17e21lZGlhLmhlaWdodH19Ij4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjIwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjUwJSIgLz4KICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSJyZ2JhKDUxLCA1MSwgNTEsIDApIiBvZmZzZXQ9IjcwJSIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSJ7e21lZGlhLndpZHRofX0iIGhlaWdodD0ie3ttZWRpYS5oZWlnaHR9fSIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0ie3ttZWRpYS53aWR0aH19IiBoZWlnaHQ9Int7bWVkaWEuaGVpZ2h0fX0iIGZpbGw9InVybCgjZy17e21lZGlhLndpZHRofX0te3ttZWRpYS5oZWlnaHR9fSkiIC8+CiAgICA8YW5pbWF0ZSB4bGluazpocmVmPSIjciIgYXR0cmlidXRlTmFtZT0ieCIgZnJvbT0iLXt7bWVkaWEud2lkdGh9fSIgdG89Int7bWVkaWEud2lkdGh9fSIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" base-src="{{media.preview_image | image_url}}" data-src="{{media.preview_image | image_url}}" data-srcset="{{media.preview_image | image_url: width: 480}} 480w, {{media.preview_image | image_url: width: 768}} 768w, {{media.preview_image | image_url: width: 1024}} 1024w, {{media.preview_image | image_url: width: 1440}} 1440w"
+      alt="{{media.alt | escape}}" width="{{media.width}}" height="{{media.height}}" draggable="false" quality-type quality-percent data-sizes="auto" sizes="100vw" src="{{media.preview_image | image_url}}" isNotLazyload="true" srcset base-src="{{media.preview_image | image_url}}" loading="lazy"
       id=""
       style="width:100%;height:100%;cursor:pointer;--aspect:1/1;--aspect-tablet:1/1;--aspect-mobile:{{media.width}}/{{media.height}};--objf:cover"
       class="!gp-rounded-none gp-w-full gp-h-full gp-absolute gp-top-0 gp-left-0 gp-cursor-pointer"
@@ -861,7 +861,7 @@
     <div data-id="gT56h11SX_"
         class="gT56h11SX_"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136201"
+        data-test-force-publish="1757477153952"
       >
       <div  >
         <h1
@@ -900,7 +900,7 @@
     <div id="p-price-g4dv9D3Or4" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136205"
+        data-test-force-publish="1757477153953"
       >
       <div  >
         <div
@@ -937,7 +937,7 @@
     <div id="p-price-ggo_yxaAKo" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136205"
+        data-test-force-publish="1757477153954"
       >
       <div  >
         <div
@@ -1084,7 +1084,7 @@
     <div data-id="gXlf9CLBUw"
         class="gXlf9CLBUw"
         style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136221"
+        data-test-force-publish="1757477153957"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1107,7 +1107,7 @@
     <div data-id="gnsRlswju9"
         class="gnsRlswju9"
         style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:none;--d-mobile:block;--d-tablet:none;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-2xl);--mb-mobile:16px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136222"
+        data-test-force-publish="1757477153958"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1138,7 +1138,7 @@
     <div data-id="g6w0oYKL-F"
         class="g6w0oYKL-F"
         style="--ta:left;--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136235"
+        data-test-force-publish="1757477153966"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1256,7 +1256,7 @@
     <div data-id="gqFlBYCtF3"
         class="gqFlBYCtF3"
         style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136240"
+        data-test-force-publish="1757477153968"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1647,7 +1647,7 @@
       role="presentation"
       data-id="get_mBWpGD"
       style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center"
-      class="gp-group/image gp-relative force-publish-1757058136281 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto get_mBWpGD"
+      class="gp-group/image gp-relative force-publish-1757477153974 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto get_mBWpGD"
     >
       <div
         
@@ -1667,7 +1667,7 @@
         alt=""
         width="100%"
         style="--aspect:auto;--aspect-tablet:auto;--aspect-mobile:auto;--objf:cover;--h:auto;--h-tablet:auto;--h-mobile:auto;--b:none;--bc:#000000;--bw:1px 1px 1px 1px;--radiusType:none;--shadow:none"
-        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload gp_force_load"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
       />
     
     </picture>
@@ -1700,7 +1700,7 @@
       role="presentation"
       data-id="goMeXN285o"
       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--ta:left"
-      class="gp-group/image gp-relative force-publish-1757058136283 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto goMeXN285o"
+      class="gp-group/image gp-relative force-publish-1757477153975 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto goMeXN285o"
     >
       <a
         href="https://web.facebook.com/luxebrims/" target="_self" title="Image Title"
@@ -1720,7 +1720,7 @@
         alt="Alt Image"
         width="100%"
         style="--aspect:auto;--objf:cover;--w:32px;--w-tablet:32px;--w-mobile:32px;--h:auto;--h-tablet:auto;--h-mobile:auto"
-        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload gp_force_load"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
       />
     
     </picture>
@@ -1738,7 +1738,7 @@
       role="presentation"
       data-id="gVUmLsXKod"
       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left"
-      class="gp-group/image gp-relative force-publish-1757058136284 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gVUmLsXKod"
+      class="gp-group/image gp-relative force-publish-1757477153976 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gVUmLsXKod"
     >
       <a
         href="https://x.com/LuxeBrims" target="_self" title="Image Title"
@@ -1758,7 +1758,7 @@
         alt="Alt Image"
         width="100%"
         style="--aspect:auto;--objf:cover;--w:32px;--w-tablet:32px;--w-mobile:32px;--h:auto;--h-tablet:auto;--h-mobile:auto"
-        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload gp_force_load"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
       />
     
     </picture>
@@ -1776,7 +1776,7 @@
       role="presentation"
       data-id="g7_1iCmujo"
       style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left"
-      class="gp-group/image gp-relative force-publish-1757058136284 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g7_1iCmujo"
+      class="gp-group/image gp-relative force-publish-1757477153976 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g7_1iCmujo"
     >
       <a
         href="https://www.instagram.com/luxebrims" target="_self" title="Image Title"
@@ -1796,7 +1796,7 @@
         alt="Alt Image"
         width="100%"
         style="--aspect:auto;--objf:cover;--w:32px;--w-tablet:32px;--w-mobile:32px;--h:auto;--h-tablet:auto;--h-mobile:auto"
-        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload gp_force_load"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
       />
     
     </picture>
@@ -1846,7 +1846,7 @@
     <div data-id
         
         style="--c:#3B3B3B;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136287"
+        data-test-force-publish="1757477153978"
       >
       <div  >
         <div
@@ -1932,7 +1932,7 @@
     <div data-id
         
         style="--c:#3B3B3B;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136289"
+        data-test-force-publish="1757477153979"
       >
       <div  >
         <div
@@ -1960,7 +1960,7 @@
     <div data-id="gOBbmTy4bI"
         class="gOBbmTy4bI"
         style="--ta:left;--bs:solid;--bw:1px 0px 0px 0px;--bc:#E6E9EB;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-xl);--pt:var(--g-s-xl);--pl:var(--g-s-xl);--pr:var(--g-s-xl);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136291"
+        data-test-force-publish="1757477153979"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -2005,7 +2005,7 @@
     <div data-id
         
         style="--c:#3B3B3B;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136292"
+        data-test-force-publish="1757477153980"
       >
       <div  >
         <div
@@ -2033,7 +2033,7 @@
     <div data-id="gtiHwHoJoI"
         class="gtiHwHoJoI"
         style="--ta:left;--bs:solid;--bw:1px 0px 0px 0px;--bc:#E6E9EB;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pageType:GP_PRODUCT;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-xl);--pt:var(--g-s-xl);--pl:var(--g-s-xl);--pr:var(--g-s-xl);--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1757058136293"
+        data-test-force-publish="1757477153980"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -2094,7 +2094,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/abeezee/v22/esDR31xSG-6AGleN2tWklg.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/abeezee/v23/esDR31xSG-6AGleN2tWklg.woff) format('woff');
 }
 @font-face {
   font-family: 'AR One Sans';
@@ -2130,7 +2130,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/abeezee/v22/esDR31xSG-6AGleN2tukkJUEGpCeGQ.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/abeezee/v23/esDR31xSG-6AGleN2tukkJUEGpCeGQ.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -2139,7 +2139,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/abeezee/v22/esDR31xSG-6AGleN2tWkkJUEGpA.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/abeezee/v23/esDR31xSG-6AGleN2tWkkJUEGpA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* vietnamese */
