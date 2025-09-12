@@ -614,5 +614,38 @@
     "Breadcrumb": {
       "home": "Heim"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "order_summary": {
+        "from_shop_heading": "Von %{shop_name}",
+        "from_other_stores_heading": "Aus anderen Geschäften"
+      },
+      "payment": {
+        "crypto_payment_method": {
+          "description": "Stellen Sie eine sichere Verbindung zu Ihrem Wallet im Base-Netzwerk her",
+          "tooltip": "Ihr Wallet-Guthaben und Ihre Adresse werden nicht weitergegeben und nur der angeforderte Betrag kann abgezogen werden"
+        },
+        "bank_account_missing": "Bankkonto muss verbunden sein"
+      },
+      "thank_you": {
+        "payment_method_not_charged": "Nicht berechnet"
+      }
+    }
+  },
+  "customer_accounts": {
+    "subscriptions": {
+      "update_payment_instrument": {
+        "title": "Zahlungsmethode ersetzen",
+        "loading": "Zahlungsmethoden werden geladen",
+        "no_payment_methods_available": "Keine Zahlungsmethoden verfügbar",
+        "select_new_payment_method": "Wählen Sie eine neue Zahlungsmethode",
+        "current_method": "Aktuell",
+        "cancel": "Stornieren",
+        "save": "Speichern",
+        "success": "Zahlungsmethode aktualisiert",
+        "use_new_payment_method": "+ Neue Zahlungsmethode verwenden"
+      }
+    }
   }
 }
