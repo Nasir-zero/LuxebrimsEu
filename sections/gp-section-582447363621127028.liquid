@@ -65,7 +65,7 @@
     <div data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756892043519"
+        data-test-force-publish="1757756366735"
       >
       <div  >
         <h1
@@ -259,16 +259,19 @@
         if request.page_type == 'collection' or preview_page_type == 'collection'
           assign target_collection = collection
           if target_collection == empty or target_collection == null
-            if 'latest' == 'latest'
+            if '452247748857' == 'latest'
               assign target_collection = collections | sort: 'updated_at'  | first
             else
               
-          for collection in collections
-            if collection.id == latest
-              assign target_collection = collection
-              break
-            endif
-          endfor
+          assign target_collection = collections['cowboy-hats']
+          if target_collection == empty
+            for collection in collections
+              if collection.id == 452247748857
+                assign target_collection = collection
+                break
+              endif
+            endfor
+          endif
         
             endif
           endif
@@ -296,16 +299,19 @@
               endif
             endunless
           else
-            if 'latest' == 'latest'
+            if '452247748857' == 'latest'
               assign target_collection = collections | sort: 'updated_at'  | first
             else
               
-          for collection in collections
-            if collection.id == latest
-              assign target_collection = collection
-              break
-            endif
-          endfor
+          assign target_collection = collections['cowboy-hats']
+          if target_collection == empty
+            for collection in collections
+              if collection.id == 452247748857
+                assign target_collection = collection
+                break
+              endif
+            endfor
+          endif
         
             endif
             paginate target_collection.products by 48
@@ -342,7 +348,7 @@
         
       <gp-product
         gp-context='{"variantSelected": {{ variant | json | escape }}, "inventory_management": {{ variant.inventory_management | json | escape  }}, "inventory_policy": {{ variant.inventory_policy | json | escape }}, "quantity": 1 ,  "formId": "{{ product_form_id }}"}'
-        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }},"pageContext" : {"pageType":"GP_COLLECTION","sectionName":"","isPreviewing":false,"isOptimizePlan":false,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true}}'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }},"pageContext" : {"pageType":"GP_COLLECTION","sectionName":"","isPreviewing":false,"isOptimizePlan":true,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true}}'
         
 
       >
@@ -407,7 +413,7 @@
     <div id="p-tag-g1ppQ-GrZW" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756892043619"
+        data-test-force-publish="1757756366816"
       >
       <div  >
         <div
@@ -454,7 +460,7 @@
       gp-data='
     {
       "id":"g9QFfabqDG",
-      "pageContext": {"pageType":"GP_COLLECTION","sectionName":"","isPreviewing":false,"isOptimizePlan":false,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true},
+      "pageContext": {"pageType":"GP_COLLECTION","sectionName":"","isPreviewing":false,"isOptimizePlan":true,"isTranslateWithLocale":false,"isLazyLoadSection":true,"isLazyLoadImage":true,"hasCollectionHandle":true,"numberOfProductOfProductList":0,"pageBackground":"","fontType":"google","primaryLocale":"","showPriceCurrency":false,"enableLazyLoadImage":true},
       "setting":{"arrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <rect width=\"32\" height=\"32\" rx=\"16\" fill=\"white\"/>\n              <path d=\"M12.7434 20.8964C12.4176 21.2223 12.4176 21.7506 12.7434 22.0764C13.0693 22.4023 13.5976 22.4023 13.9234 22.0764L19.6227 16.3771C19.8311 16.1687 19.8311 15.8308 19.6227 15.6224L13.9234 9.9231C13.5976 9.59725 13.0693 9.59725 12.7434 9.9231C12.4176 10.2489 12.4176 10.7772 12.7434 11.1031L17.6401 15.9998L12.7434 20.8964Z\" fill=\"black\"/>\n              </svg>\n              ","borderActive":{"borderType":"none","borderWidth":"1px","color":"#000000","isCustom":"false","width":"1px 1px 1px 1px"},"clickOpenLightBox":{"desktop":false,"mobile":false,"tablet":false},"dragToScroll":true,"ftArrowIcon":"<svg width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM10.6828 8.13017C10.5266 7.95661 10.2734 7.95661 10.1172 8.13017C9.96095 8.30374 9.96095 8.58515 10.1172 8.75871L13.0343 12L10.1172 15.2413C9.96095 15.4149 9.96095 15.6963 10.1172 15.8698C10.2734 16.0434 10.5266 16.0434 10.6828 15.8698L13.8828 12.3143C14.0391 12.1407 14.0391 11.8593 13.8828 11.6857L10.6828 8.13017Z\" fill=\"currentColor\"/>\n    </svg>","ftArrowIconColor":"#000000","ftClickOpenLightBox":{"desktop":"product-link"},"ftDotActiveColor":{"desktop":"line-3"},"ftDotColor":{"desktop":"bg-1"},"ftDotGapToCarousel":{"desktop":16},"ftDotSize":{"desktop":12},"ftDotStyle":{"desktop":"none"},"ftNavigationPosition":{"desktop":"none","mobile":"none","tablet":"none"},"hoverEffect":"other","loop":{"desktop":false},"navigationPosition":{"desktop":"inside","mobile":"inside","tablet":"inside"},"otherImage":1,"pauseOnHover":true,"preDisplay":"1st-available-variant","preload":false,"speed":1,"type":{"desktop":"images","mobile":"images","tablet":"images"},"typeDisplay":"all-images","zoom":150,"zoomType":"default"},
       "styles":{"align":{"desktop":"center","mobile":"center","tablet":"center"},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"ftLayout":{"desktop":"cover"},"ftShape":{"desktop":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"tablet":{"shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"}},"itemSpacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"layout":{"desktop":"cover"},"position":{"desktop":"only-feature","mobile":"only-feature","tablet":"only-feature"},"ratioLayout":{"desktop":[20,80],"mobile":[20,80],"tablet":[20,80]},"ratioLayoutRight":{"desktop":[80,20],"mobile":[80,20],"tablet":[80,20]},"shape":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor1Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"100%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeFor2Col":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"50%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForBottom":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1","width":"20%"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"shapeForFtOnly":{"desktop":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"mobile":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"},"tablet":{"height":"","shape":"square","shapeLinked":true,"shapeValue":"1/1"}},"spacing":{"desktop":"var(--g-s-s)","mobile":"var(--g-s-s)"},"verticalLayout":{"desktop":false},"verticalLayoutRow":{"desktop":true}},
       "productUrl":{{product.url | json | escape}},
@@ -655,7 +661,7 @@
     <div data-id="gAGVW1Cold"
         class="gAGVW1Cold collectionProductTitleA"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756892043656"
+        data-test-force-publish="1757756366822"
       >
       <div  >
         <h2
@@ -695,7 +701,7 @@
     <div id="p-price-gfa6raHFw2" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756892043657"
+        data-test-force-publish="1757756366823"
       >
       <div  >
         <div
@@ -732,7 +738,7 @@
     <div id="p-price-gQ71OOButG" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1756892043657"
+        data-test-force-publish="1757756366824"
       >
       <div  >
         <div
@@ -1267,7 +1273,7 @@
       class="gp-product-button"
       gp-label-out-of-stock="{{ section.settings.ggAxXQYDp2R_outOfStockLabel }}"
       gp-label-unavailable="{{ section.settings.ggAxXQYDp2R_unavailableLabel }}"
-      gp-data='{"styles":{"errorTypo":{"attrs":{"color":"error"},"type":"paragraph-2"},"successTypo":{"attrs":{"color":"success"},"type":"paragraph-2"}},"setting":{"errorType":"built-in","actionEffect":"open-cart-drawer","enableMessage":true,"label":"Add to cart","errorMessage":"Cannot add product to cart","successMessage":"Add product to cart successfully","outOfStockLabel":"Out of stocks","customURL":{"link":"/cart","target":"_self"}},"variantID":"{{variant.id}}","disabled":"{{variant.available}}","totalVariant":"{{total_combinations}}"}'
+      gp-data='{"styles":{"errorTypo":{"attrs":{"color":"error"},"type":"paragraph-2"},"successTypo":{"attrs":{"color":"success"},"type":"paragraph-2"}},"setting":{"errorType":"built-in","actionEffect":"continue-shopping","enableMessage":true,"label":"Add to cart","errorMessage":"Cannot add product to cart","successMessage":"Add product to cart successfully","outOfStockLabel":"Out of stocks","customURL":{"link":"/cart","target":"_self"}},"variantID":"{{variant.id}}","disabled":"{{variant.available}}","totalVariant":"{{total_combinations}}"}'
       data-variant-selection-required-message=""
     >
       
@@ -1473,14 +1479,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QI6MX1D_JOuGQbT0gvTJPa787weuyJF.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787weuyJF.woff) format('woff');
 }
 @font-face {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QI6MX1D_JOuGQbT0gvTJPa787z5vCJF.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787z5vCJF.woff) format('woff');
 }
 /* khmer */
 @font-face {
@@ -1497,7 +1503,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
@@ -1506,7 +1512,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* math */
@@ -1515,7 +1521,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuM3b7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM3b7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 /* symbols */
@@ -1524,7 +1530,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuM2T7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM2T7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
 }
 /* vietnamese */
@@ -1533,7 +1539,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
@@ -1542,7 +1548,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -1551,7 +1557,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
@@ -1560,7 +1566,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
@@ -1569,7 +1575,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* math */
@@ -1578,7 +1584,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuM3b7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM3b7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 /* symbols */
@@ -1587,7 +1593,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuM2T7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuM2T7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
 }
 /* vietnamese */
@@ -1596,7 +1602,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
@@ -1605,7 +1611,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -1614,7 +1620,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v36/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lora/v37/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 </style>
