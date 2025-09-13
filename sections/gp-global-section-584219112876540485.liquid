@@ -1,0 +1,2942 @@
+
+    {% render 'gp-head', 'isThemeSection: true' %}
+    <style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-584219112876540485.gps.gpsil [style*="--ai:"]{align-items:var(--ai)}.gps-584219112876540485.gps.gpsil [style*="--as:"]{align-self:var(--as)}.gps-584219112876540485.gps.gpsil [style*="--aspect:"]{aspect-ratio:var(--aspect)}.gps-584219112876540485.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-584219112876540485.gps.gpsil [style*="--hvr-bg:"]:hover{background:var(--hvr-bg)}.gps-584219112876540485.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-584219112876540485.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-584219112876540485.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-584219112876540485.gps.gpsil [style*="--hvr-bgi:"]:hover{background-image:var(--hvr-bgi)}.gps-584219112876540485.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-584219112876540485.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-584219112876540485.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-584219112876540485.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-584219112876540485.gps.gpsil [style*="--hvr-b:"]:hover{border:var(--hvr-b)}.gps-584219112876540485.gps.gpsil [style*="--bb:"]{border-bottom:var(--bb)}.gps-584219112876540485.gps.gpsil [style*="--hvr-bb:"]:hover{border-bottom:var(--hvr-bb)}.gps-584219112876540485.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-584219112876540485.gps.gpsil [style*="--bblr:"]{border-bottom-left-radius:var(--bblr)}.gps-584219112876540485.gps.gpsil [style*="--hvr-bblr:"]:hover{border-bottom-left-radius:var(--hvr-bblr)}.gps-584219112876540485.gps.gpsil [style*="--bbrr:"]{border-bottom-right-radius:var(--bbrr)}.gps-584219112876540485.gps.gpsil [style*="--hvr-bbrr:"]:hover{border-bottom-right-radius:var(--hvr-bbrr)}.gps-584219112876540485.gps.gpsil [style*="--radius:"]{border-radius:var(--radius)}.gps-584219112876540485.gps.gpsil [style*="--hvr-radius:"]:hover{border-radius:var(--hvr-radius)}.gps-584219112876540485.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-584219112876540485.gps.gpsil [style*="--bt:"]{border-top:var(--bt)}.gps-584219112876540485.gps.gpsil [style*="--hvr-bt:"]:hover{border-top:var(--hvr-bt)}.gps-584219112876540485.gps.gpsil [style*="--btlr:"]{border-top-left-radius:var(--btlr)}.gps-584219112876540485.gps.gpsil [style*="--hvr-btlr:"]:hover{border-top-left-radius:var(--hvr-btlr)}.gps-584219112876540485.gps.gpsil [style*="--btrr:"]{border-top-right-radius:var(--btrr)}.gps-584219112876540485.gps.gpsil [style*="--hvr-btrr:"]:hover{border-top-right-radius:var(--hvr-btrr)}.gps-584219112876540485.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-584219112876540485.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-584219112876540485.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-584219112876540485.gps.gpsil [style*="--hvr-c:"]:hover{color:var(--hvr-c)}.gps-584219112876540485.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-584219112876540485.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-584219112876540485.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-584219112876540485.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-584219112876540485.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-584219112876540485.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-584219112876540485.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-584219112876540485.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-584219112876540485.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-584219112876540485.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-584219112876540485.gps.gpsil [style*="--tdt:"]{text-decoration-thickness:var(--tdt)}.gps-584219112876540485.gps.gpsil [style*="--tdl:"]{text-decoration-line:var(--tdl)}.gps-584219112876540485.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-584219112876540485.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-584219112876540485.gps.gpsil [style*="--ml:"]{margin-left:var(--ml)}.gps-584219112876540485.gps.gpsil [style*="--mt:"]{margin-top:var(--mt)}.gps-584219112876540485.gps.gpsil [style*="--objf:"]{-o-object-fit:var(--objf);object-fit:var(--objf)}.gps-584219112876540485.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-584219112876540485.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-584219112876540485.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-584219112876540485.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-584219112876540485.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-584219112876540485.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-584219112876540485.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-584219112876540485.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-584219112876540485.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-584219112876540485.gps.gpsil [style*="--ts:"]{text-shadow:var(--ts)}.gps-584219112876540485.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-584219112876540485.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-584219112876540485.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1024px){.gps-584219112876540485.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-584219112876540485.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-584219112876540485.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-584219112876540485.gps.gpsil [style*="--pb-tablet:"]{padding-bottom:var(--pb-tablet)}.gps-584219112876540485.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-584219112876540485.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-584219112876540485.gps.gpsil [style*="--pt-tablet:"]{padding-top:var(--pt-tablet)}.gps-584219112876540485.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-584219112876540485.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-584219112876540485.gps.gpsil [style*="--aspect-mobile:"]{aspect-ratio:var(--aspect-mobile)}.gps-584219112876540485.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-584219112876540485.gps.gpsil [style*="--gtc-mobile:"]{grid-template-columns:var(--gtc-mobile)}.gps-584219112876540485.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-584219112876540485.gps.gpsil [style*="--jc-mobile:"]{justify-content:var(--jc-mobile)}.gps-584219112876540485.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-584219112876540485.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-584219112876540485.gps.gpsil [style*="--ml-mobile:"]{margin-left:var(--ml-mobile)}.gps-584219112876540485.gps.gpsil [style*="--mt-mobile:"]{margin-top:var(--mt-mobile)}.gps-584219112876540485.gps.gpsil [style*="--pc-mobile:"]{place-content:var(--pc-mobile)}.gps-584219112876540485.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-584219112876540485.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-584219112876540485.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-584219112876540485.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-584219112876540485.gps.gpsil [style*="--ta-mobile:"]{text-align:var(--ta-mobile)}.gps-584219112876540485.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-584219112876540485.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-584219112876540485 .gp-g-paragraph-1{font-family:var(--g-p1-ff);font-size:var(--g-p1-size);font-style:var(--g-p1-fs);font-weight:var(--g-p1-weight);letter-spacing:var(--g-p1-ls);line-height:var(--g-p1-lh)}.gps-584219112876540485 .gp-fixed{position:fixed}.gps-584219112876540485 .gp-relative{position:relative}.gps-584219112876540485 .gp-top-\[27px\]{top:27px}.gps-584219112876540485 .gp-z-\[100\]{z-index:100}.gps-584219112876540485 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-584219112876540485 .gp-mb-0{margin-bottom:0}.gps-584219112876540485 .gp-inline-block{display:inline-block}.gps-584219112876540485 .gp-flex{display:flex}.gps-584219112876540485 .gp-inline-flex{display:inline-flex}.gps-584219112876540485 .gp-grid{display:grid}.gps-584219112876540485 .gp-contents{display:contents}.gps-584219112876540485 .\!gp-hidden{display:none!important}.gps-584219112876540485 .gp-hidden{display:none}.gps-584219112876540485 .gp-h-auto{height:auto}.gps-584219112876540485 .gp-h-full{height:100%}.gps-584219112876540485 .gp-w-full{width:100%}.gps-584219112876540485 .gp-max-w-full{max-width:100%}.gps-584219112876540485 .gp-flex-none{flex:none}.gps-584219112876540485 .gp-grid-rows-\[1fr\]{grid-template-rows:1fr}.gps-584219112876540485 .gp-flex-col{flex-direction:column}.gps-584219112876540485 .gp-items-center{align-items:center}.gps-584219112876540485 .gp-justify-center{justify-content:center}.gps-584219112876540485 .gp-overflow-hidden{overflow:hidden}.gps-584219112876540485 .gp-break-words{overflow-wrap:break-word}.gps-584219112876540485 .gp-rounded{border-radius:4px}.gps-584219112876540485 .\!gp-bg-none{background-image:none!important}.gps-584219112876540485 .gp-p-\[16px\]{padding:16px}.gps-584219112876540485 .gp-text-center{text-align:center}.gps-584219112876540485 .gp-text-\[14px\]{font-size:14px}.gps-584219112876540485 .gp-leading-normal{line-height:1.5}.gps-584219112876540485 .gp-text-g-bg-3{color:var(--g-c-bg-3)}.gps-584219112876540485 .gp-text-g-text-3{color:var(--g-c-text-3)}.gps-584219112876540485 .gp-no-underline{text-decoration-line:none}.gps-584219112876540485 .\!gp-outline-none{outline:2px solid transparent!important;outline-offset:2px!important}.gps-584219112876540485 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-584219112876540485 .gp-duration-200{transition-duration:.2s}.gps-584219112876540485 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-584219112876540485 .disabled\:gp-btn-disabled:disabled{cursor:default}@media (hover:hover) and (pointer:fine){.gps-584219112876540485 .hover\:gp-text-g-text-3:hover{color:var(--g-c-text-3)}}.gps-584219112876540485 .disabled\:gp-opacity-30:disabled{opacity:.3}.gps-584219112876540485 .gp-group\/button:active .group-active\/button\:\!gp-text-inherit{color:inherit!important}.gps-584219112876540485 .gp-group[data-state=loading] .group-data-\[state\=loading\]\:gp-invisible{visibility:hidden}@media (max-width:1024px){.gps-584219112876540485 .tablet\:\!gp-hidden{display:none!important}.gps-584219112876540485 .tablet\:gp-hidden{display:none}.gps-584219112876540485 .tablet\:gp-h-auto{height:auto}.gps-584219112876540485 .tablet\:gp-flex-none{flex:none}}@media (max-width:767px){.gps-584219112876540485 .mobile\:\!gp-hidden{display:none!important}.gps-584219112876540485 .mobile\:gp-hidden{display:none}.gps-584219112876540485 .mobile\:gp-h-auto{height:auto}.gps-584219112876540485 .mobile\:gp-flex-none{flex:none}}.gps-584219112876540485 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-584219112876540485 .\[\&_p\]\:gp-whitespace-pre-line p{white-space:pre-line}</style>
+    
+    
+    
+
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+
+    
+        <section
+          class="gp-mx-auto gp-max-w-full [&_*]:gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+          style="--w:100%;--w-tablet:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--w-mobile:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px))"
+        >
+          
+    <gp-row gp-data='{"background":{"desktop":{"type":"color","color":"transparent","image":{"src":"","width":0,"height":0},"size":"cover","position":{"x":50,"y":50},"repeat":"no-repeat","attachment":"scroll"}},"uid":"gwhZ4q7cHV"}' data-id="gwhZ4q7cHV" id="gwhZ4q7cHV" data-same-height-subgrid-container class="gwhZ4q7cHV gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--pt:0px;--pl:0px;--pb:0px;--pr:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:grid;--d-tablet:grid;--d-mobile:grid;--bs:solid;--bw:0px;--bc:#121212;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--op:100%;--cg:32px;--gtc:minmax(0, 12fr);--w:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gSOKOFGclz gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"#FCFAF7","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color","preload":false}},"uid":"gYjjlOJJ_-"}' data-id="gYjjlOJJ_-" id="gYjjlOJJ_-" data-same-height-subgrid-container class="gYjjlOJJ_- gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:var(--g-s-4xl);--pt-mobile:var(--g-s-4xl);--pl-mobile:0px;--pr-mobile:0px;--pt-tablet:var(--g-s-4xl);--pl-tablet:0px;--pr-tablet:0px;--cg:0px;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FCFAF7;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--o:0"
+      class="g_qOa6QpNc gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"giSZScyzJO"}' data-id="giSZScyzJO" id="giSZScyzJO" data-same-height-subgrid-container class="giSZScyzJO gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--pt:0px;--pl:15px;--pb:0px;--pr:15px;--cg:32px;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gB2llJK67Q gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gWc_1aeoHQ"
+        class="gWc_1aeoHQ"
+        style="--ta:center;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329199"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <h2
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ts:none;--ta:center;--c:#191918;--fs:normal;--ff:var(--g-font-Playfair-Display, 'Playfair Display'), var(--g-font-heading, heading);--weight:700;--ls:normal;--size:33px;--size-tablet:33px;--size-mobile:29px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggWc_1aeoHQ_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    <div class="gp-mx-auto gp-max-w-full" style="--w:100%;--pl:0px;--pr:0px;--pt:var(--g-s-2xl);--pb:24px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:var(--g-s-2xl);--pb-mobile:24px;--bc:transparent;--bw:0px;--bs:none;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px">
+      <gp-form
+        data-id="gCs528ijro" id="gCs528ijro"
+        data-callback='{"link":"","target":"_self"}'
+      >
+        <a
+          hidden="true" id="gp-form-callback-gCs528ijro"
+        >
+        </a>
+        {% form 'customer', class: 'gp-form-gCs528ijro ', id: 'contact_form_gCs528ijro' %}
+          {% if form.errors %}
+            <div
+              id="gp-form-error-gCs528ijro"
+              class="gp-form-message gp-hidden gp-top-[27px] gp-fixed gp-rounded gp-p-[16px] gp-text-[14px] gp-leading-normal gp-z-[100]"
+              style="background-color:#FFE9E9;left:50%;transform:translateX(-50%)"
+            >
+              {{ section.settings.ggCs528ijro_errorMessage }}
+            </div>
+          {% endif %}
+          <div popover id="my-popover-gCs528ijro">
+            <style>
+              
+    #my-popover-gCs528ijro::backdrop {
+      width: fit-content;
+      height: fit-content;
+    }
+  
+            </style>
+            <div
+              id="gp-form-success-gCs528ijro"
+              class="gp-form-message gp-hidden gp-top-[27px] gp-fixed gp-rounded gp-p-[16px] gp-text-[14px] gp-leading-normal gp-z-[100]"
+              style="background-color:#F2FFEC;left:50%;transform:translateX(-50%)"
+            >
+              {{ section.settings.ggCs528ijro_successMessage }}
+            </div>
+          </div>
+          
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"#FFFFFF","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gXP_niG_kW"}' data-id="gXP_niG_kW" id="gXP_niG_kW" data-same-height-subgrid-container class="gXP_niG_kW gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--cg:0px;--gtc:minmax(0, 9fr) minmax(0, 3fr);--gtc-mobile:minmax(0, 8fr) minmax(0, 4fr);--w:570px;--w-tablet:570px;--w-mobile:100%;--bgc:#FFFFFF;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gKzXb02o4d gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      
+      data-id="g6X1hg2iw2"
+      class="g6X1hg2iw2 flex flex-col"
+      style="--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--ta:left"
+    >
+      
+      <input
+        type="email"
+        class="gp-form-item !gp-outline-none !gp-bg-none email-form-g6X1hg2iw2"
+        style="--w:100%;--w-tablet:313px;--w-mobile:100%;--h:auto;--pl:16px;--pr:16px;--pt:12px;--pb:12px;--pl-tablet:16px;--pr-tablet:16px;--pt-tablet:12px;--pb-tablet:12px;--pl-mobile:16px;--pr-mobile:16px;--pt-mobile:12px;--pb-mobile:12px;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:18px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--bs:none;--bw:0px 0px 0px 0px;--bc:transparent;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none"
+        placeholder="{{ section.settings.gg6X1hg2iw2_placeholder }}"
+        name="contact[email]"
+        required
+        autocomplete="email"
+        
+      ></input>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gVjdWi0b64 gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+    <gp-button
+      gp-data='{}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left" >
+        <style>[data-id="gbcs6AwfMG"].gp-button-base::before, [data-id="gbcs6AwfMG-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px 0px 0px 0px;
+  border-color: transparent;
+  
+    
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      
+  
+    }
+  
+      
+  [data-id="gbcs6AwfMG"]:hover::before, [data-id="gbcs6AwfMG-interaction"]:hover::before {
+    border-style: none;
+  border-width: 0px 0px 0px 0px;
+  border-color: transparent;
+  
+    
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      
+  }</style>
+        
+        <button
+          data-id="gbcs6AwfMG" dataId="gbcs6AwfMG" data-state="idle" aria-label="Subscribe"
+          
+          type="submit"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:24px;--pr:24px;--pt:12px;--pb:12px;--pl-tablet:24px;--pr-tablet:24px;--pt-tablet:12px;--pb-tablet:12px;--pl-mobile:24px;--pr-mobile:24px;--pt-mobile:12px;--pb-mobile:12px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--hvr-bblr:0px;--hvr-bbrr:0px;--hvr-btlr:0px;--hvr-btrr:0px;--bgi:;--hvr-bgi:;--hvr-bg:rgba(36, 36, 36, 0.8);--bg:#191919;--hvr-c:var(--g-c-text-3);--c:#FCFAF7;--fs:normal;--ff:var(--g-font-Playfair-Display, 'Playfair Display'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:18px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gbcs6AwfMG gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 hover:gp-text-g-text-3 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Playfair-Display, 'Playfair Display'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:18px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggbcs6AwfMG_label }}
+    </span>
+        </div>
+        
+        </button>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+        {% endform %}
+      </gp-form>
+    </div>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-form-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gd55lh7AUQ"
+        class="gd55lh7AUQ"
+        style="--ta:center;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:0px;--pl-mobile:15px;--pb-mobile:5px;--pr-mobile:15px;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329203"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1 gp-text-g-text-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--ta:center;--line-clamp:0;--line-clamp-tablet:0;--line-clamp-mobile:0;--c:#191918;--size:10px;--size-tablet:16px;--size-mobile:11px;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggd55lh7AUQ_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"guMrfFX9GR"}' data-id="guMrfFX9GR" id="guMrfFX9GR" data-same-height-subgrid-container class="guMrfFX9GR gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:none;--d-tablet:grid;--op:100%;--radius:var(--g-radius-small);--pt:var(--g-s-xl);--pl:15px;--pb:30px;--pr:15px;--pt-mobile:30px;--pl-mobile:var(--g-s-l);--pb-mobile:30px;--pr-mobile:var(--g-s-l);--cg:120px;--gtc:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--gtc-mobile:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:center">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--o:0"
+      class="gjXMfsIAP7 gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gdDJ3xAPwd"
+        class="gdDJ3xAPwd"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329204"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-Open-Sans, 'Open Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggdDJ3xAPwd_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/contact-us-page","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gbfAzHJZCr"].gp-button-base::before, [data-id="gbfAzHJZCr-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gbfAzHJZCr"]:hover::before, [data-id="gbfAzHJZCr-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gbfAzHJZCr" dataId="gbfAzHJZCr" data-state="idle" aria-label="<p>Contact Us</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/contact-us-page" target
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gbfAzHJZCr gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggbfAzHJZCr_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/legal-page-apr-12-11-00-04","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gAiuQHi-dr"].gp-button-base::before, [data-id="gAiuQHi-dr-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gAiuQHi-dr"]:hover::before, [data-id="gAiuQHi-dr-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gAiuQHi-dr" dataId="gAiuQHi-dr" data-state="idle" aria-label="<p>Shipping</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/legal-page-apr-12-11-00-04" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gAiuQHi-dr gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggAiuQHi-dr_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/returnexchanges","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="guVgrjF8xv"].gp-button-base::before, [data-id="guVgrjF8xv-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="guVgrjF8xv"]:hover::before, [data-id="guVgrjF8xv-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="guVgrjF8xv" dataId="guVgrjF8xv" data-state="idle" aria-label="<p>Return &amp; Exchanges</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/returnexchanges" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="guVgrjF8xv gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gguVgrjF8xv_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gDo_8b8Rd- gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gRWZ4do67V"
+        class="gRWZ4do67V"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329207"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-Open-Sans, 'Open Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggRWZ4do67V_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/conditions-of-sale","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gzCff_BId6"].gp-button-base::before, [data-id="gzCff_BId6-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gzCff_BId6"]:hover::before, [data-id="gzCff_BId6-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gzCff_BId6" dataId="gzCff_BId6" data-state="idle" aria-label="<p>Conditions of sale</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/conditions-of-sale" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gzCff_BId6 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggzCff_BId6_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/privacy-policy-1","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gUGgb-UosO"].gp-button-base::before, [data-id="gUGgb-UosO-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gUGgb-UosO"]:hover::before, [data-id="gUGgb-UosO-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gUGgb-UosO" dataId="gUGgb-UosO" data-state="idle" aria-label="<p>Privacy policy</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/privacy-policy-1" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gUGgb-UosO gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggUGgb-UosO_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/cookie","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gQrrwjsw-6"].gp-button-base::before, [data-id="gQrrwjsw-6-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gQrrwjsw-6"]:hover::before, [data-id="gQrrwjsw-6-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gQrrwjsw-6" dataId="gQrrwjsw-6" data-state="idle" aria-label="<p>Cookie</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/cookie" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gQrrwjsw-6 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggQrrwjsw-6_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gcDT-5fxvr gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gS1Tz43m8U"
+        class="gS1Tz43m8U"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329210"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-Open-Sans, 'Open Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggS1Tz43m8U_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/mens","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gIJVk5zHli"].gp-button-base::before, [data-id="gIJVk5zHli-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gIJVk5zHli"]:hover::before, [data-id="gIJVk5zHli-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gIJVk5zHli" dataId="gIJVk5zHli" data-state="idle" aria-label="<p>Men</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/mens" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gIJVk5zHli gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggIJVk5zHli_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/women-s-hats","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gf6WQEait-"].gp-button-base::before, [data-id="gf6WQEait--interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gf6WQEait-"]:hover::before, [data-id="gf6WQEait--interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gf6WQEait-" dataId="gf6WQEait-" data-state="idle" aria-label="<p>Women</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/women-s-hats" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gf6WQEait- gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggf6WQEait-_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/accessories","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--ta:left" >
+        <style>[data-id="gIgZXlKtQV"].gp-button-base::before, [data-id="gIgZXlKtQV-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gIgZXlKtQV"]:hover::before, [data-id="gIgZXlKtQV-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gIgZXlKtQV" dataId="gIgZXlKtQV" data-state="idle" aria-label="<p>Accessories</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/accessories" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gIgZXlKtQV gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggIgZXlKtQV_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gamnPB6jpl gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gThV-AGUhw"
+        class="gThV-AGUhw"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329212"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-Open-Sans, 'Open Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggThV-AGUhw_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/face-shape-guide","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--mb:var(undefined);--ta:left" >
+        <style>[data-id="gGtl6Os9D4"].gp-button-base::before, [data-id="gGtl6Os9D4-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gGtl6Os9D4"]:hover::before, [data-id="gGtl6Os9D4-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gGtl6Os9D4" dataId="gGtl6Os9D4" data-state="idle" aria-label="<p>Face Shape Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/face-shape-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gGtl6Os9D4 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggGtl6Os9D4_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/rewards","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gO-OEttEQ9"].gp-button-base::before, [data-id="gO-OEttEQ9-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gO-OEttEQ9"]:hover::before, [data-id="gO-OEttEQ9-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gO-OEttEQ9" dataId="gO-OEttEQ9" data-state="idle" aria-label="<p>Rewards</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/rewards" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gO-OEttEQ9 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggO-OEttEQ9_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/faqs","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gSamgrot6r"].gp-button-base::before, [data-id="gSamgrot6r-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gSamgrot6r"]:hover::before, [data-id="gSamgrot6r-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gSamgrot6r" dataId="gSamgrot6r" data-state="idle" aria-label="<p>FAQ</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/faqs" target
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gSamgrot6r gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggSamgrot6r_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="grtFwtiqKA gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gQleUrxb5E"
+        class="gQleUrxb5E"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329215"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-Open-Sans, 'Open Sans'), var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggQleUrxb5E_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/custom-hat-bar","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--ta:left" >
+        <style>[data-id="gNm6QSTsbk"].gp-button-base::before, [data-id="gNm6QSTsbk-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gNm6QSTsbk"]:hover::before, [data-id="gNm6QSTsbk-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gNm6QSTsbk" dataId="gNm6QSTsbk" data-state="idle" aria-label="<p>Hat Bar</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/custom-hat-bar" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gNm6QSTsbk gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggNm6QSTsbk_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/hat-care-guide","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-xl);--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--ta:left" >
+        <style>[data-id="gU6dATfiL1"].gp-button-base::before, [data-id="gU6dATfiL1-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gU6dATfiL1"]:hover::before, [data-id="gU6dATfiL1-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gU6dATfiL1" dataId="gU6dATfiL1" data-state="idle" aria-label="<p>Hat Care Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/hat-care-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent;--c:#191918;--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%"
+          class="gU6dATfiL1 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="--fs:normal;--ff:var(--g-font-Raleway, 'Raleway'), var(--g-font-body, body);--weight:400;--ls:0.96px;--size:16px;--size-tablet:14px;--size-mobile:14px;--lh:160%;--lh-tablet:180%;--lh-mobile:180%;--ts:none;word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggU6dATfiL1_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gTBipJrBh7"}' data-id="gTBipJrBh7" id="gTBipJrBh7" data-same-height-subgrid-container class="gTBipJrBh7 gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ml:-5px;--mb:var(undefined);--pt:0px;--pl:0px;--pb:0px;--pr:0px;--cg:12px;--gtc:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--gtc-mobile:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start;--pc-mobile:center">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--jc-mobile:center;--o:0"
+      class="gqtJma_F00 gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="gYzHsJl4OH"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:0px;--mb-mobile:0px;--ta:center"
+      class="gp-group/image gp-relative force-publish-1757751329217 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gYzHsJl4OH"
+    >
+      <a
+        href="https://www.facebook.com/luxebrims.official/" target title="Image Title"
+        style="border-radius:inherit;--jc:center"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-e9b10431-8b46-49ff-b573-0f238bd7003d.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-e9b10431-8b46-49ff-b573-0f238bd7003d.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-e9b10431-8b46-49ff-b573-0f238bd7003d.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-e9b10431-8b46-49ff-b573-0f238bd7003d.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:30px;--w-tablet:9px;--w-mobile:25px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gyxClr2xf_ gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="gZZugNDB4s"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:4px;--ta:left"
+      class="gp-group/image gp-relative force-publish-1757751329218 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gZZugNDB4s"
+    >
+      <a
+        href="https://x.com/LuxeBrims?fbclid=IwY2xjawJkTxtleHRuA2FlbQIxMAABHiUUlCV79_cnFTUB4o2xlnfjxnPYwyAV81Ehs_hSVi7ob8FnIjPE15upVOmt_aem_FtAtNtSsvR_TQg8Su6Evgw" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-5cd52bad-d7a7-42e2-b33e-49b75f38d99a.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-5cd52bad-d7a7-42e2-b33e-49b75f38d99a.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-5cd52bad-d7a7-42e2-b33e-49b75f38d99a.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-5cd52bad-d7a7-42e2-b33e-49b75f38d99a.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:22px;--w-tablet:16px;--w-mobile:19px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gfBQjKxG8P gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="gB24oZzQul"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:0px;--ta:center"
+      class="gp-group/image gp-relative force-publish-1757751329218 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gB24oZzQul"
+    >
+      <a
+        href="https://www.instagram.com/luxebrims?igsh=MTU1ZWl3Y2p5OGExNQ==" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:center"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-f7349d07-0164-46ac-8c8e-087f2e3248f4.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-f7349d07-0164-46ac-8c8e-087f2e3248f4.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-f7349d07-0164-46ac-8c8e-087f2e3248f4.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-f7349d07-0164-46ac-8c8e-087f2e3248f4.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:18px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="goVr7QlGGS gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="gOEncxe37W"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left"
+      class="gp-group/image gp-relative force-publish-1757751329218 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gOEncxe37W"
+    >
+      <a
+        href="https://www.pinterest.com/settings/#profile" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-f484c10e-0dad-43d6-bb21-546e9e1bfce0.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-f484c10e-0dad-43d6-bb21-546e9e1bfce0.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-f484c10e-0dad-43d6-bb21-546e9e1bfce0.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-f484c10e-0dad-43d6-bb21-546e9e1bfce0.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:20px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gX7hYbLgQK gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="g-mtoS0dro"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb-mobile:0px;--ta:left"
+      class="gp-group/image gp-relative force-publish-1757751329219 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g-mtoS0dro"
+    >
+      <a
+        href="https://www.tiktok.com/@luxebrims?is_from_webapp=1&sender_device=pc" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-b0f0fccb-40da-46c5-b27e-ded41a4a17fe.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-b0f0fccb-40da-46c5-b27e-ded41a4a17fe.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-b0f0fccb-40da-46c5-b27e-ded41a4a17fe.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-b0f0fccb-40da-46c5-b27e-ded41a4a17fe.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:20px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"g6B-OTZsm2"}' data-id="g6B-OTZsm2" id="g6B-OTZsm2" data-same-height-subgrid-container class="g6B-OTZsm2 gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:none;--d-mobile:grid;--d-tablet:none;--op:100%;--radius:var(--g-radius-small);--pt:30px;--pb:30px;--pt-mobile:10px;--pl-mobile:15px;--pb-mobile:10px;--pr-mobile:15px;--cg:0px;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--o:0"
+      class="gCKFNpMlqT gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"g0PhNvh4IP"}' data-id="g0PhNvh4IP" id="g0PhNvh4IP" data-same-height-subgrid-container class="g0PhNvh4IP gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:none;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mt-mobile:7px;--ml-mobile:11px;--mb-mobile:6px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--cg:8px;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 6fr) minmax(0, 6fr);--w:var(--g-ct-w, 1200px);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gkGJxMmdMz gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gDLv1oAlPB"
+        class="gDLv1oAlPB"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--mt-mobile:0px;--mb-mobile:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329223"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggDLv1oAlPB_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/hat-care-guide","selectedTab":"pages","target":"_self","title":"Hat Care Guide"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="geXOupKvbP"].gp-button-base::before, [data-id="geXOupKvbP-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="geXOupKvbP"]:hover::before, [data-id="geXOupKvbP-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="geXOupKvbP" dataId="geXOupKvbP" data-state="idle" aria-label="<p>Hat Care Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/hat-care-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="geXOupKvbP gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggeXOupKvbP_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/conditions-of-sale","selectedTab":"pages","target":"_self","title":"Conditions of sale"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gszGncRCtJ"].gp-button-base::before, [data-id="gszGncRCtJ-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gszGncRCtJ"]:hover::before, [data-id="gszGncRCtJ-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gszGncRCtJ" dataId="gszGncRCtJ" data-state="idle" aria-label="<p>Conditions of sale</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/conditions-of-sale" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gszGncRCtJ gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggszGncRCtJ_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/privacy-policy-1","selectedTab":"pages","target":"_self","title":"Privacy policy"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gWaUBfhJLX"].gp-button-base::before, [data-id="gWaUBfhJLX-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gWaUBfhJLX"]:hover::before, [data-id="gWaUBfhJLX-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gWaUBfhJLX" dataId="gWaUBfhJLX" data-state="idle" aria-label="<p>Privacy policy</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/privacy-policy-1" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gWaUBfhJLX gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggWaUBfhJLX_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/cookie","selectedTab":"pages","target":"_self","title":"Cookie"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gjh0Y8HWfV"].gp-button-base::before, [data-id="gjh0Y8HWfV-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gjh0Y8HWfV"]:hover::before, [data-id="gjh0Y8HWfV-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gjh0Y8HWfV" dataId="gjh0Y8HWfV" data-state="idle" aria-label="<p>Cookie</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/cookie" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gjh0Y8HWfV gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggjh0Y8HWfV_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/mens","selectedTab":"collections","target":"_self","title":"Men&#039;s"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="ghPrzHRlub"].gp-button-base::before, [data-id="ghPrzHRlub-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="ghPrzHRlub"]:hover::before, [data-id="ghPrzHRlub-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="ghPrzHRlub" dataId="ghPrzHRlub" data-state="idle" aria-label="<p>Men</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/mens" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="ghPrzHRlub gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gghPrzHRlub_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/women-s-hats","selectedTab":"collections","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gRJ9xYUmC0"].gp-button-base::before, [data-id="gRJ9xYUmC0-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gRJ9xYUmC0"]:hover::before, [data-id="gRJ9xYUmC0-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gRJ9xYUmC0" dataId="gRJ9xYUmC0" data-state="idle" aria-label="<p>Women</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/women-s-hats" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gRJ9xYUmC0 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggRJ9xYUmC0_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/best-selling-hats","selectedTab":"collections","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gG12aFG7z0"].gp-button-base::before, [data-id="gG12aFG7z0-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gG12aFG7z0"]:hover::before, [data-id="gG12aFG7z0-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gG12aFG7z0" dataId="gG12aFG7z0" data-state="idle" aria-label="<p>Best Seller</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/best-selling-hats" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gG12aFG7z0 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggG12aFG7z0_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/new-arrival","selectedTab":"collections","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gWu_zrkrjO"].gp-button-base::before, [data-id="gWu_zrkrjO-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gWu_zrkrjO"]:hover::before, [data-id="gWu_zrkrjO-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gWu_zrkrjO" dataId="gWu_zrkrjO" data-state="idle" aria-label="<p>New Arrival</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/new-arrival" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gWu_zrkrjO gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggWu_zrkrjO_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/custom-hat-bar","selectedTab":"pages","target":"_self","title":"Custom Hat Bar"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--pl:0px;--pr:var(--g-s-4xl);--ta:left;--ta-mobile:left" >
+        <style>[data-id="ghntkmTynu"].gp-button-base::before, [data-id="ghntkmTynu-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="ghntkmTynu"]:hover::before, [data-id="ghntkmTynu-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="ghntkmTynu" dataId="ghntkmTynu" data-state="idle" aria-label="<p>Hat Bar</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/custom-hat-bar" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="ghntkmTynu gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gghntkmTynu_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="ghGDbjL7PP gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gRrGpXrNjw"
+        class="gRrGpXrNjw"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(undefined);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329230"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-bg-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#191918;--fs:normal;--ff:var(--g-font-body, body);--weight:700;--ls:normal;--size:19px;--size-tablet:19px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggRrGpXrNjw_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/contact-us-page","selectedTab":"pages","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gwwmHLniGW"].gp-button-base::before, [data-id="gwwmHLniGW-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gwwmHLniGW"]:hover::before, [data-id="gwwmHLniGW-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gwwmHLniGW" dataId="gwwmHLniGW" data-state="idle" aria-label="<p>Contact Us</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/contact-us-page" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gwwmHLniGW gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggwwmHLniGW_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/legal-page-apr-12-11-00-04","selectedTab":"pages","target":"_self","title":"Shipping Policy"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gCVGgzTx3V"].gp-button-base::before, [data-id="gCVGgzTx3V-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gCVGgzTx3V"]:hover::before, [data-id="gCVGgzTx3V-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gCVGgzTx3V" dataId="gCVGgzTx3V" data-state="idle" aria-label="<p>Shipping</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/legal-page-apr-12-11-00-04" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gCVGgzTx3V gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggCVGgzTx3V_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/returnexchanges","selectedTab":"pages","target":"_self","title":"Return &amp; Exchanges"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="g7ByyM7J-3"].gp-button-base::before, [data-id="g7ByyM7J-3-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g7ByyM7J-3"]:hover::before, [data-id="g7ByyM7J-3-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g7ByyM7J-3" dataId="g7ByyM7J-3" data-state="idle" aria-label="<p>Return &amp; Exchanges</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/returnexchanges" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g7ByyM7J-3 gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg7ByyM7J-3_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/order-status","selectedTab":"pages","target":"_self","title":"Order Status"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gJZeGuQxKJ"].gp-button-base::before, [data-id="gJZeGuQxKJ-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gJZeGuQxKJ"]:hover::before, [data-id="gJZeGuQxKJ-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gJZeGuQxKJ" dataId="gJZeGuQxKJ" data-state="idle" aria-label="<p>Order Status</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/order-status" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gJZeGuQxKJ gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggJZeGuQxKJ_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/collections/gift","selectedTab":"products","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gJtMottdjJ"].gp-button-base::before, [data-id="gJtMottdjJ-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gJtMottdjJ"]:hover::before, [data-id="gJtMottdjJ-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gJtMottdjJ" dataId="gJtMottdjJ" data-state="idle" aria-label="<p>Gift Cards</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/collections/gift" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gJtMottdjJ gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggJtMottdjJ_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/faqs","selectedTab":"pages","target":"_self","type":"open-page"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ta:left" >
+        <style>[data-id="gJqEhayNcM"].gp-button-base::before, [data-id="gJqEhayNcM-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gJqEhayNcM"]:hover::before, [data-id="gJqEhayNcM-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gJqEhayNcM" dataId="gJqEhayNcM" data-state="idle" aria-label="<p>FAQ</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/faqs" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gJqEhayNcM gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggJqEhayNcM_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/hat-size-guide","selectedTab":"pages","target":"_self","title":"Hat Size Guide"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="g6P9YjkKbm"].gp-button-base::before, [data-id="g6P9YjkKbm-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g6P9YjkKbm"]:hover::before, [data-id="g6P9YjkKbm-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g6P9YjkKbm" dataId="g6P9YjkKbm" data-state="idle" aria-label="<p>Size Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/hat-size-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g6P9YjkKbm gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg6P9YjkKbm_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/face-shape-guide","selectedTab":"pages","target":"_self","title":"FACE SHAPE GUIDE"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="g7S0CZRc7t"].gp-button-base::before, [data-id="g7S0CZRc7t-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="g7S0CZRc7t"]:hover::before, [data-id="g7S0CZRc7t-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="g7S0CZRc7t" dataId="g7S0CZRc7t" data-state="idle" aria-label="<p>Face Shape Guide</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/face-shape-guide" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="g7S0CZRc7t gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.gg7S0CZRc7t_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    <gp-button
+      gp-data='{"btnLink":{"link":"/pages/rewards","selectedTab":"pages","target":"_self","title":"REWARDS"}}'
+      
+      class="gp-flex gp-flex-col"
+    >
+      <div style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--mb:var(undefined);--ta:left" >
+        <style>[data-id="gXx3_Tq5OI"].gp-button-base::before, [data-id="gXx3_Tq5OI-interaction"].gp-button-base::before {
+      
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    border-style: none;
+  border-width: 0px;
+  border-color: transparent;
+  
+    border-radius: var(--g-radius-small);
+  
+    }
+  
+      
+  [data-id="gXx3_Tq5OI"]:hover::before, [data-id="gXx3_Tq5OI-interaction"]:hover::before {
+    
+    
+  }</style>
+        
+        <a
+          data-id="gXx3_Tq5OI" dataId="gXx3_Tq5OI" data-state="idle" aria-label="<p>Rewards</p>"
+          
+          href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/pages/rewards" target="_self"
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--bgi:;--hvr-bgi:;--hvr-bg:transparent;--bg:transparent"
+          class="gXx3_Tq5OI gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30  gp-g-paragraph-1"
+        >
+        
+        <div class="gp-inline-flex">
+          
+          
+    <span
+      data-gp-text
+      style="word-break:break-word"
+      class="gp-content-product-button group-active/button:!gp-text-inherit gp-relative gp-flex gp-h-full gp-items-center gp-overflow-hidden gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-text button-text"
+    >
+      {{ section.settings.ggXx3_Tq5OI_label }}
+    </span>
+        </div>
+        
+        </a>
+      </div>
+      <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+    </gp-button>
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gxkHSRuTAb"}' data-id="gxkHSRuTAb" id="gxkHSRuTAb" data-same-height-subgrid-container class="gxkHSRuTAb gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-small);--mt:var(--g-s-l);--ml:-5px;--mb:var(undefined);--pt:0px;--pl:0px;--pb:0px;--pr:0px;--cg:12px;--gtc:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--gtc-mobile:minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start;--pc-mobile:center">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--jc-mobile:center;--o:0"
+      class="gIi4-BLaOB gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="gV4MIqruCb"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:0px;--mb-mobile:0px;--ta:center"
+      class="gp-group/image gp-relative force-publish-1757751329239 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gV4MIqruCb"
+    >
+      <a
+        href="https://www.facebook.com/luxebrims.official/" target title="Image Title"
+        style="border-radius:inherit;--jc:center"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-e9b10431-8b46-49ff-b573-0f238bd7003d.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-e9b10431-8b46-49ff-b573-0f238bd7003d.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-e9b10431-8b46-49ff-b573-0f238bd7003d.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjUwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTI1MC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yNTAiIHRvPSIyNTAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-e9b10431-8b46-49ff-b573-0f238bd7003d.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:30px;--w-tablet:9px;--w-mobile:25px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gmPrXpTZLL gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="gPImL_1BxM"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:4px;--ta:left"
+      class="gp-group/image gp-relative force-publish-1757751329239 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gPImL_1BxM"
+    >
+      <a
+        href="https://x.com/LuxeBrims?fbclid=IwY2xjawJkTxtleHRuA2FlbQIxMAABHiUUlCV79_cnFTUB4o2xlnfjxnPYwyAV81Ehs_hSVi7ob8FnIjPE15upVOmt_aem_FtAtNtSsvR_TQg8Su6Evgw" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-5cd52bad-d7a7-42e2-b33e-49b75f38d99a.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-5cd52bad-d7a7-42e2-b33e-49b75f38d99a.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-5cd52bad-d7a7-42e2-b33e-49b75f38d99a.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTAwLTUwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0idXJsKCNnLTUwMC01MDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MDAiIHRvPSI1MDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-5cd52bad-d7a7-42e2-b33e-49b75f38d99a.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:22px;--w-tablet:16px;--w-mobile:19px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gsIjBahSQO gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="g4Ge6PG1Lq"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb:0px;--ta:center"
+      class="gp-group/image gp-relative force-publish-1757751329239 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g4Ge6PG1Lq"
+    >
+      <a
+        href="https://www.instagram.com/luxebrims?igsh=MTU1ZWl3Y2p5OGExNQ==" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:center"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-f7349d07-0164-46ac-8c8e-087f2e3248f4.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-f7349d07-0164-46ac-8c8e-087f2e3248f4.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-f7349d07-0164-46ac-8c8e-087f2e3248f4.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMjAwLTIwMCI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0idXJsKCNnLTIwMC0yMDApIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0yMDAiIHRvPSIyMDAiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-f7349d07-0164-46ac-8c8e-087f2e3248f4.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:18px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="g06DG6-zfB gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="g3GC08O78N"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--ta:left"
+      class="gp-group/image gp-relative force-publish-1757751329240 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g3GC08O78N"
+    >
+      <a
+        href="https://www.pinterest.com/settings/#profile" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-f484c10e-0dad-43d6-bb21-546e9e1bfce0.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-f484c10e-0dad-43d6-bb21-546e9e1bfce0.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-f484c10e-0dad-43d6-bb21-546e9e1bfce0.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-f484c10e-0dad-43d6-bb21-546e9e1bfce0.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:20px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start;--jc-mobile:center"
+      class="gvmxgsIQLv gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="g18DkKZFPD"
+      style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--mb-mobile:0px;--ta:left"
+      class="gp-group/image gp-relative force-publish-1757751329240 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g18DkKZFPD"
+    >
+      <a
+        href="https://www.tiktok.com/@luxebrims?is_from_webapp=1&sender_device=pc" target="_self" title="Image Title"
+        style="border-radius:inherit;--jc:left"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-b0f0fccb-40da-46c5-b27e-ded41a4a17fe.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-b0f0fccb-40da-46c5-b27e-ded41a4a17fe.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-b0f0fccb-40da-46c5-b27e-ded41a4a17fe.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctNTEyLTUxMiI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnLTUxMi01MTIpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii01MTIiIHRvPSI1MTIiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" data-src="{{ "gempages_581001623841538568-b0f0fccb-40da-46c5-b27e-ded41a4a17fe.png" | file_url }}"
+        alt="Alt Image"
+        width="100%"
+        style="--aspect:auto;--aspect-mobile:auto;--objf:cover;--w:26px;--w-tablet:20px;--w-mobile:23px;--h:auto;--h-tablet:auto;--h-mobile:auto"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </a>
+    </div>
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gwmRbrUvsN"}' data-id="gwmRbrUvsN" id="gwmRbrUvsN" data-same-height-subgrid-container class="gwmRbrUvsN gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-small);--mb:var(undefined);--pt:55px;--pl:15px;--pb:55px;--pr:15px;--pt-mobile:var(--g-s-l);--pl-mobile:15px;--pb-mobile:30px;--pr-mobile:15px;--cg:30px;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--ai:normal;--jc:start;--o:0"
+      class="g7TvD3SwTD gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gi5lmfFCzU"
+        class="gi5lmfFCzU"
+        style="--ta:left;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:none;--d-tablet:block;--op:100%;--radius:var(--g-radius-small);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1757751329243"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-text-g-text-3 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--ta:left;--line-clamp:0;--line-clamp-tablet:0;--line-clamp-mobile:0;--c:rgba(255, 255, 255, 0.8);--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:13px;--size-tablet:13px;--size-mobile:12px;--lh:150%;--lh-tablet:150%;--lh-mobile:150%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggi5lmfFCzU_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    </div><div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="g2p5-smUJU gp-relative gp-flex gp-flex-col"
+    >
+      
+    <div
+      role="presentation"
+      data-id="grbDtDCb9P"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--ta:right"
+      class="gp-group/image gp-relative force-publish-1757751329244 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto grbDtDCb9P"
+    >
+      <div
+        
+        style="border-radius:inherit;--jc:right"
+        class="gp-h-full gp-w-full gp-flex pointer-events-auto"
+      >
+        
+    <picture style="border-radius:inherit" class="gp-contents">
+      
+      <source media="(max-width: 767px)" data-srcSet="{{ "gempages_581001623841538568-fa80a0e4-634f-4c93-8037-d6684d40d8a8.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTMyNC05MyI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0idXJsKCNnLTEzMjQtOTMpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xMzI0IiB0bz0iMTMyNCIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" />
+      <source media="(max-width: 1024px)" data-srcSet="{{ "gempages_581001623841538568-fa80a0e4-634f-4c93-8037-d6684d40d8a8.png" | file_url }}" srcset="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTMyNC05MyI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0idXJsKCNnLTEzMjQtOTMpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xMzI0IiB0bz0iMTMyNCIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" />
+    
+      
+      <img
+        base-src="{{ "gempages_581001623841538568-fa80a0e4-634f-4c93-8037-d6684d40d8a8.png" | file_url }}" quality-type="{}" quality-percent="{}"
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImctMTMyNC05MyI+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSIyMCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI1MCUiIC8+CiAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0icmdiYSg1MSwgNTEsIDUxLCAwKSIgb2Zmc2V0PSI3MCUiIC8+CiAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMTMyNCIgaGVpZ2h0PSI5MyIgZmlsbD0idXJsKCNnLTEzMjQtOTMpIiAvPgogICAgPGFuaW1hdGUgeGxpbms6aHJlZj0iI3IiIGF0dHJpYnV0ZU5hbWU9IngiIGZyb209Ii0xMzI0IiB0bz0iMTMyNCIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiICAvPgogIDwvc3ZnPg==" data-src="{{ "gempages_581001623841538568-fa80a0e4-634f-4c93-8037-d6684d40d8a8.png" | file_url }}"
+        alt=""
+        width="100%"
+        style="--objf:cover;--w:500px;--w-tablet:500px;--w-mobile:500px;--h:auto;--h-tablet:auto;--h-mobile:auto;--b:none;--bc:#000000;--bw:1px 1px 1px 1px;--radiusType:none;--shadow:none"
+        class="gp-inline-block gp-w-full gp-max-w-full gp_lazyload"
+      />
+    
+    </picture>
+  
+      </div>
+    </div>
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+  
+    </div>
+
+      
+    </gp-row>
+  
+        </section>
+      
+  
+    <style {% if section.settings.section_preload == "false" %} class="gps-link" type="text/disabled-css" {% endif %}>@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrc.woff) format('woff');
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4taVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4kaVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4saVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4jaVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4iaVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x5caVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x5OaVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4vaVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVQUwaEQbjA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrcVIT9d0c-dYA.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCMPrcVIT9d0c-dYA.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCHPrcVIT9d0c-dYA.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCGPrcVIT9d0c-dYA.woff) format('woff');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v37/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrcVIT9d0c8.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    
+{% schema %}
+  {
+    "presets": [{ "name": "Copy of Copy of foot" }],
+    "name": "Copy of Copy of foot",
+    "tag": "section",
+    "class": "gps-584219112876540485 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/w1g447-w1/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=584219112876540485)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"},{"type":"html","id":"ggWc_1aeoHQ_text","label":"ggWc_1aeoHQ_text","default":"<strong>SUBSCRIBE TO OUR EMAIL</strong>"},{"type":"html","id":"ggCs528ijro_successMessage","label":"ggCs528ijro_successMessage","default":"Thanks for contacting us. We'll get back to you as soon as possible."},{"type":"html","id":"ggCs528ijro_errorMessage","label":"ggCs528ijro_errorMessage","default":"Can’t send email. Please try again later."},{"type":"html","id":"gg6X1hg2iw2_placeholder","label":"gg6X1hg2iw2_placeholder","default":"Enter your email"},{"type":"html","id":"ggbcs6AwfMG_label","label":"ggbcs6AwfMG_label","default":"Subscribe"},{"type":"html","id":"ggd55lh7AUQ_text","label":"ggd55lh7AUQ_text","default":"<p>BY PROVIDING YOUR EMAIL ADDRESS, YOU AGREE TO OUR PRIVACY POLICY &amp; TERMS &amp; CONDITIONS.</p>"},{"type":"html","id":"ggdDJ3xAPwd_text","label":"ggdDJ3xAPwd_text","default":"<p><strong>Customer Care</strong></p>"},{"type":"html","id":"ggbfAzHJZCr_label","label":"ggbfAzHJZCr_label","default":"<p>Contact Us</p>"},{"type":"html","id":"ggAiuQHi-dr_label","label":"ggAiuQHi-dr_label","default":"<p>Shipping</p>"},{"type":"html","id":"gguVgrjF8xv_label","label":"gguVgrjF8xv_label","default":"<p>Return &amp; Exchanges</p>"},{"type":"html","id":"ggRWZ4do67V_text","label":"ggRWZ4do67V_text","default":"<p><strong>LEGAL AREA</strong></p>"},{"type":"html","id":"ggzCff_BId6_label","label":"ggzCff_BId6_label","default":"<p>Conditions of sale</p>"},{"type":"html","id":"ggUGgb-UosO_label","label":"ggUGgb-UosO_label","default":"<p>Privacy policy</p>"},{"type":"html","id":"ggQrrwjsw-6_label","label":"ggQrrwjsw-6_label","default":"<p>Cookie</p>"},{"type":"html","id":"ggS1Tz43m8U_text","label":"ggS1Tz43m8U_text","default":"<p><strong>Shop</strong></p>"},{"type":"html","id":"ggIJVk5zHli_label","label":"ggIJVk5zHli_label","default":"<p>Men</p>"},{"type":"html","id":"ggf6WQEait-_label","label":"ggf6WQEait-_label","default":"<p>Women</p>"},{"type":"html","id":"ggIgZXlKtQV_label","label":"ggIgZXlKtQV_label","default":"<p>Accessories</p>"},{"type":"html","id":"ggThV-AGUhw_text","label":"ggThV-AGUhw_text","default":"<p><strong>Size Guide</strong></p>"},{"type":"html","id":"ggGtl6Os9D4_label","label":"ggGtl6Os9D4_label","default":"<p>Face Shape Guide</p>"},{"type":"html","id":"ggO-OEttEQ9_label","label":"ggO-OEttEQ9_label","default":"<p>Rewards</p>"},{"type":"html","id":"ggSamgrot6r_label","label":"ggSamgrot6r_label","default":"<p>FAQ</p>"},{"type":"html","id":"ggQleUrxb5E_text","label":"ggQleUrxb5E_text","default":"<p><strong>Support</strong></p>"},{"type":"html","id":"ggNm6QSTsbk_label","label":"ggNm6QSTsbk_label","default":"<p>Hat Bar</p>"},{"type":"html","id":"ggU6dATfiL1_label","label":"ggU6dATfiL1_label","default":"<p>Hat Care Guide</p>"},{"type":"html","id":"ggDLv1oAlPB_text","label":"ggDLv1oAlPB_text","default":"<p>Customer Care</p>"},{"type":"html","id":"ggeXOupKvbP_label","label":"ggeXOupKvbP_label","default":"<p>Hat Care Guide</p>"},{"type":"html","id":"ggszGncRCtJ_label","label":"ggszGncRCtJ_label","default":"<p>Conditions of sale</p>"},{"type":"html","id":"ggWaUBfhJLX_label","label":"ggWaUBfhJLX_label","default":"<p>Privacy policy</p>"},{"type":"html","id":"ggjh0Y8HWfV_label","label":"ggjh0Y8HWfV_label","default":"<p>Cookie</p>"},{"type":"html","id":"gghPrzHRlub_label","label":"gghPrzHRlub_label","default":"<p>Men</p>"},{"type":"html","id":"ggRJ9xYUmC0_label","label":"ggRJ9xYUmC0_label","default":"<p>Women</p>"},{"type":"html","id":"ggG12aFG7z0_label","label":"ggG12aFG7z0_label","default":"<p>Best Seller</p>"},{"type":"html","id":"ggWu_zrkrjO_label","label":"ggWu_zrkrjO_label","default":"<p>New Arrival</p>"},{"type":"html","id":"gghntkmTynu_label","label":"gghntkmTynu_label","default":"<p>Hat Bar</p>"},{"type":"html","id":"ggRrGpXrNjw_text","label":"ggRrGpXrNjw_text","default":"<p>Support</p>"},{"type":"html","id":"ggwwmHLniGW_label","label":"ggwwmHLniGW_label","default":"<p>Contact Us</p>"},{"type":"html","id":"ggCVGgzTx3V_label","label":"ggCVGgzTx3V_label","default":"<p>Shipping</p>"},{"type":"html","id":"gg7ByyM7J-3_label","label":"gg7ByyM7J-3_label","default":"<p>Return &amp; Exchanges</p>"},{"type":"html","id":"ggJZeGuQxKJ_label","label":"ggJZeGuQxKJ_label","default":"<p>Order Status</p>"},{"type":"html","id":"ggJtMottdjJ_label","label":"ggJtMottdjJ_label","default":"<p>Gift Cards</p>"},{"type":"html","id":"ggJqEhayNcM_label","label":"ggJqEhayNcM_label","default":"<p>FAQ</p>"},{"type":"html","id":"gg6P9YjkKbm_label","label":"gg6P9YjkKbm_label","default":"<p>Size Guide</p>"},{"type":"html","id":"gg7S0CZRc7t_label","label":"gg7S0CZRc7t_label","default":"<p>Face Shape Guide</p>"},{"type":"html","id":"ggXx3_Tq5OI_label","label":"ggXx3_Tq5OI_label","default":"<p>Rewards</p>"},{"type":"html","id":"ggi5lmfFCzU_text","label":"ggi5lmfFCzU_text","default":"<p>Copyright © 2025 luxebrims. All Rights Reserved.</p>"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {}
+  }
+{% endschema %}
+  
