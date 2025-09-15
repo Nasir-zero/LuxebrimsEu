@@ -9,136 +9,42 @@
  */
 {
   "sections": {
-    "gp_section_582447363285713780": {
-      "type": "gp-section-582447363285713780",
+    "gp_section_582447363268805492": {
       "settings": {
-        "section_preload": "true",
-        "checksum": "4f84b408375f7c62e9a32459e32daff632f8624fd5c91f2d98d930ff9b6cc92c_1_1_1_0_",
-        "gg_9OuRuC2c_label": "<p>Shop Now</p>",
-        "gg-7c098B4n_text": "New Straw Hat",
-        "ggzVRIlGwo3_label": "<p>Shop Now</p>",
-        "ggWZI8ImAY4_text": "Cowboy Hat",
-        "gg1OzWXYfxJ_label": "<p>Shop Now</p>"
-      }
+        "checksum": "88b7a71acba553082518747d7fbae84192dd1a9746e25cb5e8b2382d13703439_1_1_1_0_"
+      },
+      "type": "gp-section-582447363268805492"
     },
     "gp_section_582447363285582708": {
-      "type": "gp-section-582447363285582708",
       "settings": {
-        "section_preload": "false",
-        "checksum": "8535340b9e4aca3ba7ae52f4f7c469bae074d213a1fb0f5180dd5acdcb1fd86c_1_1_1_0_",
-        "ggdvimNhP9R_text": "Our Best-Sellers ",
-        "ggZmfzY3yQc_customContent_suffix": "off",
-        "ggEnH_OQS-v_label": "Add to cart",
-        "ggEnH_OQS-v_outOfStockLabel": "Out of stocks",
-        "ggEnH_OQS-v_unavailableLabel": "Unavailable",
-        "ggEnH_OQS-v_variantSelectionRequiredMessage": "Please select a variant to add product to cart"
-      }
-    },
-    "gp_section_582447363319202676": {
-      "type": "gp-section-582447363319202676",
-      "settings": {
-        "section_preload": "false",
-        "checksum": "bb860771491edd2c5e335cbaccf035bf56c21b4f7c84e3179b39180289693f41_1_1_1_0_",
-        "gg3i1GzN-le_text": "<p>5000+ 5 Star reviews</p>",
-        "gg9P2BITIqc_text": "Crafting Sustainable Style: Hats for a Conscious World",
-        "ggx6_YWRhqC_text": "<p>From sustainable sources to our atelier, we craft with respect for the planet.</p>",
-        "ggX6nGQBO2Q_text": "<p><span style=\"color:#242424;\"><strong>The Fiber's Footprint</strong></span></p>",
-        "ggaIosjIpkD_text": "<p>Meticulously handcrafted using time-honored techniques, our hats are designed for lasting style and wear.</p>",
-        "ggaJNxDMcXT_text": "<p><span style=\"color:#242424;\"><strong>Enduring Craftsmanship</strong></span></p>",
-        "ggAC53apmdT_text": "<p>Our hats feature thoughtful details and distinctive silhouettes, allowing you to express your unique style with confidence.</p>",
-        "gg-IfagR-vn_text": "<p><span style=\"color:#242424;\"><strong>Designed for Individuality</strong></span></p>"
-      }
+        "checksum": "97ea091f7b9710f639daf5e8af49103bd838157f0aa1358e2d068a59224c6cd3_1_1_1_0_"
+      },
+      "type": "gp-section-582447363285582708"
     },
     "gp_section_582447363285648244": {
-      "type": "gp-section-582447363285648244",
       "settings": {
-        "section_preload": "false",
-        "checksum": "790ccde8fb0bd964552bb7f06f86984a5f514bd1a58fb30d6f00c3d2ae56a559_1_1_1_0_",
-        "ggtFN88YYFv_text": "Men's &amp; Women's Hats",
-        "ggEaqiAMFjI_text": "Mens ",
-        "gglPBP_4IQI_label": "<p><strong>Shop Now</strong></p>",
-        "ggo-OfAXpeI_text": "Womens",
-        "ggAS4ndUFgc_label": "<p><strong>Shop Now</strong></p>"
-      }
+        "checksum": "790ccde8fb0bd964552bb7f06f86984a5f514bd1a58fb30d6f00c3d2ae56a559_1_1_1_0_"
+      },
+      "type": "gp-section-582447363285648244"
     },
-    "gp_section_582447363268805492": {
-      "type": "gp-section-582447363268805492",
+    "gp_section_582447363285713780": {
       "settings": {
-        "section_preload": "false",
-        "checksum": "e1fcc4b1148f6626af889f54e36069a7b6314ba80215c0b346e57d5f3a6aa107_1_1_1_0_",
-        "ggXLCUbIfTG_text": "Featured Collection",
-        "ggjLyFTa6PJ_text": "<p>Discover our latest collection of hats and beanies, featuring fresh and refined tones inspired by the season's renewal. Find the piece that resonates with your individual style and carry a touch of timeless elegance with you.</p>",
-        "ggw30Kr_iJh_label": "<p>Spring&amp;Summer </p>",
-        "ggSmOnKtQZO_label": "<p>Men’s Straw Hats</p>",
-        "ggR-5PuaUiV_label": "<p>Western Hats</p>",
-        "gg1-B3kSI1U_label": "<p>Felt Hats</p>",
-        "ggvJD5-1MDF_label": "<p>Spring&amp;Summer </p>",
-        "ggzmOSHviOI_label": "<p>Men’s Straw Hats</p>",
-        "ggU6_82Uauu_label": "<p>Western Hats</p>",
-        "gghbfdgd163_label": "<p>Felt Hats</p>"
-      }
+        "checksum": "200f6acc2ff6ed1d7accdc1baf9591599b5400b5f3f3165e5d372aed018a5768_1_1_1_0_",
+        "section_preload": "true"
+      },
+      "type": "gp-section-582447363285713780"
+    },
+    "gp_section_582447363319202676": {
+      "settings": {
+        "checksum": "b4eed963ea360447e779296700b388a1b28c2dbad646edbfe7828aad2e351e28_1_1_1_0_"
+      },
+      "type": "gp-section-582447363319202676"
     },
     "gp_section_582447363352691572": {
-      "type": "gp-section-582447363352691572",
       "settings": {
-        "section_preload": "false",
-        "checksum": "637e964d6512830a24ad3b59d30cb699e806d07c3a35fed72fc9b6662c5080c5_1_1_1_0_",
-        "gg_QNMzrHLC_text": "#ON INSTAGRAM",
-        "ggQt-Zh1zKJ_text": "This is absolutely amazing! I love the colors and the overall vibe. So inspiring!",
-        "ggSFM7QtYin_label": "<p>SHOP NOW</p>",
-        "ggo5cq_bV6R_text": "<p>thebohemianginger_</p><p>1 months ago</p>",
-        "ggtaWLsQ3D-_text": "<span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\"> My must-have summer shield.</span><br><span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">#WideBrimVibes #DesertChic</span>",
-        "gg74vPm6RSR_label": "<p>SHOP NOW</p>",
-        "gg2pXbT-j5v_text": "<p>Emily</p><p>2 months ago</p>",
-        "ggP1uyRsmCn_text": "<span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">Straw hat, city heat, SoHo strolls. </span><br><span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">#StrawFedoraFeels #CityCool</span>",
-        "ggJiWaheM7__label": "<p>SHOP NOW</p>",
-        "ggDjnLIBWaa_text": "<p>Samantha</p><p>4 months ago</p>",
-        "ggDbytsvLLv_text": "<span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">Bucket hat + ocean breeze = peace 🐚 Light, cute, sun-safe.</span><br><span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">#BucketHatSeason #BeachVibes</span>",
-        "ggXosABGDEP_label": "<p>SHOP NOW</p>",
-        "ggGGDSxumOi_text": "<p>Jasmine</p><p>15 months ago</p>",
-        "ggVXgrAbTR__text": "Lakeside reads + floppy hat love 💛 Soft, shaded, and so me.<br>#FloppyFeels #LakeLifeStyle",
-        "ggpyhu3d4Wz_label": "<p>SHOP NOW</p>",
-        "ggSbuiYMfbU_text": "<p>Maya</p><p>50 months ago</p>"
-      }
-    },
-    "175749276532ff96b6": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_169b39e_7WdyCT": {
-          "type": "ai_gen_block_169b39e",
-          "settings": {
-            "drawer_title": "Your Cart",
-            "empty_title": "Your cart is empty",
-            "empty_message": "Add some products to get started!",
-            "subtotal_label": "Subtotal",
-            "checkout_button_text": "Checkout",
-            "continue_shopping_text": "Continue Shopping",
-            "drawer_width": 400,
-            "padding": 20,
-            "item_image_size": 80,
-            "title_size": 20,
-            "background_color": "#ffffff",
-            "header_background_color": "#ffffff",
-            "footer_background_color": "#ffffff",
-            "text_color": "#000000",
-            "muted_text_color": "#666666",
-            "border_color": "#e5e5e5",
-            "checkout_button_color": "#000000",
-            "checkout_button_text_color": "#ffffff",
-            "checkout_button_hover_color": "#333333",
-            "quantity_button_bg": "#f8f8f8",
-            "remove_color": "#dc2626",
-            "remove_hover_color": "#b91c1c",
-            "button_border_radius": 6,
-            "image_border_radius": 8
-          },
-          "blocks": {}
-        }
+        "checksum": "e6729bfe38920fb4186180e4f9568142345c89313c21ce4d3d12626c94889ec3_1_1_1_0_"
       },
-      "block_order": [
-        "ai_gen_block_169b39e_7WdyCT"
-      ],
-      "settings": {}
+      "type": "gp-section-582447363352691572"
     }
   },
   "order": [
@@ -147,7 +53,6 @@
     "gp_section_582447363319202676",
     "gp_section_582447363285648244",
     "gp_section_582447363268805492",
-    "gp_section_582447363352691572",
-    "175749276532ff96b6"
+    "gp_section_582447363352691572"
   ]
 }
