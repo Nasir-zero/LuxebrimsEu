@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -508,6 +517,79 @@
       "signup_form_email_label": "Email",
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "thank_you": {
+        "items_fulfilled_by_store": {
+          "one": "Les articles que vous avez achetés proviendront de %{remote_shop_name}.",
+          "other": "Les articles que vous avez achetés proviendront d'autres magasins."
+        },
+        "thank_you_confirmed_orders_with_email_description": {
+          "one": "Vous recevrez bientôt un email de confirmation",
+          "other": "Vous recevrez bientôt des e-mails de confirmation distincts de chaque magasin."
+        },
+        "thank_you_confirmed_orders_with_phone_description": {
+          "one": "Vous recevrez bientôt un SMS de confirmation",
+          "other": "Vous recevrez bientôt des SMS de confirmation distincts de chaque magasin."
+        },
+        "thank_you_confirmed_orders_with_email_and_phone_description": {
+          "one": "Vous recevrez bientôt un email de confirmation",
+          "other": "Vous recevrez bientôt des e-mails de confirmation distincts de chaque magasin."
+        }
+      }
+    }
+  },
+  "customer_accounts": {
+    "account_information": {
+      "profile_card": {
+        "editable_email_help_text": "Cet e-mail est utilisé pour la connexion et les mises à jour de commande."
+      },
+      "verify_new_email_modal": {
+        "email_resend_button_error_banner_message": "Impossible d'envoyer le code de vérification"
+      }
+    },
+    "payment_methods": {
+      "generic_error": "Une erreur s'est produite. Veuillez réessayer."
+    }
+  },
+  "gempages": {
+    "Carousel": {
+      "no_slider": "Pas de curseur"
+    },
+    "Newsletter": {
+      "err_msg_default": "Impossible d'envoyer l'e-mail. Veuillez réessayer plus tard.",
+      "success_msg_default": "Merci de vous être abonné"
+    },
+    "IconListV2": {
+      "icons_not_found": "Icônes non trouvées"
+    },
+    "IconList": {
+      "icons_not_found": "Icônes non trouvées"
+    },
+    "IconListHoz": {
+      "icons_not_found": "Icônes non trouvées"
+    },
+    "Product": {
+      "product_not_found": "Produit non trouvé"
+    },
+    "ProductList": {
+      "product_not_found": "Produit non trouvé!",
+      "no_products_found": "Aucun produit trouvé!",
+      "no_related_products": "Aucun produit associé!"
+    },
+    "ProductTitle": {
+      "product_not_found": "Produit non trouvé"
+    },
+    "ProductVariants": {
+      "please_select": "Veuillez sélectionner une option"
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>DÉPÊCHEZ-VOUS!</mark> ACHETEZ MAINTENANT"
+    },
+    "Breadcrumb": {
+      "home": "Maison"
     }
   }
 }
