@@ -1,0 +1,576 @@
+
+    
+    <style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-586112124963521219.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-586112124963521219.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-586112124963521219.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-586112124963521219.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-586112124963521219.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-586112124963521219.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-586112124963521219.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-586112124963521219.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-586112124963521219.gps.gpsil [style*="--bb:"]{border-bottom:var(--bb)}.gps-586112124963521219.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-586112124963521219.gps.gpsil [style*="--bblr:"]{border-bottom-left-radius:var(--bblr)}.gps-586112124963521219.gps.gpsil [style*="--bbrr:"]{border-bottom-right-radius:var(--bbrr)}.gps-586112124963521219.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-586112124963521219.gps.gpsil [style*="--bt:"]{border-top:var(--bt)}.gps-586112124963521219.gps.gpsil [style*="--btlr:"]{border-top-left-radius:var(--btlr)}.gps-586112124963521219.gps.gpsil [style*="--btrr:"]{border-top-right-radius:var(--btrr)}.gps-586112124963521219.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-586112124963521219.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-586112124963521219.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-586112124963521219.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-586112124963521219.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-586112124963521219.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-586112124963521219.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-586112124963521219.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-586112124963521219.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-586112124963521219.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-586112124963521219.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-586112124963521219.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-586112124963521219.gps.gpsil [style*="--tdt:"]{text-decoration-thickness:var(--tdt)}.gps-586112124963521219.gps.gpsil [style*="--tdl:"]{text-decoration-line:var(--tdl)}.gps-586112124963521219.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-586112124963521219.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-586112124963521219.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-586112124963521219.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-586112124963521219.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-586112124963521219.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-586112124963521219.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-586112124963521219.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-586112124963521219.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-586112124963521219.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-586112124963521219.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-586112124963521219.gps.gpsil [style*="--tt:"]{text-transform:var(--tt)}.gps-586112124963521219.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-586112124963521219.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-586112124963521219.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1024px){.gps-586112124963521219.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-586112124963521219.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-586112124963521219.gps.gpsil [style*="--mb-tablet:"]{margin-bottom:var(--mb-tablet)}.gps-586112124963521219.gps.gpsil [style*="--pb-tablet:"]{padding-bottom:var(--pb-tablet)}.gps-586112124963521219.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-586112124963521219.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-586112124963521219.gps.gpsil [style*="--pt-tablet:"]{padding-top:var(--pt-tablet)}.gps-586112124963521219.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-586112124963521219.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-586112124963521219.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-586112124963521219.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-586112124963521219.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-586112124963521219.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-586112124963521219.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-586112124963521219.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-586112124963521219.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-586112124963521219.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-586112124963521219.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-586112124963521219 .gp-g-paragraph-1{font-family:var(--g-p1-ff);font-size:var(--g-p1-size);font-style:var(--g-p1-fs);font-weight:var(--g-p1-weight);letter-spacing:var(--g-p1-ls);line-height:var(--g-p1-lh)}.gps-586112124963521219 .gp-relative{position:relative}.gps-586112124963521219 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-586112124963521219 .gp-mb-0{margin-bottom:0}.gps-586112124963521219 .gp-flex{display:flex}.gps-586112124963521219 .gp-grid{display:grid}.gps-586112124963521219 .\!gp-hidden{display:none!important}.gps-586112124963521219 .gp-hidden{display:none}.gps-586112124963521219 .gp-max-w-full{max-width:100%}.gps-586112124963521219 .gp-grid-rows-\[1fr\]{grid-template-rows:1fr}.gps-586112124963521219 .gp-flex-col{flex-direction:column}.gps-586112124963521219 .gp-text-g-text-2{color:var(--g-c-text-2)}.gps-586112124963521219 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-586112124963521219 .gp-duration-200{transition-duration:.2s}.gps-586112124963521219 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1024px){.gps-586112124963521219 .tablet\:\!gp-hidden{display:none!important}.gps-586112124963521219 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-586112124963521219 .mobile\:\!gp-hidden{display:none!important}.gps-586112124963521219 .mobile\:gp-hidden{display:none}}.gps-586112124963521219 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}</style>
+    
+    
+    
+
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+
+    
+        <section
+          class="gp-mx-auto gp-max-w-full [&_*]:gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:none;--pl-tablet:none;--pl-mobile:none;--pr:none;--pr-tablet:none;--pr-mobile:none"
+        >
+          
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"#FCFAF7","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color","preload":false}},"uid":"gYpesMVJOv"}' data-id="gYpesMVJOv" id="gYpesMVJOv" data-same-height-subgrid-container class="gYpesMVJOv gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:var(--g-s-4xl);--pl:20%;--pb:var(--g-s-4xl);--pr:20%;--pt-tablet:var(--g-s-4xl);--pl-tablet:15px;--pb-tablet:var(--g-s-4xl);--pr-tablet:15px;--pt-mobile:var(--g-s-4xl);--pl-mobile:15px;--pb-mobile:var(--g-s-4xl);--pr-mobile:15px;--cg:var(--g-s-2xl);--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FCFAF7;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="gX0qSHNsd1 gp-relative gp-flex gp-flex-col"
+    >
+      
+    
+
+    
+
+    
+    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"transparent","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gL9IS5KUIG"}' data-id="gL9IS5KUIG" id="gL9IS5KUIG" data-same-height-subgrid-container class="gL9IS5KUIG gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-3xl);--pl-mobile:15px;--pr-mobile:15px;--cg:var(--g-s-2xl);--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+      
+
+      <div
+      data-same-height-display-contents
+      style="--jc:start"
+      class="ggP1NSdrKs gp-relative gp-flex gp-flex-col"
+    >
+      
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gd-bY0qeJX"
+        class="gd-bY0qeJX"
+        style="--ta:center;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-l);--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756105"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <h2
+          data-gp-text
+          class="gp-text-g-text-2 gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center;--c:#242424;--fs:normal;--ff:var(--g-font-heading, heading);--weight:700;--ls:normal;--size:40px;--size-tablet:40px;--size-mobile:35px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggd-bY0qeJX_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gGVuRdMSnA"
+        class="gGVuRdMSnA"
+        style="--ta:center;--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756106"
+      >
+      <div class="gp-flex" style="--jc:center">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--ta:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;word-break:break-word;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggGVuRdMSnA_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+      
+    </gp-row>
+  
+  
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g-6hTxp0n3"
+        class="g-6hTxp0n3"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756107"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--weight:bold;--c:var(--g-c-text-2, text-2);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg-6hTxp0n3_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g701txaJdo"
+        class="g701txaJdo"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756113"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg701txaJdo_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gKYQNR7ZY8"
+        class="gKYQNR7ZY8"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756114"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggKYQNR7ZY8_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g4bGLlFw5m"
+        class="g4bGLlFw5m"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756115"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--weight:bold;--c:var(--g-c-text-2, text-2);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg4bGLlFw5m_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="glBV2in_yi"
+        class="glBV2in_yi"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756116"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gglBV2in_yi_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gFmzIPitEw"
+        class="gFmzIPitEw"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756117"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggFmzIPitEw_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gaaL3FAhoh"
+        class="gaaL3FAhoh"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756118"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggaaL3FAhoh_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g1KRh2Hg7C"
+        class="g1KRh2Hg7C"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756119"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--c:var(--g-c-text-2, text-2);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg1KRh2Hg7C_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gMlISTJ9Ui"
+        class="gMlISTJ9Ui"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756120"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggMlISTJ9Ui_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g1JDjqVFJS"
+        class="g1JDjqVFJS"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756121"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg1JDjqVFJS_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gP2lcdJLRd"
+        class="gP2lcdJLRd"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756122"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggP2lcdJLRd_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gqb5WigNZQ"
+        class="gqb5WigNZQ"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756123"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--c:var(--g-c-text-2, text-2);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggqb5WigNZQ_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gwa8Ehzd8-"
+        class="gwa8Ehzd8-"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756124"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggwa8Ehzd8-_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gaj8-ohiie"
+        class="gaj8-ohiie"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756125"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggaj8-ohiie_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gr7LZPz46f"
+        class="gr7LZPz46f"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756126"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggr7LZPz46f_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gdE3462C9K"
+        class="gdE3462C9K"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756127"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--c:var(--g-c-text-2, text-2);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggdE3462C9K_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="guSBNAAb4A"
+        class="guSBNAAb4A"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756128"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gguSBNAAb4A_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g84JJrqxij"
+        class="g84JJrqxij"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756129"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg84JJrqxij_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="grBdV2ccSH"
+        class="grBdV2ccSH"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756130"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggrBdV2ccSH_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g7dXZIjV8t"
+        class="g7dXZIjV8t"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756131"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg7dXZIjV8t_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gZ65Is6qQY"
+        class="gZ65Is6qQY"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756132"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--c:var(--g-c-text-2, text-2);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggZ65Is6qQY_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="ggxAWAlNyI"
+        class="ggxAWAlNyI"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756133"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gggxAWAlNyI_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gaKR3blvl-"
+        class="gaKR3blvl-"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756134"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggaKR3blvl-_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="g68uNjYNh8"
+        class="g68uNjYNh8"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756135"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gg68uNjYNh8_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gfzB_XysXN"
+        class="gfzB_XysXN"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756136"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggfzB_XysXN_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gTM5D0l1TF"
+        class="gTM5D0l1TF"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756142"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--c:var(--g-c-text-2, text-2);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggTM5D0l1TF_text | replace: '$locationOrigin', locationOrigin }}
+        </h2>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="gKWXq2vN4l"
+        class="gKWXq2vN4l"
+        style="--ta:left;--mb:0px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:0px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:0px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756143"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.ggKWXq2vN4l_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+    <div data-id="ghioFCPQDw"
+        class="ghioFCPQDw"
+        style="--ta:left;--mb:32px;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:32px;--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:32px;--pt-mobile:0px;--pl-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
+        data-test-force-publish="1758879756144"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="gp-g-paragraph-1  gp-text-instant gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--tdt:auto;--b:none;--bc:#121212;--bw:1px 1px 1px 1px;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--shadow:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:var(--g-c-text-1, text-1);--tt:none;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden;--tdl:"
+        >
+          {{ section.settings.gghioFCPQDw_text | replace: '$locationOrigin', locationOrigin }}
+        </div>
+      </div>
+    </div>
+    
+    </div>
+
+      
+    </gp-row>
+  
+        </section>
+      
+  
+    
+    
+{% schema %}
+  {
+    
+    "name": "Section 2",
+    "tag": "section",
+    "class": "gps-586112124963521219 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/w1g447-w1/apps/gempages-cro/app/shopify/edit?pageType=GP_STATIC&editorId=582879649965671284&sectionId=586112124963521219)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"false"},{"type":"text","label":"Checksum","id":"checksum"},{"type":"html","id":"ggd-bY0qeJX_text","label":"ggd-bY0qeJX_text","default":"How Are Luxebrims Hats Made?"},{"type":"html","id":"ggGVuRdMSnA_text","label":"ggGVuRdMSnA_text","default":"<p>From our design studio in Europe, Luxebrims products undergo as many as 80 meticulous steps before they reach your hands. What makes Luxebrims truly unique? Read on, as Luxebrims founder Erica will answer the most frequently asked questions about our brand and our commitment to exquisite craftsmanship.</p>"},{"type":"html","id":"gg-6hTxp0n3_text","label":"gg-6hTxp0n3_text","default":"1.Why did you start Luxebrims?"},{"type":"html","id":"gg701txaJdo_text","label":"gg701txaJdo_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Luxebrims was born from a passionate belief that true luxury should be accessible without compromising on quality or craftsmanship. We noticed a significant gap in the market between mass-produced items and ultra-high-end luxury goods that were out of reach for most discerning customers.&nbsp;</span></p>"},{"type":"html","id":"ggKYQNR7ZY8_text","label":"ggKYQNR7ZY8_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">We're extremely proud to bridge this gap by offering meticulously crafted products that embody the essence of European elegance at a price point that makes luxury attainable. Our founders combined decades of experience in luxury goods with a fresh perspective on what modern consumers truly value - authenticity, quality, and timeless design.</span></p>"},{"type":"html","id":"gg4bGLlFw5m_text","label":"gg4bGLlFw5m_text","default":"<strong>2.What is the mission of Luxebrims?</strong>"},{"type":"html","id":"gglBV2in_yi_text","label":"gglBV2in_yi_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Luxebrims' mission is to redefine accessible luxury by creating products that inspire confidence and elevate everyday experiences. We believe that luxury isn't just about owning beautiful things - it's about how those things make you feel and the confidence they bring to your daily life.</span></p>"},{"type":"html","id":"ggFmzIPitEw_text","label":"ggFmzIPitEw_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">In a tangible sense, we achieve this mission by putting craftsmanship first, sourcing only the finest materials, and maintaining rigorous quality standards throughout every step of our process. But in the more profound sense, we hope our products become cherished companions that enhance your personal style and boost your confidence in every situation.</span></p>"},{"type":"html","id":"ggaaL3FAhoh_text","label":"ggaaL3FAhoh_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">We're committed to building a community of individuals who appreciate the finer things in life while staying grounded in authenticity and genuine value.</span></p>"},{"type":"html","id":"gg1KRh2Hg7C_text","label":"gg1KRh2Hg7C_text","default":"<strong>3.Where are Luxebrims products produced?</strong>"},{"type":"html","id":"ggMlISTJ9Ui_text","label":"ggMlISTJ9Ui_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Luxebrims' product designs originate from our design studio in Europe, and the products are manufactured in carefully selected production facilities around the world, including factories in China and other parts of Asia. While some may question this global approach, we believe it is our greatest strength.</span></p>"},{"type":"html","id":"gg1JDjqVFJS_text","label":"gg1JDjqVFJS_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">We personally visit every facility we work with on a regular basis to ensure our products meet our exacting standards, that artisans are treated with respect and fair compensation, and that the processes in place align with our values of excellence and ethical production.</span></p>"},{"type":"html","id":"ggP2lcdJLRd_text","label":"ggP2lcdJLRd_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">This global network allows us to work with the world's finest craftspeople - from Italian leather artisans who have perfected their skills over generations, to master weavers who understand the intricacies of luxury textiles. We put our reputation where our standards are and invite everyone to experience the Luxebrims difference.</span></p>"},{"type":"html","id":"ggqb5WigNZQ_text","label":"ggqb5WigNZQ_text","default":"<strong>4.Where does Luxebrims source materials?</strong>"},{"type":"html","id":"ggwa8Ehzd8-_text","label":"ggwa8Ehzd8-_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Luxebrims sources materials from the finest suppliers around the world - this isn't just marketing speak, it's an absolute necessity for achieving the quality we demand. Our Italian leather comes from tanneries with centuries of tradition, our cashmere is sourced from the highlands of Mongolia and Scotland, our silk comes from the most skilled producers in France and Italy, and our precious metals are ethically sourced from certified suppliers.</span></p>"},{"type":"html","id":"ggaj8-ohiie_text","label":"ggaj8-ohiie_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Each material is chosen not just for its inherent quality, but for the story it tells and the craftsmanship behind it. We believe that the provenance of materials matters as much as their quality - it's what gives each Luxebrims product its unique character and authenticity.</span></p>"},{"type":"html","id":"ggr7LZPz46f_text","label":"ggr7LZPz46f_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">We maintain long-term relationships with our suppliers, many of whom have been family businesses for generations. This ensures consistency, quality, and supports traditional craftsmanship techniques that might otherwise be lost to mass production.</span></p>"},{"type":"html","id":"ggdE3462C9K_text","label":"ggdE3462C9K_text","default":"<strong>5.What makes Luxebrims products different?</strong>"},{"type":"html","id":"gguSBNAAb4A_text","label":"gguSBNAAb4A_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Sustainability is at the core of everything we do at Luxebrims. We believe that true luxury must be responsible luxury. This means creating products that are built to last for generations, not seasons.</span></p>"},{"type":"html","id":"gg84JJrqxij_text","label":"gg84JJrqxij_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Our approach to sustainability is multi-faceted: we source materials from suppliers who share our commitment to ethical and environmental responsibility, we minimize waste through precise planning and efficient production processes, and we use packaging made from recycled and recyclable materials.</span></p>"},{"type":"html","id":"ggrBdV2ccSH_text","label":"ggrBdV2ccSH_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">We also offer a comprehensive repair and restoration service for all our products, because we believe that maintaining and caring for quality items is far more sustainable than replacing them. Our craftspeople take pride in breathing new life into well-loved pieces.</span></p>"},{"type":"html","id":"gg7dXZIjV8t_text","label":"gg7dXZIjV8t_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Additionally, we're committed to transparency in our supply chain and regularly audit our partners to ensure they meet our standards for worker welfare and environmental responsibility.</span></p>"},{"type":"html","id":"ggZ65Is6qQY_text","label":"ggZ65Is6qQY_text","default":"<strong>6.How does Luxebrims ensure customer satisfaction?</strong>"},{"type":"html","id":"gggxAWAlNyI_text","label":"gggxAWAlNyI_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Customer satisfaction isn't just our goal - it's our obsession. We understand that choosing Luxebrims is an investment, and we're committed to ensuring that investment brings you joy for years to come.</span></p>"},{"type":"html","id":"ggaKR3blvl-_text","label":"ggaKR3blvl-_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Our customer service team consists of product specialists who understand every detail of our craftsmanship and can help you make the perfect choice for your needs. We offer personalized styling consultations, detailed care instructions, and ongoing support throughout your ownership experience.</span></p>"},{"type":"html","id":"gg68uNjYNh8_text","label":"gg68uNjYNh8_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Our \"White Glove Service\" includes complimentary gift wrapping, expedited shipping options, and our unique \"Preview Program\" where you can examine your purchase at home for 30 days before making your final decision.</span></p>"},{"type":"html","id":"ggfzB_XysXN_text","label":"ggfzB_XysXN_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">We also maintain a private client services team for our most valued customers, offering exclusive access to limited editions, custom modifications, and priority service for repairs and maintenance.</span></p>"},{"type":"html","id":"ggTM5D0l1TF_text","label":"ggTM5D0l1TF_text","default":"<strong>7.Join the Luxebrims Community</strong>"},{"type":"html","id":"ggKWXq2vN4l_text","label":"ggKWXq2vN4l_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">At Luxebrims, we're more than a brand - we're a community of individuals who believe that life's finest moments deserve to be celebrated with exceptional quality and timeless style. We invite you to experience the difference that true craftsmanship makes and to join us in our mission to make luxury accessible without compromise.</span></p>"},{"type":"html","id":"gghioFCPQDw_text","label":"gghioFCPQDw_text","default":"<p><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);font-size:16px;\">Whether you're discovering Luxebrims for the first time or you're a longtime member of our community, we're honored to be part of your story and committed to exceeding your expectations at every turn.</span></p>"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {}
+  }
+{% endschema %}
+  
