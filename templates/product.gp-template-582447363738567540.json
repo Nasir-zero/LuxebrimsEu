@@ -11,26 +11,48 @@
   "sections": {
     "gp_section_582447363755344756": {
       "settings": {
-        "checksum": "08e0d6f05ed4416a794f559b162d49c808732a1f77c88961196e848a1e50c460_1_1_0_0_"
+        "checksum": "08e0d6f05ed4416a794f559b162d49c808732a1f77c88961196e848a1e50c460_1_1_1_0__1",
+        "ggAxk2GUPDw_label": "Add To cart",
+        "ggAxk2GUPDw_outOfStockLabel": "Out Of Stock",
+        "ggAxk2GUPDw_unavailableLabel": "Unavailable",
+        "ggAxk2GUPDw_variantSelectionRequiredMessage": "Please select a variant to add product to cart"
       },
       "type": "gp-section-582447363755344756"
     },
     "gp_section_582447363755410292": {
       "settings": {
-        "checksum": "a0155af4f03429dd3baf3db3daf3619ac98f6423d7249805609d75e40b4416f1_1_1_0_0_"
+        "checksum": "a0155af4f03429dd3baf3db3daf3619ac98f6423d7249805609d75e40b4416f1_1_1_1_0__1"
       },
       "type": "gp-section-582447363755410292"
     },
     "gp_section_582447363788899188": {
       "settings": {
-        "checksum": "e2bd9894ea89bfc07eb4770fcd0a56aaa81b028302ba91530d519ae159ce0bfb_1_1_0_0_",
+        "checksum": "64b663c7216cf5e68ebc492c690825903d778f2bf0c6560b6adb0cc865533b30_1_1_1_0__1",
+        "gg6w0oYKL-F_text": "Quantity",
+        "gg9EkWcHJcu_label": "Add To card",
+        "gg9EkWcHJcu_outOfStockLabel": "Out of stock",
+        "gg9EkWcHJcu_unavailableLabel": "Unavailable",
+        "ggABQgDsBlU_label": "Buy Now",
+        "ggABQgDsBlU_outOfStockLabel": "Out of stock",
+        "ggABQgDsBlU_unavailableLabel": "Unavailable",
+        "ggASsv2ZA0V_childItem_0": "<p>Discription</p>",
+        "ggASsv2ZA0V_childItem_1": "<p>Size+fit</p>",
+        "ggASsv2ZA0V_childItem_2": "<p>Free Shipping</p>",
+        "ggNRet-TOB1_viewLessText": "Show less",
+        "ggNRet-TOB1_viewMoreText": "Show more",
+        "ggOBbmTy4bI_text": "<p>At LuxeBrims, our hats are crafted with precision to ensure a tailored and flattering fit.</p><p>&nbsp;</p><p><strong>True to Size:</strong><br>Each style is designed to fit true to size, following standard international headwear measurements. Simply select your usual hat size for the most comfortable fit.</p><p>&nbsp;</p><p><strong>Between Sizes:</strong><br>If you find yourself between sizes, we recommend using one of our premium hat fillers. Designed for subtle comfort, they provide a secure fit without compromising the hat’s shape or style.</p><p>&nbsp;</p><p><strong>Need Assistance</strong>:<br>Not sure of your size? Visit our <a href=\"https://luxebrims.com/pages/hat-size-guide\"><u>Hat Size Guide</u></a> or reach out to our support team — we're here to help you find your perfect fit.</p>",
+        "ggXlf9CLBUw_text": "<p>(1080 reviews)</p>",
+        "ggnsRlswju9_text": "<p>Short top in soft fabric with a square neckline and draped bodice. Long sleeves with narrow elastic at shoulders and cuffs. Lined bodice.</p>",
+        "ggqFlBYCtF3_text": "<p><a href=\"https://luxebrims-eu.myshopify.com/pages/hat-size-guide\"><u>Size Guide</u></a></p>",
+        "ggtiHwHoJoI_text": "<p><span style=\"color:#3B3B3B;\">LuxeBrims delivers to customers around the world — with free shipping and estimated delivery in 15–20 business days.</span><br><span style=\"color:#3B3B3B;\">Note: Delivery times may vary slightly depending on your location.</span></p>",
         "section_preload": "true"
       },
       "type": "gp-section-582447363788899188"
     },
     "gp_section_582447363788964724": {
       "settings": {
-        "checksum": "0c5aa74e3a6d1c54fd5dbb4f1bad3178d4b44ee7a286a4f1df9d91dcfee2ba5f_1_1_0_0_"
+        "checksum": "0c5aa74e3a6d1c54fd5dbb4f1bad3178d4b44ee7a286a4f1df9d91dcfee2ba5f_1_1_1_0__1",
+        "ggTbNKrpvEN_text": "You may also like"
       },
       "type": "gp-section-582447363788964724"
     }
