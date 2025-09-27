@@ -11,13 +11,21 @@
   "sections": {
     "gp_section_582447363604415348": {
       "settings": {
-        "checksum": "cd6b1ff55f16b0546bef60be59ab3f3efb508e505f28c12c57684d8dbc96d8de_1_1_1_0_"
+        "checksum": "cd6b1ff55f16b0546bef60be59ab3f3efb508e505f28c12c57684d8dbc96d8de_1_1_1_0__1",
+        "ggDWKfifQHA_nextText": ">",
+        "ggDWKfifQHA_previousText": "<"
       },
       "type": "gp-section-582447363604415348"
     },
     "gp_section_582447363621127028": {
       "settings": {
-        "checksum": "3bd97cd31c2dacfd972a4c1e4be50b8812c184acc1549b43f943de66dd306121_1_1_1_0_",
+        "checksum": "f89da85f1e58639e01fe1fd0ddf87f02b072f4b5c3b78072d43f1dc49541e815_1_1_1_0__1",
+        "gg1ppQ-GrZW_customContent_suffix": "off",
+        "ggAxXQYDp2R_label": "Add to cart",
+        "ggAxXQYDp2R_outOfStockLabel": "Out of stocks",
+        "ggAxXQYDp2R_unavailableLabel": "Unavailable",
+        "gggZbLy0EBc_quantityTextDisplay": "%number% products",
+        "gggZbLy0EBc_sortingTextDisplay": "Sorting",
         "section_preload": "true"
       },
       "type": "gp-section-582447363621127028"
