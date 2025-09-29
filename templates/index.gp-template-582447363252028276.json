@@ -48,14 +48,6 @@
       },
       "type": "gp-section-582447363285648244"
     },
-    "gp_section_582447363285713780": {
-      "settings": {
-        "checksum": "aa4ff183931eaa184047a7387025201be0268edc89ec550165b90b7223f19c41_1_1_1_0__1",
-        "gg_9OuRuC2c_label": "<p>Shop Now</p>",
-        "section_preload": "true"
-      },
-      "type": "gp-section-582447363285713780"
-    },
     "gp_section_582447363319202676": {
       "settings": {
         "checksum": "bb860771491edd2c5e335cbaccf035bf56c21b4f7c84e3179b39180289693f41_1_1_1_0__1",
@@ -91,10 +83,18 @@
         "ggtaWLsQ3D-_text": "<span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">&nbsp;My must-have summer shield.</span><br><span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">#WideBrimVibes #DesertChic</span>"
       },
       "type": "gp-section-582447363352691572"
+    },
+    "gp_section_586546021199250115": {
+      "settings": {
+        "checksum": "5cf6e0aec216ac86853db712ed2874d3a1c491ff06a60164afe28efb2e89de1a_1_1_1_0__1",
+        "ggn8B2moGDc_label": "<p>Shop NOW</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-586546021199250115"
     }
   },
   "order": [
-    "gp_section_582447363285713780",
+    "gp_section_586546021199250115",
     "gp_section_582447363285582708",
     "gp_section_582447363319202676",
     "gp_section_582447363285648244",
