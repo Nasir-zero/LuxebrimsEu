@@ -10,38 +10,38 @@
 {
   "sections": {
     "gp_section_582879649982317428": {
-      "type": "gp-section-582879649982317428",
       "settings": {
-        "section_preload": "true",
-        "checksum": "34bb87a3da887d51c8867231bc8c2e760b13746927c77cc55d43ef762acf4696_1_1_1_0__1",
+        "checksum": "a295a81f857d22746a4e085055a2334cd24eb44680a7b02220e4b93dd2594d01_1_1_1_0__1",
         "ggI6FbUW9uq_text": "About Us",
-        "ggYnWalJOEA_text": "<p>Every great story begins with a simple belief. Ours started with the conviction that true luxury isn't just about what you wear—it's about how it makes you feel.</p>"
-      }
+        "ggYnWalJOEA_text": "<p>Every great story begins with a simple belief. Ours started with the conviction that true luxury isn't just about what you wear—it's about how it makes you feel.</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-582879649982317428"
     },
     "gp_section_586112124963521219": {
-      "type": "gp-section-586112124963521219",
       "settings": {
         "checksum": "9f5d1ad5fae05fdf2f544eb83dc388b4d0754d312f87a58ea9c90be9ef4ce5aa_1_1_1_0__1",
-        "ggd-bY0qeJX_text": "How Are Luxebrims Hats Made?",
-        "ggGVuRdMSnA_text": "<p>From our design studio in Europe, Luxebrims products undergo as many as 80 meticulous steps before they reach your hands. What makes Luxebrims truly unique? Read on, as Luxebrims founder Erica will answer the most frequently asked questions about our brand and our commitment to exquisite craftsmanship.</p>",
         "gg-6hTxp0n3_text": "1.Why did you start Luxebrims?",
-        "gg4bGLlFw5m_text": "<strong>2.What is the mission of Luxebrims?</strong>",
         "gg1KRh2Hg7C_text": "<strong>3.Where are Luxebrims products produced?</strong>",
-        "ggqb5WigNZQ_text": "<strong>4.Where does Luxebrims source materials?</strong>",
-        "ggdE3462C9K_text": "<strong>5.What makes Luxebrims products different?</strong>",
+        "gg4bGLlFw5m_text": "<strong>2.What is the mission of Luxebrims?</strong>",
+        "ggGVuRdMSnA_text": "<p>From our design studio in Europe, Luxebrims products undergo as many as 80 meticulous steps before they reach your hands. What makes Luxebrims truly unique? Read on, as Luxebrims founder Erica will answer the most frequently asked questions about our brand and our commitment to exquisite craftsmanship.</p>",
+        "ggTM5D0l1TF_text": "<strong>7.Join the Luxebrims Community</strong>",
         "ggZ65Is6qQY_text": "<strong>6.How does Luxebrims ensure customer satisfaction?</strong>",
-        "ggTM5D0l1TF_text": "<strong>7.Join the Luxebrims Community</strong>"
-      }
+        "ggd-bY0qeJX_text": "How Are Luxebrims Hats Made?",
+        "ggdE3462C9K_text": "<strong>5.What makes Luxebrims products different?</strong>",
+        "ggqb5WigNZQ_text": "<strong>4.Where does Luxebrims source materials?</strong>"
+      },
+      "type": "gp-section-586112124963521219"
     },
     "gp_section_586112194488304413": {
-      "type": "gp-section-586112194488304413",
       "settings": {
         "checksum": "28d8bfdd0ea0c3e51cc8214c71818bb27e0a304a5845486b4dcd90ba72b01a50_1_1_1_0__1",
         "gg-t9lGbUfX_text": "<p>1. Mystery Box</p>",
+        "ggN6rrBSWAb_text": "<p><i>Thank you for choosing Luxebrims. We look forward to being a part of your story&nbsp;</i></p><p><i>and helping you express your unique style with&nbsp;</i></p><p><i>confidence and elegance.</i></p>",
         "gghEvhWsY23_text": "<p>2. Collections</p>",
-        "gglQYSaQ86O_text": "<p>3. Accessories</p>",
-        "ggN6rrBSWAb_text": "<p><i>Thank you for choosing Luxebrims. We look forward to being a part of your story&nbsp;</i></p><p><i>and helping you express your unique style with&nbsp;</i></p><p><i>confidence and elegance.</i></p>"
-      }
+        "gglQYSaQ86O_text": "<p>3. Accessories</p>"
+      },
+      "type": "gp-section-586112194488304413"
     }
   },
   "order": [
