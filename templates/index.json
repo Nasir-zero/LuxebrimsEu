@@ -11,17 +11,17 @@
   "sections": {
     "gp_section_582447363268805492": {
       "settings": {
-        "checksum": "a3fa20866712d0282b5c7daf949edff9c946d122fb0f04484b47ce898dcb946f_1_1_1_0__1",
+        "checksum": "0ab845258f05a5069150461326e673163d724bf97b708d5f66a05b724fc2769c_1_1_1_0__1",
         "gg1-B3kSI1U_label": "<p>Mystery-Box</p>",
         "ggR-5PuaUiV_label": "<p>Autumn &amp; Winter</p>",
         "ggSmOnKtQZO_label": "<p>Fedora Hats</p>",
-        "ggU6_82Uauu_label": "<p>Western Hats</p>",
+        "ggU6_82Uauu_label": "<p>Autumn &amp; Winter</p>",
         "ggXLCUbIfTG_text": "Featured Collection",
-        "gghbfdgd163_label": "<p>Felt Hats</p>",
+        "gghbfdgd163_label": "<p>Mystery-Box</p>",
         "ggjLyFTa6PJ_text": "<p>Discover our latest collection of hats and beanies, featuring fresh and refined tones inspired by the season's renewal. Find the piece that resonates with your individual style and carry a touch of timeless elegance with you.</p>",
-        "ggvJD5-1MDF_label": "<p>Spring&amp;Summer&nbsp;</p>",
+        "ggvJD5-1MDF_label": "<p>Felt Hats</p>",
         "ggw30Kr_iJh_label": "<p>Felt Hats</p>",
-        "ggzmOSHviOI_label": "<p>Men’s Straw Hats</p>"
+        "ggzmOSHviOI_label": "<p>Fedora Hats</p>"
       },
       "type": "gp-section-582447363268805492"
     },
@@ -39,7 +39,7 @@
     },
     "gp_section_582447363285648244": {
       "settings": {
-        "checksum": "a1fa8d6b508c7c602d016738971cc7c8ae7195fb5b44945dd5597ba309f4436f_1_1_1_0__1",
+        "checksum": "90a2d1ac1660d920d23251ccbfd4332dbebb381e14577e6f49bb1117d6875024_1_1_1_0__1",
         "ggAS4ndUFgc_label": "<p><strong>Shop Now</strong></p>",
         "ggEaqiAMFjI_text": "Mens&nbsp;",
         "gglPBP_4IQI_label": "<p><strong>Shop Now</strong></p>",
@@ -86,7 +86,7 @@
     },
     "gp_section_586546021199250115": {
       "settings": {
-        "checksum": "5cf6e0aec216ac86853db712ed2874d3a1c491ff06a60164afe28efb2e89de1a_1_1_1_0__1",
+        "checksum": "5f165f02d25141b504f532b2ec09ba33bc74c86f6505af4106e20758085d826a_1_1_1_0__1",
         "ggn8B2moGDc_label": "<p>Shop NOW</p>",
         "section_preload": "true"
       },
