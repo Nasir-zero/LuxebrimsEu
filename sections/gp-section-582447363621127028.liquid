@@ -65,7 +65,7 @@
     <div data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1758959198197"
+        data-test-force-publish="1759134440899"
       >
       <div  >
         <h1
@@ -259,14 +259,14 @@
         if request.page_type == 'collection' or preview_page_type == 'collection'
           assign target_collection = collection
           if target_collection == empty or target_collection == null
-            if '452632379641' == 'latest'
+            if '454230606073' == 'latest'
               assign target_collection = collections | sort: 'updated_at'  | first
             else
               
-          assign target_collection = collections['accessories']
+          assign target_collection = collections['women-hat']
           if target_collection == empty
             for collection in collections
-              if collection.id == 452632379641
+              if collection.id == 454230606073
                 assign target_collection = collection
                 break
               endif
@@ -299,14 +299,14 @@
               endif
             endunless
           else
-            if '452632379641' == 'latest'
+            if '454230606073' == 'latest'
               assign target_collection = collections | sort: 'updated_at'  | first
             else
               
-          assign target_collection = collections['accessories']
+          assign target_collection = collections['women-hat']
           if target_collection == empty
             for collection in collections
-              if collection.id == 452632379641
+              if collection.id == 454230606073
                 assign target_collection = collection
                 break
               endif
@@ -413,7 +413,7 @@
     <div id="p-tag-g1ppQ-GrZW" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1758959198363"
+        data-test-force-publish="1759134441041"
       >
       <div  >
         <div
@@ -661,7 +661,7 @@
     <div data-id="gAGVW1Cold"
         class="gAGVW1Cold collectionProductTitleA"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1758959198378"
+        data-test-force-publish="1759134441051"
       >
       <div  >
         <h2
@@ -701,7 +701,7 @@
     <div id="p-price-gfa6raHFw2" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1758959198382"
+        data-test-force-publish="1759134441055"
       >
       <div  >
         <div
@@ -738,7 +738,7 @@
     <div id="p-price-gQ71OOButG" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1758959198382"
+        data-test-force-publish="1759134441055"
       >
       <div  >
         <div
@@ -1273,7 +1273,7 @@
       class="gp-product-button"
       gp-label-out-of-stock="{{ section.settings.ggAxXQYDp2R_outOfStockLabel }}"
       gp-label-unavailable="{{ section.settings.ggAxXQYDp2R_unavailableLabel }}"
-      gp-data='{"styles":{"errorTypo":{"attrs":{"color":"error"},"type":"paragraph-2"},"successTypo":{"attrs":{"color":"success"},"type":"paragraph-2"}},"setting":{"errorType":"built-in","actionEffect":"continue-shopping","enableMessage":true,"label":"Add to cart","errorMessage":"Cannot add product to cart","successMessage":"Add product to cart successfully","outOfStockLabel":"Out of stocks","customURL":{"link":"/cart","target":"_self"}},"variantID":"{{variant.id}}","disabled":"{{variant.available}}","totalVariant":"{{total_combinations}}"}'
+      gp-data='{"styles":{"errorTypo":{"attrs":{"color":"error"},"type":"paragraph-2"},"successTypo":{"attrs":{"color":"success"},"type":"paragraph-2"}},"setting":{"errorType":"built-in","actionEffect":"open-cart-drawer","enableMessage":true,"label":"Add to cart","errorMessage":"Cannot add product to cart","successMessage":"Add product to cart successfully","outOfStockLabel":"Out of stocks","customURL":{"link":"/cart","target":"_self"}},"variantID":"{{variant.id}}","disabled":"{{variant.available}}","totalVariant":"{{total_combinations}}"}'
       data-variant-selection-required-message=""
     >
       
