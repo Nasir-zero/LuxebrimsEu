@@ -500,7 +500,7 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "contact_method_title": "Email or Phone"
+        "contact_method_title": "Email"
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Send me live tracking and order updates"
