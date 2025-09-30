@@ -11,7 +11,7 @@
   "sections": {
     "gp_section_582447363268805492": {
       "settings": {
-        "checksum": "0ab845258f05a5069150461326e673163d724bf97b708d5f66a05b724fc2769c_1_1_1_0__1",
+        "checksum": "3f54b74c66ee4e00f82adf6f823568d9dd9d99fc77c3c4b9a37c675eef281f93_1_1_1_0__1",
         "gg1-B3kSI1U_label": "<p>Mystery-Box</p>",
         "ggR-5PuaUiV_label": "<p>Autumn &amp; Winter</p>",
         "ggSmOnKtQZO_label": "<p>Fedora Hats</p>",
@@ -39,7 +39,7 @@
     },
     "gp_section_582447363285648244": {
       "settings": {
-        "checksum": "90a2d1ac1660d920d23251ccbfd4332dbebb381e14577e6f49bb1117d6875024_1_1_1_0__1",
+        "checksum": "7b720c1c19fbce5700c8648baea2c97524f7ac151e723ab7e1a156a871860eb1_1_1_1_0__1",
         "ggAS4ndUFgc_label": "<p><strong>Shop Now</strong></p>",
         "ggEaqiAMFjI_text": "Mens&nbsp;",
         "gglPBP_4IQI_label": "<p><strong>Shop Now</strong></p>",
@@ -62,31 +62,9 @@
       },
       "type": "gp-section-582447363319202676"
     },
-    "gp_section_582447363352691572": {
-      "settings": {
-        "checksum": "b142bb0100a8e549220270b66dc47fdc8cce978a3566cf508d49b2aecdd881a6_1_1_1_0__1",
-        "gg2pXbT-j5v_text": "<p>Emily</p><p>2 months ago</p>",
-        "gg74vPm6RSR_label": "<p>SHOP NOW</p>",
-        "ggDbytsvLLv_text": "<span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">Bucket hat + ocean breeze = peace 🐚 Light, cute, sun-safe.</span><br><span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">#BucketHatSeason #BeachVibes</span>",
-        "ggDjnLIBWaa_text": "<p>Samantha</p><p>4 months ago</p>",
-        "ggGGDSxumOi_text": "<p>Jasmine</p><p>15 months ago</p>",
-        "ggJiWaheM7__label": "<p>SHOP NOW</p>",
-        "ggP1uyRsmCn_text": "<span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">Straw hat, city heat, SoHo strolls.&nbsp;</span><br><span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">#StrawFedoraFeels #CityCool</span>",
-        "ggQt-Zh1zKJ_text": "This is absolutely amazing! I love the colors and the overall vibe. So inspiring!<br>&nbsp;",
-        "ggSFM7QtYin_label": "<p>SHOP NOW</p>",
-        "ggSbuiYMfbU_text": "<p>Maya</p><p>50 months ago</p>",
-        "ggVXgrAbTR__text": "Lakeside reads + floppy hat love 💛 Soft, shaded, and so me.<br>#FloppyFeels #LakeLifeStyle",
-        "ggXosABGDEP_label": "<p>SHOP NOW</p>",
-        "gg_QNMzrHLC_text": "#ON INSTAGRAM",
-        "ggo5cq_bV6R_text": "<p>thebohemianginger_</p>",
-        "ggpyhu3d4Wz_label": "<p>SHOP NOW</p>",
-        "ggtaWLsQ3D-_text": "<span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">&nbsp;My must-have summer shield.</span><br><span style=\"background-color:rgba(255,255,255,0);color:#FFFFFF;font-size:15px;\">#WideBrimVibes #DesertChic</span>"
-      },
-      "type": "gp-section-582447363352691572"
-    },
     "gp_section_586546021199250115": {
       "settings": {
-        "checksum": "5f165f02d25141b504f532b2ec09ba33bc74c86f6505af4106e20758085d826a_1_1_1_0__1",
+        "checksum": "dfeea07ac4b793668f09d97c380c288a4b892fe5160b7d814e5b1e3e69ef81f6_1_1_1_0__1",
         "ggn8B2moGDc_label": "<p>Shop NOW</p>",
         "section_preload": "true"
       },
@@ -98,7 +76,6 @@
     "gp_section_582447363285582708",
     "gp_section_582447363319202676",
     "gp_section_582447363285648244",
-    "gp_section_582447363268805492",
-    "gp_section_582447363352691572"
+    "gp_section_582447363268805492"
   ]
 }
