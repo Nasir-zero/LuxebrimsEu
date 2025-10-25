@@ -63,8 +63,11 @@
     },
     "gp_section_586546021199250115": {
       "settings": {
-        "checksum": "26b320ff70629c961035061b4ede4f7b302880663e95dbe4957cc7de145ffa13_1_1_1_0__1",
-        "ggn8B2moGDc_label": "<p>Shop NOW</p>",
+        "checksum": "b2c1ad18901c86de1841d4a3744d9dcdb14da24aae33320c47e94e56406cb246_1_1_1_0__1",
+        "ggC_aMyrKNX_label": "<p>Men</p>",
+        "ggSXFhjT663_text": "<p>Each hat unites heritage and refinement, handcrafted with timeless precision and effortless style.</p>",
+        "ggxPDoydNnb_label": "<p>Women</p>",
+        "ggzT3Vk3Hi0_text": "Tradition with Elegance",
         "section_preload": "true"
       },
       "type": "gp-section-586546021199250115"
