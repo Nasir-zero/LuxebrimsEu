@@ -601,6 +601,13 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "ffbdd343-1d00-42d8-b473-dd1bf8a36600": {
+        "type": "shopify://apps/boost-ai-search-filter/blocks/boost-sd-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": false,
+        "settings": {
+          "templateId": "HO-nsCtKES"
+        }
       }
     }
   },
